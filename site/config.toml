@@ -76,7 +76,7 @@ bootswatchtheme = "paper"
 # menu for changing language. This changes languages with js and stores the choice with the help of JavaScript in a Cookie. Then the path is rewritten with pathnamereplace.js. The name of the md files needs to have the same name for each language abbreviation to work correctly. Example: showcase.en.md and showcase.sv.md. It only works if DefaultContentLanguageInSubdir = true
 switchlang = false
 # You can use markdown here.
-BrandImage = "http://blog.appernetic.io/images/apperneticlogo.png" #top header brand image.
+BrandImage = "http://blog.surpass.github.io/images/apperneticlogo.png" #top header brand image.
 brand = "My awsome blog" # brand image alt text.
 topline = "few words about your site"
 footline = "code with <i class='fa fa-heart'></i>"
@@ -140,7 +140,7 @@ extensionmask = []
 [Languages.en]
 languageCode = "en"
 weight = 1
-copyright = "(c) 2016 Copyright my blog"
+copyright = "(c) 2016 Copyright frankli blog"
 title = "My blog" # Site title
 
 [[Languages.en.menu.main]]
@@ -154,27 +154,27 @@ url = "/post/"
 name = "About"
 weight = 1
 identifier = ""
-url = "https://appernetic.io/app/#/about"
+url = "https://surpass.github.io/site/content/#/about"
 pre = "<i class='fa fa-road'></i>"
 
 [[Languages.en.menu.main]]
 name = "Dashboard"
 identifier = ""
 weight = 3
-url = "https://appernetic.io/app/"
+url = "https://surpass.github.io/site/public/"
 
 [[Languages.en.menu.footer]] # add  links to the bottom right corner.
 name = "Disclaimer"
 pre = "<i>&middot;</i>"
 identifier = "disclaimer"
 weight = 1
-url = "/disclaimer/"
+url = "https://surpass.github.io/site/public/disclaimer/"
 
 [[Languages.en.menu.footer]]
 name = "Terms"
 identifier = "terms"
 weight = 2
-url = "/terms/"
+url = "https://surpass.github.io/site/public/terms/"
 
 [Languages.sv]
 languageCode = "sv"
