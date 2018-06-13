@@ -148,13 +148,13 @@ name = "Blog"
 pre = ""
 weight = 2
 identifier = "post"
-url = "/post/"
+url = "/site/public/post/"
 
 [[Languages.en.menu.main]]
 name = "About"
 weight = 1
 identifier = ""
-url = "https://surpass.github.io/site/content/#/about"
+url = "https://surpass.github.io/site/content/about"
 pre = "<i class='fa fa-road'></i>"
 
 [[Languages.en.menu.main]]
