@@ -3,27 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://surpass.github.io/sv/</loc>
+    <loc>https://surpass.github.io/site/public/sv/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://surpass.github.io/"
+                href="https://surpass.github.io/site/public/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv"
-                href="https://surpass.github.io/sv/"
+                href="https://surpass.github.io/site/public/sv/"
                 />
   </url>
   
   <url>
-    <loc>https://surpass.github.io/sv/taggar/</loc>
+    <loc>https://surpass.github.io/site/public/sv/taggar/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://surpass.github.io/sv/%C3%A4mne/</loc>
+    <loc>https://surpass.github.io/site/public/sv/%C3%A4mne/</loc>
     <priority>0</priority>
   </url>
   

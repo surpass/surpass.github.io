@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Taggar on Min blog</title>
-    <link>https://surpass.github.io/sv/taggar/</link>
+    <link>https://surpass.github.io/site/public/sv/taggar/</link>
     <description>Recent content in Taggar on Min blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>sv</language>
@@ -10,7 +10,7 @@
     <webMaster>surpass_li@aliyun.com (Frank Li)</webMaster>
     <copyright>(c) 2016 Alla rättigheter</copyright>
     
-	<atom:link href="https://surpass.github.io/sv/taggar/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://surpass.github.io/site/public/sv/taggar/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
