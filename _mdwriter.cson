@@ -8,7 +8,7 @@
 # use menu: View -> Developer -> Reload Window
 
 # website of your blog
-siteUrl: "http://blog.coderzh.com"
+siteUrl: "http://surpass-li.iteye.com"
 # root directory of your blog
 siteLocalDir: ""
 # directory to drafts from siteLocalDir
@@ -149,4 +149,4 @@ tableExtraPipes: false
 # template variables is a key-value map used in template string
 # e.g. you can have `posts/{author}/{year}` in newPostFileName after you set author.
 templateVariables:
-  author: 'coderzh'
+  author: 'FrankLi'
