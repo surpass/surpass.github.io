@@ -18,7 +18,7 @@ Taxonomies:
   tag: "tags"
   category: "categories"
 params:
-  CopyrightHTML: "Copyright FrankLee 20189. All Rights Reserved."
+  CopyrightHTML: "Copyright FrankLee 2018. All Rights Reserved."
   GitHubUser: "coderzh"
   SidebarRecentLimit: 5
   DateForm : "2018年06月15日"
