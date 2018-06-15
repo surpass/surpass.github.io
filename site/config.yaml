@@ -1,34 +1,24 @@
-title: "Frank Blog"
+title: "Beyond Blog"
 languageCode: "zh-CN"
-baseurl: "https://surpass.github.io"
-copyright: "Copyright (c) 2018. All rights reserved.  <a href='http://www.miitbeian.gov.cn/'>辽ICP备12345678号-1</a>"
+baseurl: "http://surpass.github.io"
 theme: "hugo-rapid-theme"
+copyright: "Copyright (c) 2018. All rights reserved."
 MetaDataFormat: "yaml"
 canonifyurls: true
 builddrafts: false
 PaginatePath: paginator
 pygmentsStyle: "default"
 pygmentsUseClasses: true
+RSSUri: "feed.xml"
 disablePathToLower: true 
 hasCJKLanguage: true
 permalinks:
   posts: /:year/:month/:day/:slug/
-
-outputs:
-  home:
-    - "RSS"
-    - "HTML"
-
-outputFormats:
-  RSS:
-    mediatype: "application/rss"
-    baseName: "feed"
-
 Taxonomies:
   tag: "tags"
   category: "categories"
-
 params:
+  CopyrightHTML: "Copyright &#xA9; 2015. All Rights Reserved."
   GitHubUser: "coderzh"
   SidebarRecentLimit: 5
   DateForm : "2006年01月02日"
