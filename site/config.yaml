@@ -1,6 +1,6 @@
 title: "Beyond Blog"
 languageCode: "zh-CN"
-baseurl: "http://surpass.github.io"
+baseurl: "https://surpass.github.io/site"
 theme: "hugo-rapid-theme"
 copyright: "Copyright (c) 2018. All rights reserved."
 MetaDataFormat: "yaml"

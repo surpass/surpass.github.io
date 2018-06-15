@@ -2,76 +2,85 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>思考感悟 on Beyond Blog</title>
-    <link>http://surpass.github.io/categories/%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F/</link>
+    <link>https://surpass.github.io/site/categories/%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F/</link>
     <description>Recent content in 思考感悟 on Beyond Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>Copyright (c) 2018. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 25 Feb 2018 00:15:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 15 Jun 2018 21:56:26 +0800</lastBuildDate>
     
-	<atom:link href="http://surpass.github.io/categories/%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://surpass.github.io/site/categories/%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>My First Post</title>
+      <link>https://surpass.github.io/site/post/my-first-post/</link>
+      <pubDate>Fri, 15 Jun 2018 21:56:26 +0800</pubDate>
+      
+      <guid>https://surpass.github.io/site/post/my-first-post/</guid>
+      <description>这里是文章内容</description>
+    </item>
+    
+    <item>
       <title>我的 2017</title>
-      <link>http://surpass.github.io/2018/02/25/my-2017/</link>
+      <link>https://surpass.github.io/site/2018/02/25/my-2017/</link>
       <pubDate>Sun, 25 Feb 2018 00:15:00 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2018/02/25/my-2017/</guid>
+      <guid>https://surpass.github.io/site/2018/02/25/my-2017/</guid>
       <description>2017 总结：写了一篇博客，发了一篇公众号。完。 为什么写的少了，如果说因为带娃太忙没有时间，都是借口，时间挤一挤总会有的。这一年，我看了一些书，学</description>
     </item>
     
     <item>
       <title>我的 2016</title>
-      <link>http://surpass.github.io/2017/01/01/my-2016/</link>
+      <link>https://surpass.github.io/site/2017/01/01/my-2016/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2017/01/01/my-2016/</guid>
+      <guid>https://surpass.github.io/site/2017/01/01/my-2016/</guid>
       <description>光阴似箭，岁月如梭，仿佛去年写「我的 2015」就在昨日，然而时间的确在滴滴答答中度过了 365 天。这一年里，经历了一些事，读了一些书，努力过，收获</description>
     </item>
     
     <item>
       <title>小目标</title>
-      <link>http://surpass.github.io/2016/09/25/small-plan/</link>
+      <link>https://surpass.github.io/site/2016/09/25/small-plan/</link>
       <pubDate>Sun, 25 Sep 2016 23:43:43 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2016/09/25/small-plan/</guid>
+      <guid>https://surpass.github.io/site/2016/09/25/small-plan/</guid>
       <description>两个多月没更新了，感谢一直关注的小伙伴们。 上篇文章《一次 CTF 之旅》有读者评论，会不会因为学习的东西太多而每个都不精通？以我的经验来看，会的。 曾</description>
     </item>
     
     <item>
       <title>代自己：《致和菜头书》</title>
-      <link>http://surpass.github.io/2016/06/11/to-hecaitou/</link>
+      <link>https://surpass.github.io/site/2016/06/11/to-hecaitou/</link>
       <pubDate>Sat, 11 Jun 2016 12:24:55 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2016/06/11/to-hecaitou/</guid>
+      <guid>https://surpass.github.io/site/2016/06/11/to-hecaitou/</guid>
       <description>和菜头先生， 恭喜您在《得到》APP 开启了《槽边往事》新的篇章！我是读者 CoderZh，你开设付费栏目后第一时间付费并给你写信的人。你也许会好</description>
     </item>
     
     <item>
       <title>善良比聪明更难</title>
-      <link>http://surpass.github.io/2016/05/15/kind-or-clever/</link>
+      <link>https://surpass.github.io/site/2016/05/15/kind-or-clever/</link>
       <pubDate>Sun, 15 May 2016 11:32:15 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2016/05/15/kind-or-clever/</guid>
+      <guid>https://surpass.github.io/site/2016/05/15/kind-or-clever/</guid>
       <description>Jeff, one day you&amp;rsquo;ll understand that it&amp;rsquo;s harder to be kind than clever. 杰夫，总有一天你会明白，善良比聪明更难。 Jeff Bezos 毕业于普林斯顿大学，是美国亚马逊的创始人。在 2010 年普林斯顿大学学士毕业典</description>
     </item>
     
     <item>
       <title>我如何管理我的笔记</title>
-      <link>http://surpass.github.io/2016/04/09/how-i-manage-my-notes/</link>
+      <link>https://surpass.github.io/site/2016/04/09/how-i-manage-my-notes/</link>
       <pubDate>Sat, 09 Apr 2016 14:57:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2016/04/09/how-i-manage-my-notes/</guid>
+      <guid>https://surpass.github.io/site/2016/04/09/how-i-manage-my-notes/</guid>
       <description>&lt;p&gt;我们从小就被教育：「好记性不如烂笔头。」我是一个笔记重度用户，也许是从小培养的习惯，喜欢把有意思的东西记在本子里。记录笔记有一种成就感，像玩游戏达成一个又一个成就。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>所有的编程技术都会成为历史</title>
-      <link>http://surpass.github.io/2016/04/05/programming-languages/</link>
+      <link>https://surpass.github.io/site/2016/04/05/programming-languages/</link>
       <pubDate>Mon, 04 Apr 2016 16:28:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2016/04/05/programming-languages/</guid>
+      <guid>https://surpass.github.io/site/2016/04/05/programming-languages/</guid>
       <description>&lt;p&gt;大四的时候，我用当时最新的 ASP.NET 技术给我叔写了一个服装制衣厂管理软件，这个软件用了差不多 10 年，中间几乎没有维护过，到现在还在工作。前几天突然联系我说，这个软件能不能迁移到 Win7 上使用（之前是在 XP 上），我想了想，肯定没问题啊，即使不行，在 Win7 里跑个 XP 的虚拟机也行。&lt;/p&gt;
 
 &lt;p&gt;最后，我还是给 ASP.NET 和 IIS 跪了，出各种莫名其妙的错误，从出错的内容里根本看不出任何可追踪的信息。 一个工作了近 10 年的系统，中间迁移重装过几次，工作的很好的系统，突然告诉我一个莫名其妙的错误，我猜八成是 .NET 或 IIS 的 Bug，关于 ASP.NET 的技术我已经忘光了，而且我再也不想在 .NET 上浪费光阴了。&lt;/p&gt;</description>
@@ -79,19 +88,19 @@
     
     <item>
       <title>使用番茄工作法一个月感受</title>
-      <link>http://surpass.github.io/2016/03/06/pomotodo/</link>
+      <link>https://surpass.github.io/site/2016/03/06/pomotodo/</link>
       <pubDate>Sun, 06 Mar 2016 21:40:47 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2016/03/06/pomotodo/</guid>
+      <guid>https://surpass.github.io/site/2016/03/06/pomotodo/</guid>
       <description>之前就听说过「番茄工作法」，但是一直没有尝试。春节期间，新买的 MacBook Pro 到了之后，开始装各种效率软件时，发现有人推荐 pomotodo 这个番茄工作法的软件。于是试</description>
     </item>
     
     <item>
       <title>追求简单和纯粹，我去掉了博客的评论功能</title>
-      <link>http://surpass.github.io/2016/02/01/close-comments/</link>
+      <link>https://surpass.github.io/site/2016/02/01/close-comments/</link>
       <pubDate>Mon, 01 Feb 2016 23:35:19 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2016/02/01/close-comments/</guid>
+      <guid>https://surpass.github.io/site/2016/02/01/close-comments/</guid>
       <description>&lt;p&gt;一直以来，我们都习惯了有评论功能的博客系统，甚至大多数的博客系统还拿评论数来计算分数，作为你的文章热度的一个指标。&lt;/p&gt;
 
 &lt;p&gt;曾经我也一度以为评论功能很重要，有时还会去期待有人评论。然而从结果来看，几乎大部分的评论都毫无价值。最近还受到了垃圾评论的骚扰，既浪费了我的时间不停的去删除，也影响了阅读者的体验。&lt;/p&gt;
@@ -107,10 +116,10 @@
     
     <item>
       <title>我和 ThoughtWorks 的一点小故事</title>
-      <link>http://surpass.github.io/2016/01/18/thoughtworks-story/</link>
+      <link>https://surpass.github.io/site/2016/01/18/thoughtworks-story/</link>
       <pubDate>Mon, 18 Jan 2016 23:05:24 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2016/01/18/thoughtworks-story/</guid>
+      <guid>https://surpass.github.io/site/2016/01/18/thoughtworks-story/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://7xlx3k.com1.z0.glb.clouddn.com/TW.jpg-wt&#34; alt=&#34;TW&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -118,10 +127,10 @@
     
     <item>
       <title>我的 2015</title>
-      <link>http://surpass.github.io/2016/01/01/my-2015/</link>
+      <link>https://surpass.github.io/site/2016/01/01/my-2015/</link>
       <pubDate>Fri, 01 Jan 2016 00:34:08 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2016/01/01/my-2015/</guid>
+      <guid>https://surpass.github.io/site/2016/01/01/my-2015/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://7xlx3k.com1.z0.glb.clouddn.com/2016.jpg-wt&#34; alt=&#34;2016&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;2015年对我来说是意义非凡的一年，这一年里，我主要干了以下几件事：&lt;/p&gt;
@@ -161,10 +170,10 @@
     
     <item>
       <title>大家都应该做的 Code Review</title>
-      <link>http://surpass.github.io/2015/12/27/code-review/</link>
+      <link>https://surpass.github.io/site/2015/12/27/code-review/</link>
       <pubDate>Sun, 27 Dec 2015 18:49:15 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2015/12/27/code-review/</guid>
+      <guid>https://surpass.github.io/site/2015/12/27/code-review/</guid>
       <description>&lt;p&gt;代码审查（Code Review）是个老生常谈的话题了，我以前呆过的大公司也好，创业公司也好，都知道 Code Review 的好处，但真正去有效执行的却很少。有人认为“存在即合理”，大家都不愿意做 Code Review ，可能 Code Review 真的不好，影响开发效率。有的人想做，但是执行起来太困难。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -172,10 +181,10 @@
     
     <item>
       <title>程序员的思考：我的 K12（我也曾是小学生）</title>
-      <link>http://surpass.github.io/2015/12/21/my-k12-pupil/</link>
+      <link>https://surpass.github.io/site/2015/12/21/my-k12-pupil/</link>
       <pubDate>Mon, 21 Dec 2015 22:38:15 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2015/12/21/my-k12-pupil/</guid>
+      <guid>https://surpass.github.io/site/2015/12/21/my-k12-pupil/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://7xlx3k.com1.z0.glb.clouddn.com/math.jpeg-wt&#34; alt=&#34;math&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -183,10 +192,10 @@
     
     <item>
       <title>程序员的思考：我的 K12（逃学威龙）</title>
-      <link>http://surpass.github.io/2015/12/20/my-k12-escape-school/</link>
+      <link>https://surpass.github.io/site/2015/12/20/my-k12-escape-school/</link>
       <pubDate>Sun, 20 Dec 2015 21:38:31 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2015/12/20/my-k12-escape-school/</guid>
+      <guid>https://surpass.github.io/site/2015/12/20/my-k12-escape-school/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://7xlx3k.com1.z0.glb.clouddn.com/taoxue.jpg-wt&#34; alt=&#34;taoxue&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -194,10 +203,10 @@
     
     <item>
       <title>程序员的思考：教育的未来</title>
-      <link>http://surpass.github.io/2015/11/29/hacker-thinking-mooc/</link>
+      <link>https://surpass.github.io/site/2015/11/29/hacker-thinking-mooc/</link>
       <pubDate>Sun, 29 Nov 2015 21:21:35 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2015/11/29/hacker-thinking-mooc/</guid>
+      <guid>https://surpass.github.io/site/2015/11/29/hacker-thinking-mooc/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://7xlx3k.com1.z0.glb.clouddn.com/mooc.jpg-wt&#34; alt=&#34;mooc&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -205,10 +214,10 @@
     
     <item>
       <title>程序员的思考：分享即提高</title>
-      <link>http://surpass.github.io/2015/11/22/hacker-thinking-study/</link>
+      <link>https://surpass.github.io/site/2015/11/22/hacker-thinking-study/</link>
       <pubDate>Sun, 22 Nov 2015 10:36:35 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2015/11/22/hacker-thinking-study/</guid>
+      <guid>https://surpass.github.io/site/2015/11/22/hacker-thinking-study/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://7xlx3k.com1.z0.glb.clouddn.com/learning.jpg-wt&#34; alt=&#34;learning&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -216,10 +225,10 @@
     
     <item>
       <title>程序员直播写代码网站livecoding.tv即将登陆中国，你有兴趣吗？</title>
-      <link>http://surpass.github.io/2015/10/23/livecoding/</link>
+      <link>https://surpass.github.io/site/2015/10/23/livecoding/</link>
       <pubDate>Fri, 23 Oct 2015 07:08:11 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2015/10/23/livecoding/</guid>
+      <guid>https://surpass.github.io/site/2015/10/23/livecoding/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://7xlx3k.com1.z0.glb.clouddn.com/livecoding.jpg-wt&#34; alt=&#34;livecoding&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -227,10 +236,10 @@
     
     <item>
       <title>关于开源的思考</title>
-      <link>http://surpass.github.io/2015/10/11/open-source-thinking/</link>
+      <link>https://surpass.github.io/site/2015/10/11/open-source-thinking/</link>
       <pubDate>Sun, 11 Oct 2015 17:17:19 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2015/10/11/open-source-thinking/</guid>
+      <guid>https://surpass.github.io/site/2015/10/11/open-source-thinking/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://7xlx3k.com1.z0.glb.clouddn.com/OpenSource.png-wt&#34; alt=&#34;OpenSource&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -238,10 +247,10 @@
     
     <item>
       <title>说说刚入手的程序员键盘神器：HHKB Pro2</title>
-      <link>http://surpass.github.io/2015/09/26/my-hhkb-pro2/</link>
+      <link>https://surpass.github.io/site/2015/09/26/my-hhkb-pro2/</link>
       <pubDate>Sat, 26 Sep 2015 13:54:33 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2015/09/26/my-hhkb-pro2/</guid>
+      <guid>https://surpass.github.io/site/2015/09/26/my-hhkb-pro2/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://7xlx3k.com1.z0.glb.clouddn.com/hhkb-types.jpg&#34; alt=&#34;hhkb-types&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -249,10 +258,10 @@
     
     <item>
       <title>关于最近的XcodeGhost事件，我也来说两句</title>
-      <link>http://surpass.github.io/2015/09/21/xcode-ghost/</link>
+      <link>https://surpass.github.io/site/2015/09/21/xcode-ghost/</link>
       <pubDate>Mon, 21 Sep 2015 00:56:13 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2015/09/21/xcode-ghost/</guid>
+      <guid>https://surpass.github.io/site/2015/09/21/xcode-ghost/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://7xlx3k.com1.z0.glb.clouddn.com/xcodeghost.jpg-w&#34; alt=&#34;xcodeghost&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -260,10 +269,10 @@
     
     <item>
       <title>微信公众号开通了原创保护功能</title>
-      <link>http://surpass.github.io/2015/09/19/mp-new-start/</link>
+      <link>https://surpass.github.io/site/2015/09/19/mp-new-start/</link>
       <pubDate>Sat, 19 Sep 2015 00:35:48 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2015/09/19/mp-new-start/</guid>
+      <guid>https://surpass.github.io/site/2015/09/19/mp-new-start/</guid>
       <description>&lt;p&gt;周三非常意外的收到了微信的原创保护功能邀请，之所以说意外，是因为我没想到这么快就给我发了邀请，毕竟我的公众号关注的数量还不多。但我保证了每篇文章都是原汁原味的原创内容，而且目前保持了一周一更的速度。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -271,10 +280,10 @@
     
     <item>
       <title>坑爹的多说评论</title>
-      <link>http://surpass.github.io/2015/09/18/holy-shit-duoshuo/</link>
+      <link>https://surpass.github.io/site/2015/09/18/holy-shit-duoshuo/</link>
       <pubDate>Fri, 18 Sep 2015 19:38:18 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2015/09/18/holy-shit-duoshuo/</guid>
+      <guid>https://surpass.github.io/site/2015/09/18/holy-shit-duoshuo/</guid>
       <description>&lt;p&gt;运用了各种奇技淫巧的黑科技手段，终于把之前旧页面的多说评论全部转过来了。如果再来选择一次的话，我绝不选多说。之后有时间，全部转移到disqus吧。&lt;/p&gt;
 
 &lt;p&gt;多说简直就没人维护啊有木有，居然还那么多人用着。罗列一下多说评论的各种不人性。&lt;/p&gt;
@@ -284,10 +293,10 @@
     
     <item>
       <title>周末折腾的各种东西</title>
-      <link>http://surpass.github.io/2015/09/05/busy-weekend/</link>
+      <link>https://surpass.github.io/site/2015/09/05/busy-weekend/</link>
       <pubDate>Sat, 05 Sep 2015 23:44:48 +0800</pubDate>
       
-      <guid>http://surpass.github.io/2015/09/05/busy-weekend/</guid>
+      <guid>https://surpass.github.io/site/2015/09/05/busy-weekend/</guid>
       <description>&lt;p&gt;这个周末放了3天假，第一天当然是要看盛大的阅兵仪式了，剩下的时间一半多是在折腾博客系统Hugo，剩下的时间在折腾各种工具、IDE，还有学习了一下Unity。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -295,10 +304,10 @@
     
     <item>
       <title>你说我是错的，那你最好证明你是对的</title>
-      <link>http://surpass.github.io/2015/08/08/IDonnotCare/</link>
+      <link>https://surpass.github.io/site/2015/08/08/IDonnotCare/</link>
       <pubDate>Sat, 08 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2015/08/08/IDonnotCare/</guid>
+      <guid>https://surpass.github.io/site/2015/08/08/IDonnotCare/</guid>
       <description>&lt;p&gt;&amp;ldquo;你说我是错的，那你最好证明你是对的&amp;rdquo; &amp;ndash; Michael Jackson&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -306,10 +315,10 @@
     
     <item>
       <title>小记：网易游戏学院第二届公开日</title>
-      <link>http://surpass.github.io/2015/06/28/163GameOpenDay/</link>
+      <link>https://surpass.github.io/site/2015/06/28/163GameOpenDay/</link>
       <pubDate>Sun, 28 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2015/06/28/163GameOpenDay/</guid>
+      <guid>https://surpass.github.io/site/2015/06/28/163GameOpenDay/</guid>
       <description>&lt;p&gt;昨天参加了网易游戏学院的公开日《技术进步引发的灵感革命》，干货十足，期间做了一些笔记，分享一下。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -317,10 +326,10 @@
     
     <item>
       <title>强制链接静态库所有符号(包括未被使用的)</title>
-      <link>http://surpass.github.io/2015/06/14/LinkAllSymbols/</link>
+      <link>https://surpass.github.io/site/2015/06/14/LinkAllSymbols/</link>
       <pubDate>Sun, 14 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2015/06/14/LinkAllSymbols/</guid>
+      <guid>https://surpass.github.io/site/2015/06/14/LinkAllSymbols/</guid>
       <description>&lt;p&gt;C++程序在链接一个静态库时，如果该静态库里的某些方法没有任何地方调用到，最终这些没有被调用到的方法或变量将会被丢弃掉，不会被链接到目标程序中。这样做大大减小生成二进制文件的体积。但是，某些时候，即使静态库里的某些方法没有任何地方使用到，我们也希望将这些没有使用到的代码编译进最终的二进制文件中。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -328,10 +337,10 @@
     
     <item>
       <title>开启Github之旅</title>
-      <link>http://surpass.github.io/2015/06/13/StartGithub/</link>
+      <link>https://surpass.github.io/site/2015/06/13/StartGithub/</link>
       <pubDate>Sat, 13 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2015/06/13/StartGithub/</guid>
+      <guid>https://surpass.github.io/site/2015/06/13/StartGithub/</guid>
       <description>&lt;p&gt;在那个远古时代，我以为可以用GoogleCode干点事，结果啥也没干好。如今，Github已经成为了业界标杆，就连Google、微软、Facebook的开源项目都往Github搬。Github作为全球最大的同性交友网站，假如你在上面有几个加星数不错的Project，一定会为你的简历增色不少。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -339,10 +348,10 @@
     
     <item>
       <title>最近的一些变化</title>
-      <link>http://surpass.github.io/2015/05/11/NewChange/</link>
+      <link>https://surpass.github.io/site/2015/05/11/NewChange/</link>
       <pubDate>Mon, 11 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2015/05/11/NewChange/</guid>
+      <guid>https://surpass.github.io/site/2015/05/11/NewChange/</guid>
       <description>&lt;p&gt;有关注我博客的朋友也许会发现，从3月份开始，我的博客又活跃了起来，平均每周会有一篇，而且，我也开通了微信公众号：一个程序员的思考。为什么会有这个变化呢？因为，我换工作了。工作内容有了很大的变化，平时的生活娱乐方式也有了一定的变化。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -350,10 +359,10 @@
     
     <item>
       <title>新的开始，新的挑战</title>
-      <link>http://surpass.github.io/2015/03/15/NewStart/</link>
+      <link>https://surpass.github.io/site/2015/03/15/NewStart/</link>
       <pubDate>Sun, 15 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2015/03/15/NewStart/</guid>
+      <guid>https://surpass.github.io/site/2015/03/15/NewStart/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://7xlx3k.com1.z0.glb.clouddn.com/NewStart.jpg-w&#34; alt=&#34;NewStart&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;人的选择，有时候看上去是有规律或刻意的，有时候又像是自然而然的。既然选择了远方，就要鼓足勇气去面对挑战。&lt;/p&gt;
@@ -363,10 +372,10 @@
     
     <item>
       <title>关于创业</title>
-      <link>http://surpass.github.io/2015/02/18/Starup/</link>
+      <link>https://surpass.github.io/site/2015/02/18/Starup/</link>
       <pubDate>Wed, 18 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2015/02/18/Starup/</guid>
+      <guid>https://surpass.github.io/site/2015/02/18/Starup/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://7xlx3k.com1.z0.glb.clouddn.com/StartUP-header.jpg-w&#34; alt=&#34;StartUp&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;有人说，现在是创业的黄金时代。有个不错的idea，有差不多靠谱的团队，一个简单的demo甚至只有想法，就可以拉来一笔投资开始干了。其实并非如此容易，至少我现在还没这勇气魄力和这分自信。不过也的确没有那么难，不然哪来这么多雨后春笋般的创业公司。&lt;/p&gt;
@@ -376,10 +385,10 @@
     
     <item>
       <title>你好2015</title>
-      <link>http://surpass.github.io/2015/01/10/2015Jekyll/</link>
+      <link>https://surpass.github.io/site/2015/01/10/2015Jekyll/</link>
       <pubDate>Sat, 10 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2015/01/10/2015Jekyll/</guid>
+      <guid>https://surpass.github.io/site/2015/01/10/2015Jekyll/</guid>
       <description>&lt;p&gt;2015已经到来，转眼间已步入而立之年。不畏将来，不念过去。2015年是一个新的开始，正如我又将这博客从WordPress转移到了Jekyll，而且很顺利的将之前博客园的博文导入到了这个博客中。2015，对于我的独立博客来说，是个全新的开始。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -387,10 +396,10 @@
     
     <item>
       <title>如何看待：微软将以25亿美元收购Minecraft开发商Mojang</title>
-      <link>http://surpass.github.io/2014/09/10/mincraft/</link>
+      <link>https://surpass.github.io/site/2014/09/10/mincraft/</link>
       <pubDate>Wed, 10 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2014/09/10/mincraft/</guid>
+      <guid>https://surpass.github.io/site/2014/09/10/mincraft/</guid>
       <description>&lt;h3 id=&#34;背景&#34;&gt;背景&lt;/h3&gt;
 
 &lt;p&gt;相信很多人已经玩过《Minecraft》，这是一款3D沙盒游戏，玩家通过采集不同的材料，使用不同的公式合成各种其他材料。然后像搭积木一般将这些方块状的材料搭建出各种木屋，城堡，宏伟的建筑，并且可以加入脚本，设计各种关卡玩法，可谓自由度极高。&lt;/p&gt;
@@ -400,10 +409,10 @@
     
     <item>
       <title>创业感悟</title>
-      <link>http://surpass.github.io/2014/09/07/startup/</link>
+      <link>https://surpass.github.io/site/2014/09/07/startup/</link>
       <pubDate>Sun, 07 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2014/09/07/startup/</guid>
+      <guid>https://surpass.github.io/site/2014/09/07/startup/</guid>
       <description>&lt;p&gt;时光飞逝，转眼间距离上一篇博客已经快三年时间。这三年里，人们逐渐从博客转移到了微博，看的人少了，写的人也少了。以前，写博客是一种潮流，现在，写博客已经是一种坚持了。连Google都放弃了RSS，我不知道那些曾经订阅过我博客的朋友，你们还在坚持用RSS看文章吗？我写的这篇文章，你们在用Google Reader的替代品看到我的文章吗？如果有看到，并且我的文章对你有帮助，请留言告诉我。这会是我更新博客很好的动力。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -411,154 +420,154 @@
     
     <item>
       <title>启程2011</title>
-      <link>http://surpass.github.io/2011/01/06/start2011/</link>
+      <link>https://surpass.github.io/site/2011/01/06/start2011/</link>
       <pubDate>Thu, 06 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2011/01/06/start2011/</guid>
+      <guid>https://surpass.github.io/site/2011/01/06/start2011/</guid>
       <description>2011年已经来临，我甚至还来不及对2010年做个总结，过去的2010年是折腾的一年。回顾了09年的总结，2010年我主要完成做了： 1. 博客6</description>
     </item>
     
     <item>
       <title>多彩的程序人生</title>
-      <link>http://surpass.github.io/2010/07/12/programming-life/</link>
+      <link>https://surpass.github.io/site/2010/07/12/programming-life/</link>
       <pubDate>Mon, 12 Jul 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2010/07/12/programming-life/</guid>
+      <guid>https://surpass.github.io/site/2010/07/12/programming-life/</guid>
       <description>常常想程序人生的问题，也常常在网上看程序人生相关的话题，但听大师讲程序人生，还是第一次。这位大师，就是侯捷。 侯捷，两岸著名技术教育者，计算机</description>
     </item>
     
     <item>
       <title>人人都是全面手还是专业分工</title>
-      <link>http://surpass.github.io/2010/06/15/1758489/</link>
+      <link>https://surpass.github.io/site/2010/06/15/1758489/</link>
       <pubDate>Tue, 15 Jun 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2010/06/15/1758489/</guid>
+      <guid>https://surpass.github.io/site/2010/06/15/1758489/</guid>
       <description>美国当年打越南，武力装备都在越南之上，最终还是失败告终。有人总结了这样一个说法：美国军队虽然总人数占优，但由于其专业的分工，一个战士还配个医</description>
     </item>
     
     <item>
       <title>三年之痒</title>
-      <link>http://surpass.github.io/2010/03/27/three-years-work-thinking/</link>
+      <link>https://surpass.github.io/site/2010/03/27/three-years-work-thinking/</link>
       <pubDate>Sat, 27 Mar 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2010/03/27/three-years-work-thinking/</guid>
+      <guid>https://surpass.github.io/site/2010/03/27/three-years-work-thinking/</guid>
       <description>眼看就要工作满三年了，对于大多数人来说是一个特殊的时期，对于我来说，也不例外。我也常常在想，我自己的定位是什么，我以后想要做什么，我该怎么选</description>
     </item>
     
     <item>
       <title>春节随想</title>
-      <link>http://surpass.github.io/2010/02/22/thinking2010/</link>
+      <link>https://surpass.github.io/site/2010/02/22/thinking2010/</link>
       <pubDate>Mon, 22 Feb 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2010/02/22/thinking2010/</guid>
+      <guid>https://surpass.github.io/site/2010/02/22/thinking2010/</guid>
       <description>今天开始上班了。虽然春节已经过去，趁着大家还在回味春节的点滴，向所有订阅我博客的朋友拜个晚年了！您的订阅对我来说是莫大的支持，也是让我坚持的</description>
     </item>
     
     <item>
       <title>时间管理GTD工具</title>
-      <link>http://surpass.github.io/2010/01/03/1638096/</link>
+      <link>https://surpass.github.io/site/2010/01/03/1638096/</link>
       <pubDate>Sun, 03 Jan 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2010/01/03/1638096/</guid>
+      <guid>https://surpass.github.io/site/2010/01/03/1638096/</guid>
       <description>GTD，Getting Things Done的缩写。来自于David Allen的一本畅销书《Getting Things Done》。GTD的核心理念在于只有将你心中</description>
     </item>
     
     <item>
       <title>我的测试生活感悟5 - 不要被代码覆盖率蒙蔽双眼</title>
-      <link>http://surpass.github.io/2010/01/02/MyTestThinking5/</link>
+      <link>https://surpass.github.io/site/2010/01/02/MyTestThinking5/</link>
       <pubDate>Sat, 02 Jan 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2010/01/02/MyTestThinking5/</guid>
+      <guid>https://surpass.github.io/site/2010/01/02/MyTestThinking5/</guid>
       <description>新年新开始，继续我的测试生活感悟。&amp;#8220;代码覆盖率&amp;#8221;是一个有意思的话题，围绕它的讨论有很多。基本上，人们都认识到了，代码</description>
     </item>
     
     <item>
       <title>2010年01月01日0时0分 - 总结我的2009</title>
-      <link>http://surpass.github.io/2010/01/01/1637239/</link>
+      <link>https://surpass.github.io/site/2010/01/01/1637239/</link>
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2010/01/01/1637239/</guid>
+      <guid>https://surpass.github.io/site/2010/01/01/1637239/</guid>
       <description>每年这个时候，很多人都开始总结，我也来一个总结。月光博客写了400篇，老赵写了250篇，阮一峰写了150篇，我数了一下，2009年我写了49</description>
     </item>
     
     <item>
       <title>我的测试生活感悟4 - 谈谈面试</title>
-      <link>http://surpass.github.io/2009/10/02/1577408/</link>
+      <link>https://surpass.github.io/site/2009/10/02/1577408/</link>
       <pubDate>Fri, 02 Oct 2009 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2009/10/02/1577408/</guid>
+      <guid>https://surpass.github.io/site/2009/10/02/1577408/</guid>
       <description>我是一个没有什么经验的面试官，偶尔才参与几次面试。发现面试他人是一件技术要求非常高的工作，我们必须在很短的时间内了解一个人，如果方法不当，很</description>
     </item>
     
     <item>
       <title>我的测试生活感悟3 - 淘宝的接口测试白皮书</title>
-      <link>http://surpass.github.io/2009/09/08/MyTestingThink3/</link>
+      <link>https://surpass.github.io/site/2009/09/08/MyTestingThink3/</link>
       <pubDate>Tue, 08 Sep 2009 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2009/09/08/MyTestingThink3/</guid>
+      <guid>https://surpass.github.io/site/2009/09/08/MyTestingThink3/</guid>
       <description>今天晚上回来后看到淘宝测试团队发出来的《接口测试白皮书》，一口气将它读完，写的还是相当不错的，有非常多值得借鉴和学习的地方。 在工作的流程上，</description>
     </item>
     
     <item>
       <title>我的测试生活感悟2 - Art Of Unit Testing</title>
-      <link>http://surpass.github.io/2009/09/07/MyTestingThink2/</link>
+      <link>https://surpass.github.io/site/2009/09/07/MyTestingThink2/</link>
       <pubDate>Mon, 07 Sep 2009 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2009/09/07/MyTestingThink2/</guid>
+      <guid>https://surpass.github.io/site/2009/09/07/MyTestingThink2/</guid>
       <description>今天把《Art Of Unit Testing》的前四个章节读完了，作者以自己的亲身经历，使用简洁清晰的语言，为我们展现了单元测试的艺术。 1. 怎么定义一个好</description>
     </item>
     
     <item>
       <title>我的测试生活感悟1</title>
-      <link>http://surpass.github.io/2009/09/06/MyTestingThink1/</link>
+      <link>https://surpass.github.io/site/2009/09/06/MyTestingThink1/</link>
       <pubDate>Sun, 06 Sep 2009 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2009/09/06/MyTestingThink1/</guid>
+      <guid>https://surpass.github.io/site/2009/09/06/MyTestingThink1/</guid>
       <description>有些天没有更新博客了，有的时候想到一些东西，打算把它写下来时发现时间不够，有时写着写着发现自己开始长篇大论，原本一两句话可以说清楚的事情，非</description>
     </item>
     
     <item>
       <title>程序员的信仰</title>
-      <link>http://surpass.github.io/2009/06/13/1500042/</link>
+      <link>https://surpass.github.io/site/2009/06/13/1500042/</link>
       <pubDate>Sat, 13 Jun 2009 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2009/06/13/1500042/</guid>
+      <guid>https://surpass.github.io/site/2009/06/13/1500042/</guid>
       <description>老婆经常夸我有想法，得益于老婆大人的鼓励，我才打算将自己平时所想，所总结的东西写下来。人是需要不断总结的，有总结才会有进步。所谓总结，并不一</description>
     </item>
     
     <item>
       <title>代码覆盖率浅谈</title>
-      <link>http://surpass.github.io/2009/03/29/1424344/</link>
+      <link>https://surpass.github.io/site/2009/03/29/1424344/</link>
       <pubDate>Sun, 29 Mar 2009 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2009/03/29/1424344/</guid>
+      <guid>https://surpass.github.io/site/2009/03/29/1424344/</guid>
       <description>在做单元测试时，代码覆盖率常常被拿来作为衡量测试好坏的指标，甚至，用代码覆盖率来考核测试任务完成情况，比如，代码覆盖率必须达到80％或 90％</description>
     </item>
     
     <item>
       <title>做人、做事，做架构师——架构师能力模型解析(转)</title>
-      <link>http://surpass.github.io/2008/05/31/1211422/</link>
+      <link>https://surpass.github.io/site/2008/05/31/1211422/</link>
       <pubDate>Sat, 31 May 2008 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2008/05/31/1211422/</guid>
+      <guid>https://surpass.github.io/site/2008/05/31/1211422/</guid>
       <description>做人、做事，做架构师——架构师能力模型解析 &amp;nbsp; ##### **要想从一名普通程序员发展成为优秀的架构师，&amp;#8220;个人特性&amp;#8221;与&amp;#822</description>
     </item>
     
     <item>
       <title>2008到了！我的博客由原来的DeViL→Ivy改名为EverGreen！</title>
-      <link>http://surpass.github.io/2008/02/23/1078968/</link>
+      <link>https://surpass.github.io/site/2008/02/23/1078968/</link>
       <pubDate>Sat, 23 Feb 2008 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2008/02/23/1078968/</guid>
+      <guid>https://surpass.github.io/site/2008/02/23/1078968/</guid>
       <description>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;08年要更加努力学习，将更多的心得体会拿出来分享！将更加严格遵守每周至少一篇专心，精心的学习</description>
     </item>
     
     <item>
       <title>希望2008</title>
-      <link>http://surpass.github.io/2008/01/01/1022532/</link>
+      <link>https://surpass.github.io/site/2008/01/01/1022532/</link>
       <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
       
-      <guid>http://surpass.github.io/2008/01/01/1022532/</guid>
+      <guid>https://surpass.github.io/site/2008/01/01/1022532/</guid>
       <description>2007年，过的好快，以下是07年大事件： &amp;nbsp;&amp;nbsp;&amp;nbsp; 1.过年后去公司实习近2个月。 &amp;nbsp;&amp;nbsp;&amp;nbsp; 2.回校做&amp;#8220;高速公路选线设计&amp;#8221;毕业设计 &amp;nbsp;&amp;nbsp;&amp;nbsp;</description>
     </item>
     
