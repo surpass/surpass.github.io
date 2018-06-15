@@ -49,7 +49,7 @@ url: /about/
 
  * JAVAEYE博客：[surpass-li.iteye.com](http://surpass-li.iteye.com/)
  * Github: [github.com/surpass](https://github.com/surpass)
- * Email：sru@qq.com(pythonzh@gmail.com)
+ * Email：surpass_li@aliyun.com(surpass.li@gmail.com)
  * 微信号：s46488820   
 
 ### 声明
