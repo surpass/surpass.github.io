@@ -4,11 +4,11 @@ date: 2017-07-31T21:44:58+08:00
 draft: false
 banner: "https://ws4.sinaimg.cn/large/0069RVTdgy1fttdt7l2qxj30rs0ku0yj.jpg"
 author: "Frank Li"
-authorlink: "https://surpass.github.io/"
-translator: "宋净超"
-translatorlink: "https://easyolap.cn"
+authorlink: "https://surpass.github.io/public/about"
+translator: "李在超"
+translatorlink: "https://www.easyolap.cn"
 originallink: "https://surpass.github.io/public/mysql-src-install/"
-summary: "今天，我们很高兴地宣布 Istio 1.0。这距离最初的 0.1 版本发布以来已经过了一年多时间了。从 0.1 起，Istio 就在蓬勃发展的社区、贡献者和用户的帮助下迅速发展。现在已经有许多公司成功将 Istio 应用于生产，并通过 Istio 提供的洞察力和控制力获得了真正的价值。"
+summary: "这是一个用源码安装mysql的笔记"
 tags: ["mysql linus install"]
 categories: ["mysql"]
 keywords: ["mysql","linus"]

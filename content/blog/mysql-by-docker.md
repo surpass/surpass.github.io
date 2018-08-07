@@ -4,7 +4,7 @@ date: 2017-07-31T21:44:58+08:00
 draft: false
 banner: ""
 author: "Frank Li"
-authorlink: "https://surpass.github.io/"
+authorlink: "https://surpass.github.io/public"
 translator: "李在超"
 translatorlink: "https://easyolap.cn"
 originallink: "https://surpass.github.io/public/mysql-by-docker/"
