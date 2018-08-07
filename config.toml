@@ -47,7 +47,8 @@ min_version = 0.14
 
 [[menu.main]]
     name="文档"
-    identifier = "post"
+    identifier = "docs"
+        url = "/docs/"
     weight = 3
 
 [[menu.main]]
@@ -125,13 +126,6 @@ min_version = 0.14
     title = "社区活动与公告"
     subtitle = "我们会不定期得在线上和线下举办精彩的活动，敬请关注，下面是活动公告"
 
-[params.see_more]
-    enable = true
-    icon = "fa fa-pagelines"
-    title = "参与进来"
-    subtitle = "加入 Service Mesh 爱好者社区"
-    link_url = "/contact"
-    link_text = "查看加入方式"
 
 [params.clients]
     enable = true
