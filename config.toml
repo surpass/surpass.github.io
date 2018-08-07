@@ -58,33 +58,8 @@ min_version = 0.14
 
 [[menu.main]]
     name = "联系我"
-    url  = "/contact/"
+    url  = "/about/"
     weight = 5
-# Top bar social links menu
-
-[[menu.topbar]]
-    weight = 1
-    name = "GitHub"
-    url = "https://github.com/servicemesher"
-    pre = "<i class='fa fa-2x fa-github'></i>"
-
-[[menu.topbar]]
-    weight = 2
-    name = "Twitter"
-    url = "https://twitter.com/servicemesher"
-    pre = "<i class='fa fa-2x fa-twitter'></i>"
-
-[[menu.topbar]]
-    weight = 3
-    name = "Slack"
-    url = "https://servicemesher.slack.com"
-    pre = "<i class='fa fa-2x fa-slack'></i>"
-
-[[menu.topbar]]
-    weight = 4
-    name = "Wechat"
-    url = "/contact"
-    pre = "<i class='fa fa-2x fa-wechat'></i>"
 
 [params]
     viewMorePostLink = "/blog/"
