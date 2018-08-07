@@ -1,4 +1,4 @@
-baseurl = "https://www.easyolap.cn/public"
+baseurl = "https://www.easyolap.cn"
 title = "DevOps"
 theme = "hugo-redlounge"
 languageCode = "zh"
