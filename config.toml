@@ -1,4 +1,4 @@
-baseurl = "https://www.easyolap.cn/"
+baseurl = "https://www.easyolap.cn/public"
 title = "DevOps"
 theme = "hugo-redlounge"
 languageCode = "zh"
@@ -21,7 +21,7 @@ description = "A clean, responsive, template with red accents."
 license = "Apache 2.0"
 licenselink = "https://github.com/tmaiaroto/hugo-redlounge/blob/master/LICENSE.md"
 source_repo = "https://github.com/tmaiaroto/hugo-redlounge"
-homepage = "https://www.easyolap.cn/"
+homepage = "https://www.easyolap.cn/public"
 tags = ["redlounge", "red", "raleway", "libre baskerville", "blog", "gallery"]
 features = ["blog", "gallery"]
 min_version = 0.14
@@ -102,8 +102,7 @@ min_version = 0.14
     errorimage = "https://ws1.sinaimg.cn/large/00704eQkgy1frkahxdca2j30hd08wq52.jpg"
     email = "surpass_li@aliyun.com"
     about_us = "技术交流"
-    copyright = "Copyright ©️ 2018, ServiceMesher all rights reserved."
-    icpno = "京ICP备15032932号-5"
+    copyright = "Copyright ©️ 2018, easyloap all rights reserved."
     # Format dates with Go's time formatting
     date_format = "2006年1月2日"
     logo = "https://ws1.sinaimg.cn/large/00704eQkgy1fshutb9ya0j316v09nabp.jpg"

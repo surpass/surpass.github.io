@@ -3,85 +3,85 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.easyolap.cn/post/my-first-post/</loc>
+    <loc>https://www.easyolap.cn/public/post/my-first-post/</loc>
     <lastmod>2018-06-15T21:56:26+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.easyolap.cn/post/openshift-001/</loc>
+    <loc>https://www.easyolap.cn/public/post/openshift-001/</loc>
     <lastmod>2018-06-15T21:56:26+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.easyolap.cn/about/</loc>
+    <loc>https://www.easyolap.cn/public/about/</loc>
     <lastmod>2018-06-15T08:55:31+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.easyolap.cn/post/mysql-by-docker/</loc>
+    <loc>https://www.easyolap.cn/public/post/mysql-by-docker/</loc>
     <lastmod>2017-07-31T21:44:58+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.easyolap.cn/post/mysql-src-install/</loc>
+    <loc>https://www.easyolap.cn/public/post/mysql-src-install/</loc>
     <lastmod>2017-07-31T21:44:58+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.easyolap.cn/categories/</loc>
+    <loc>https://www.easyolap.cn/public/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.easyolap.cn/</loc>
+    <loc>https://www.easyolap.cn/public/</loc>
     <lastmod>2018-06-15T21:56:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.easyolap.cn/categories/mysql/</loc>
+    <loc>https://www.easyolap.cn/public/categories/mysql/</loc>
     <lastmod>2017-07-31T21:44:58+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.easyolap.cn/tags/mysql-linus-install/</loc>
+    <loc>https://www.easyolap.cn/public/tags/mysql-linus-install/</loc>
     <lastmod>2017-07-31T21:44:58+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.easyolap.cn/post/</loc>
+    <loc>https://www.easyolap.cn/public/post/</loc>
     <lastmod>2018-06-15T21:56:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.easyolap.cn/tags/</loc>
+    <loc>https://www.easyolap.cn/public/tags/</loc>
     <lastmod>2017-07-31T21:44:58+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.easyolap.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://www.easyolap.cn/public/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2018-06-15T21:56:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.easyolap.cn/categories/%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F/</loc>
+    <loc>https://www.easyolap.cn/public/categories/%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F/</loc>
     <lastmod>2018-06-15T21:56:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.easyolap.cn/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</loc>
+    <loc>https://www.easyolap.cn/public/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</loc>
     <lastmod>2018-06-15T21:56:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.easyolap.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://www.easyolap.cn/public/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2018-06-15T21:56:26+08:00</lastmod>
     <priority>0</priority>
   </url>
