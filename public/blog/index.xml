@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mysql on DevOps</title>
-    <link>https://www.easyolap.cn/public/categories/mysql/</link>
-    <description>Recent content in Mysql on DevOps</description>
+    <title>Blogs on DevOps</title>
+    <link>https://www.easyolap.cn/public/blog/</link>
+    <description>Recent content in Blogs on DevOps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 31 Jul 2017 21:44:58 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 15 Jun 2018 21:56:26 +0800</lastBuildDate>
     
-	<atom:link href="https://www.easyolap.cn/public/categories/mysql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.easyolap.cn/public/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://www.easyolap.cn/public/blog/my-first-post/</link>
+      <pubDate>Fri, 15 Jun 2018 21:56:26 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/public/blog/my-first-post/</guid>
+      <description>这里是文章内容</description>
+    </item>
+    
+    <item>
+      <title>OpenShift Origin  3.9.0手动单机安装</title>
+      <link>https://www.easyolap.cn/public/blog/openshift-001/</link>
+      <pubDate>Fri, 15 Jun 2018 21:56:26 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/public/blog/openshift-001/</guid>
+      <description>OpenShift Origin 3.9.0手动单机安装 1.配置主机 修改主机名为openshift.demo.com hostnamectl set-hostname openshift.demo.com 开启SELINUX 修改/etc/selinux/</description>
+    </item>
     
     <item>
       <title>Mysql by Docker	！</title>

@@ -3,12 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.easyolap.cn/public/post/my-first-post/</loc>
+    <loc>https://www.easyolap.cn/public/blog/my-first-post/</loc>
     <lastmod>2018-06-15T21:56:26+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.easyolap.cn/public/post/openshift-001/</loc>
+    <loc>https://www.easyolap.cn/public/blog/openshift-001/</loc>
     <lastmod>2018-06-15T21:56:26+08:00</lastmod>
   </url>
   
@@ -18,13 +18,19 @@
   </url>
   
   <url>
-    <loc>https://www.easyolap.cn/public/post/mysql-by-docker/</loc>
+    <loc>https://www.easyolap.cn/public/blog/mysql-by-docker/</loc>
     <lastmod>2017-07-31T21:44:58+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.easyolap.cn/public/post/mysql-src-install/</loc>
+    <loc>https://www.easyolap.cn/public/blog/mysql-src-install/</loc>
     <lastmod>2017-07-31T21:44:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.easyolap.cn/public/blog/</loc>
+    <lastmod>2018-06-15T21:56:26+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -47,12 +53,6 @@
   <url>
     <loc>https://www.easyolap.cn/public/tags/mysql-linus-install/</loc>
     <lastmod>2017-07-31T21:44:58+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.easyolap.cn/public/post/</loc>
-    <lastmod>2018-06-15T21:56:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   
