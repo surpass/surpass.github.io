@@ -1,319 +1,204 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
-  <base href="https://surpass.github.io/public/">
-  <script>
-    document._writeOriginal = document.write;
-    document.write = function(str) {
-        if (str.indexOf('livereload.js') > -1) {
-            document._writeOriginal(str);
-        } else {
-            document._writeOriginal('<!-- Be Hijack!! -->');
-        }
-    }
-  </script>
-  <title>技术文章 - Beyond Blog</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>
+    技术文章 // DevOps
+  </title>
 
-<meta name="description" content="技术文章">
-<meta name="author" content="Frank Li">
-<meta name="publisher" content="Frank Li">
-<meta name="generator" content="http://gohugo.io/"/>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-<meta itemprop="name" content="技术文章 - Beyond Blog">
-<meta itemprop="description" content="技术文章">
-<meta itemprop="image" content="https://surpass.github.io/public/public/surpassli.jpg">
 
-<meta property="og:title" content="技术文章 - Beyond Blog" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://surpass.github.io/public/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/" />
-<meta property="og:image" content="https://surpass.github.io/public/public/surpassli.jpg" />
-<meta property="og:description" content="技术文章">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@Frank Li">
-<meta name="twitter:title" content="技术文章 - Beyond Blog">
-<meta name="twitter:description" content="技术文章">
-<meta name="twitter:creator" content="@Frank Li">
-<meta name="twitter:image" content="https://surpass.github.io/public/public/surpassli.jpg">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.42" />
 
-  <script>document.documentElement.className = document.documentElement.className.replace("no-js", "js");</script>
-  <link rel="canonical" href="https://surpass.github.io/public/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/">
-  <link rel='shortlink' href="https://surpass.github.io/public/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
-  <link rel="shortcut icon" href="https://surpass.github.io/public/public/favicon.ico"/>
+  <meta property="og:title" content="技术文章" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="https://www.easyolap.cn/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/" />
+
+
   
-  <link href="https://surpass.github.io/public/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/feed.xml" rel="alternate" type="application/rss+xml" title="Beyond Blog" />
-  <link href="https://surpass.github.io/public/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/feed.xml" rel="feed" type="application/rss+xml" title="Beyond Blog" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
 
-<link rel="stylesheet" id="human-style-css" href="https://surpass.github.io/public/wp-content/themes/hueman/style.css" type="text/css" media="all"/>
-<link rel="stylesheet" id="human-style-css2" href="https://surpass.github.io/public/wp-content/themes/hueman-child/style.css" type="text/css" media="all"/>
-<link rel="stylesheet" id="responsive-css" href="https://surpass.github.io/public/wp-content/themes/hueman/responsive.css" type="text/css" media="all"/>
-<link rel="stylesheet" id="font-awesome-css" href="https://surpass.github.io/public/wp-content/themes/hueman/fonts/font-awesome.min.css" type="text/css" media="all"/>
-<link rel="stylesheet" href="https://surpass.github.io/public/public/highlight/styles/github.css">
-<script src="https://surpass.github.io/public/public/highlight/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<link rel="stylesheet" id="human-style-css3" href="https://surpass.github.io/public/wp-content/themes/hueman-child/user.css" type="text/css" media="all"/>
-<link rel="stylesheet" href="public/font/hack/css/hack.min.css">
+  <link rel="stylesheet" href="https://www.easyolap.cn//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
 
-<script type="text/javascript" src="assets/js/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="wp-content/themes/hueman/js/jquery.jplayer.min.js"></script>
-<script type="text/javascript" src="wp-content/themes/hueman/js/scripts.js"></script>
-<script type="text/javascript" src="assets/picturefill/picturefill.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.matchHeight-min.js"></script>
-<script type="text/javascript" async defer src="assets/js/myblog.js"></script>
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png">
 
+  
+  <link href="https://www.easyolap.cn/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/index.xml" rel="alternate" type="application/rss+xml" title="DevOps" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+
+  
 </head>
 
-<body class="archive category col-3cm full-width topbar-enabled chrome">
+<body>
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
 
-<div id="wrapper">
-  <header id="header">
+	
 
-  <nav class="nav-container group" id="nav-topbar">
-    <div class="nav-toggle"><i class="fa fa-bars"></i></div>
-    <div class="nav-text"></div>
-    <div class="nav-wrap container">
-      <a rel="nofollow" href="https://surpass.github.io/public/" class="nav-cs-icon">
-        <img width="40" height="40" src="https://surpass.github.io/public/public/surpassli.jpg" alt="surpassli" title="Home">
-      </a>
-      <ul id="menu-default-menu" class="nav container-inner group">
-        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-          <a rel="nofollow" href="https://surpass.github.io/public/">首页</a>
-        </li>
+    
+    
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="https://www.easyolap.cn/">Home</a></li>
         
-        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-          <a rel="nofollow" href="https://surpass.github.io/public/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
-        </li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/">主页</a></li>
         
-        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-          <a rel="nofollow" href="https://surpass.github.io/public/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/">技术文章</a>
-        </li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/blog/">博客</a></li>
         
-        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-          <a rel="nofollow" href="https://surpass.github.io/public/categories/%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F/">思考感悟</a>
-        </li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="">文档</a></li>
         
-        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-          <a rel="nofollow" href="https://surpass.github.io/public/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
-        </li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/contact/">联系我</a></li>
         
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="">docs</a></li>
         
-        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-          <a rel="nofollow" href="https://surpass.github.io/public/post/">归档</a>
-        </li>
-        
-        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-          <a rel="nofollow" href="https://surpass.github.io/public/about/">关于我</a>
-        </li>
-        
-        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-          <a rel="nofollow" href="https://surpass.github.io/public/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/feed.xml" type="application/rss+xml" target="_blank">订阅</a>
-        </li>
-        <li class="menu-item menu-item-type-post_type menu-item-text">
-        一个程序员的思考与总结
-        </li>
       </ul>
-    </div>
+    </nav>
 
-    <div class="container">
-      <div class="container-inner">
-        <div class="toggle-search"><i class="fa fa-search"></i></div>
-        <div class="search-expand">
-          <div class="search-expand-inner">
-            <form method="get" class="searchform themeform" action="https://www.google.com/search">
-              <div>
-                <input type="text" class="search" name="q" placeholder="Press enter to start searching">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
+    
+
+  </div>
+</div>
+
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+      <a name="top"></a>
       
-    </div>
-    
 
-  </nav>
-  
-
-  <div class="container group">
-    <div class="container-inner">
-
-      <div class="group pad">
-
-        <div class="group pad">
-          <h1 class="site-title">
-            <a rel="nofollow" href="https://surpass.github.io/public/" rel="home">
-              <img style="border-radius: 50%;width:72px;height:72px;margin:0 auto;" alt="frankli" src="https://surpass.github.io/public/public/surpassli.jpg"></img>
-              Beyond Blog
-            </a>
-          </h1>
-          <p class="site-description"> 如果你没有感觉到时间不够用时，你多半正在虚度光阴。 </p>
-        </div>
-
-      </div>
-    </div>
-    
-  </div>
-  
-
-</header>
-
-
-
-  <div class="container" id="page">
-    <div class="container-inner">
-      <div class="main">
-        <div class="main-inner group">
-          <section class="content">
-            <div class="page-title pad group">
-              <h1><i class="fa fa-folder-open"></i>Category: <span>技术文章</span></h1>
-            </div>
-            <div class="pad group">
+      <div class="posts">
+        
+          <section  class="post">
+            <header class="post-header">
+            
+            <h1 class="post-title">
+              <a href="/post/my-first-post/">My First Post</a>
+            </h1>
+            </header>
+            <p class="post-meta">
+            	
+		          <span class="post-date">
+		            <span class="post-date-day"><sup>15</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Jun</span> <span class="post-date-year">2018</span>
+		          </span>
+      				
+      				
+      					
+      				
               
-                
-                
-                
+                <span class="post-reading-time"><i class="fa fa-clock-o"></i> <em>1 min. read</em></span>
               
-              <div class="post-list group">
-  
-  <div class="post-row">
-    <article class="post-row type-post status-publish format-standard has-post-thumbnail hentry group">
-  <div class="post-inner post-hover">
-    <div class="post-meta group">
-  <p class="post-date">15068年18月21日</p>
-  <p class="post-title-small"><a href="https://surpass.github.io/public/post/my-first-post/" rel="bookmark" title="My First Post">My First Post</a></p>
-</div>
-
-  </div>
-  
-</article>
-
-
-  </div>
-  
-  <div class="post-row">
-    <article class="post-row type-post status-publish format-standard has-post-thumbnail hentry group">
-  <div class="post-inner post-hover">
-    <div class="post-meta group">
-  <p class="post-date">15068年18月21日</p>
-  <p class="post-title-small"><a href="https://surpass.github.io/public/post/openshift-001/" rel="bookmark" title="OpenShift Origin  3.9.0手动单机安装">OpenShift Origin  3.9.0手动单机安装</a></p>
-</div>
-
-  </div>
-  
-</article>
-
-
-  </div>
-  
-</div>
-
-            </div>
-          </section>
-          <div class="sidebar s1">
-  <a class="sidebar-toggle" title="Expand Sidebar"><i class="fa icon-sidebar-toggle"></i></a>
-  <div class="sidebar-content">
-    <div class="sidebar-top group">
-      <p>Follow:</p>
-      <ul class="social-links">
- 
-    <li>
-    <a class="social-tooltip" title="On GitHub"
-        href="https://github.com/surpass" target="_blank">
-        <i class="fa fa-github"></i>
-    </a>
-    </li>
-</ul>
-
-    </div>
-    <div class="widget qrcode">
-    <img src="https://surpass.github.io/public/public/qrcode.jpg" alt="qrcode" width="172px" height="172px"/>
-    <p> 微信扫一扫：<br/> 关注我的微信号： <br /> s46488820 <br /></p>
-</div>
-
-    <div id="search-2" class="widget widget_search"><h3>Search</h3>
-      <form method="get" class="searchform themeform" action="https://www.google.com/search">
-        <div>
-          <input type="text" class="search" name="q" placeholder="Press enter to start searching">
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-          <div class="sidebar s2">
-  <a class="sidebar-toggle" title="Expand Sidebar"><i class="fa icon-sidebar-toggle"></i></a>
-  <div class="sidebar-content">
-    <div class="sidebar-top group">
-      <p>More</p>
-    </div>
-    <div id="categories-2" class="widget widget_categories"><h3>Categories</h3>
-      <ul>
-        
-          <li class="cat-item cat-item-1">
-            <a rel="nofollow" href="https://surpass.github.io/public/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
-          </li>
-        
-          <li class="cat-item cat-item-1">
-            <a rel="nofollow" href="https://surpass.github.io/public/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/">技术文章</a>
-          </li>
-        
-          <li class="cat-item cat-item-1">
-            <a rel="nofollow" href="https://surpass.github.io/public/categories/%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F/">思考感悟</a>
-          </li>
-        
-          <li class="cat-item cat-item-1">
-            <a rel="nofollow" href="https://surpass.github.io/public/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer id="footer">
-  <section class="container" id="footer-bottom">
-    <div class="container-inner">
-      <a id="back-to-top" href="#"><i class="fa fa-angle-up"></i></a>
-      <div class="pad group">
-        <div class="grid one-half">
-          <div id="copyright">
-              <p>Copyright (c) 2018. All rights reserved.<br>Powered by
-              <a rel="nofollow" href="http://gohugo.io/" target="_blank">Hugo - the static site generator</a>.
-              <a rel="nofollow" href="http://golang.org" target="_blank">#golang</a>.
+      				
+      					<div class="post-categories">
+				        
+      					
+					        <a class="post-category post-category-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0" href="https://www.easyolap.cn//categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a>
+      					
+					        <a class="post-category post-category-%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0" href="https://www.easyolap.cn//categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0">技术文章</a>
+      					
+					        <a class="post-category post-category-%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F" href="https://www.easyolap.cn//categories/%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F">思考感悟</a>
+      					
+					        <a class="post-category post-category-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0" href="https://www.easyolap.cn//categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0">学习笔记</a>
+      					
+      					</div>
+      				
             </p>
-          </div>
-          
-        </div>
-        
-        <div class="grid one-half last">
-          <ul class="social-links">
- 
-    <li>
-    <a class="social-tooltip" title="On GitHub"
-        href="https://github.com/surpass" target="_blank">
-        <i class="fa fa-github"></i>
-    </a>
-    </li>
-</ul>
+            
+              <p>这里是文章内容</p>
 
-        </div>
+            
+          </section>
+        
+          <section  class="post">
+            <header class="post-header">
+            
+            <h1 class="post-title">
+              <a href="/post/openshift-001/">OpenShift Origin  3.9.0手动单机安装</a>
+            </h1>
+            </header>
+            <p class="post-meta">
+            	
+		          <span class="post-date">
+		            <span class="post-date-day"><sup>15</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Jun</span> <span class="post-date-year">2018</span>
+		          </span>
+      				
+      				
+      					
+      				
+              
+                <span class="post-reading-time"><i class="fa fa-clock-o"></i> <em>2 min. read</em></span>
+              
+      				
+      					<div class="post-categories">
+				        
+      					
+					        <a class="post-category post-category-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0" href="https://www.easyolap.cn//categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a>
+      					
+					        <a class="post-category post-category-%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0" href="https://www.easyolap.cn//categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0">技术文章</a>
+      					
+					        <a class="post-category post-category-%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F" href="https://www.easyolap.cn//categories/%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F">思考感悟</a>
+      					
+					        <a class="post-category post-category-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0" href="https://www.easyolap.cn//categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0">学习笔记</a>
+      					
+      					</div>
+      				
+            </p>
+            
+              <article class="post-summary">
+            	OpenShift Origin 3.9.0手动单机安装 1.配置主机 修改主机名为openshift.demo.com hostnamectl set-hostname openshift.demo.com 开启SELINUX 修改/etc/selinux/
+              </article>
+			  <div class="read-more-link">
+				<a href="/post/openshift-001/"><span class="read-more-slashes">//</span>Read More...</a>
+			  </div>
+            
+          </section>
+        
       </div>
 
-    </div>
-    
-  </section>
-  
-</footer>
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
 
+	<p>Copyright ©️ 2018, ServiceMesher all rights reserved.</p>
 </div>
-
+    </div>
+  </div>
+  
 </body>
 </html>
-
