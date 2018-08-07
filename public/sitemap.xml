@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.easyolap.cn/blog/my-first-post/</loc>
+    <loc>https://www.easyolap.cn/docs/my-first-doc/</loc>
     <lastmod>2018-06-15T21:56:26+08:00</lastmod>
   </url>
   
@@ -40,6 +40,12 @@
   
   <url>
     <loc>https://www.easyolap.cn/</loc>
+    <lastmod>2018-06-15T21:56:26+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.easyolap.cn/docs/</loc>
     <lastmod>2018-06-15T21:56:26+08:00</lastmod>
     <priority>0</priority>
   </url>
