@@ -21,5 +21,14 @@
       <description>这里是文章内容</description>
     </item>
     
+    <item>
+      <title>OpenShift Origin  3.9.0手动单机安装</title>
+      <link>https://surpass.github.io/public/post/openshift-001/</link>
+      <pubDate>Fri, 15 Jun 2018 21:56:26 +0800</pubDate>
+      
+      <guid>https://surpass.github.io/public/post/openshift-001/</guid>
+      <description>OpenShift Origin 3.9.0手动单机安装 1.配置主机 修改主机名为openshift.demo.com hostnamectl set-hostname openshift.demo.com 开启SELINUX 修改/etc/selinux/</description>
+    </item>
+    
   </channel>
 </rss>

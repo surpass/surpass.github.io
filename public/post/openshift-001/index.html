@@ -12,36 +12,36 @@
         }
     }
   </script>
-  <title>404 Page not found - Beyond Blog</title>
+  <title>OpenShift Origin  3.9.0手动单机安装 - Beyond Blog</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-<meta name="description" content="404 Page not found">
+<meta name="keywords" content="DevOps,">
+<meta name="description" content="OpenShift Origin 3.9.0手动单机安装 1.配置主机 修改主机名为openshift.demo.com hostnamectl set-hostname openshift.demo.com 开启SELINUX 修改/etc/selinux/">
 <meta name="author" content="Frank Li">
 <meta name="publisher" content="Frank Li">
 <meta name="generator" content="http://gohugo.io/"/>
 
-<meta itemprop="name" content="404 Page not found - Beyond Blog">
-<meta itemprop="description" content="404 Page not found">
+<meta itemprop="name" content="OpenShift Origin  3.9.0手动单机安装 - Beyond Blog">
+<meta itemprop="description" content="OpenShift Origin 3.9.0手动单机安装 1.配置主机 修改主机名为openshift.demo.com hostnamectl set-hostname openshift.demo.com 开启SELINUX 修改/etc/selinux/">
 <meta itemprop="image" content="https://surpass.github.io/public/public/surpassli.jpg">
 
-<meta property="og:title" content="404 Page not found - Beyond Blog" />
+<meta property="og:title" content="OpenShift Origin  3.9.0手动单机安装 - Beyond Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="" />
+<meta property="og:url" content="https://surpass.github.io/public/post/openshift-001/" />
 <meta property="og:image" content="https://surpass.github.io/public/public/surpassli.jpg" />
-<meta property="og:description" content="404 Page not found">
+<meta property="og:description" content="OpenShift Origin 3.9.0手动单机安装 1.配置主机 修改主机名为openshift.demo.com hostnamectl set-hostname openshift.demo.com 开启SELINUX 修改/etc/selinux/">
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@Frank Li">
-<meta name="twitter:title" content="404 Page not found - Beyond Blog">
-<meta name="twitter:description" content="404 Page not found">
+<meta name="twitter:title" content="OpenShift Origin  3.9.0手动单机安装 - Beyond Blog">
+<meta name="twitter:description" content="OpenShift Origin 3.9.0手动单机安装 1.配置主机 修改主机名为openshift.demo.com hostnamectl set-hostname openshift.demo.com 开启SELINUX 修改/etc/selinux/">
 <meta name="twitter:creator" content="@Frank Li">
 <meta name="twitter:image" content="https://surpass.github.io/public/public/surpassli.jpg">
 
   <script>document.documentElement.className = document.documentElement.className.replace("no-js", "js");</script>
-  <link rel="canonical" href="">
-  <link rel='shortlink' href=""/>
+  <link rel="canonical" href="https://surpass.github.io/public/post/openshift-001/">
+  <link rel='shortlink' href="https://surpass.github.io/public/post/openshift-001/"/>
   <link rel="shortcut icon" href="https://surpass.github.io/public/public/favicon.ico"/>
   
 <link rel="stylesheet" id="human-style-css" href="https://surpass.github.io/public/wp-content/themes/hueman/style.css" type="text/css" media="all"/>
@@ -63,8 +63,7 @@
 
 </head>
 
-<body class="archive category col-3cm full-width topbar-enabled chrome">
-
+<body class="single single-post single-format-standard col-3cm full-width topbar-enabled chrome">
 <div id="wrapper">
   <header id="header">
 
@@ -164,10 +163,132 @@
       <div class="main">
         <div class="main-inner group">
           <section class="content">
-            <div class="pad group" style="width:560px; margin:0 auto;">
-                <h1>Post or Page not found - Error 404 :-(</h1>
+            <div class="page-title pad group">
+              <ul class="meta-single group">
+                
+                <li class="category">
+                  <a href="https://surpass.github.io/public/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" rel="category tag">读书笔记</a>
+                </li>
+                
+                <li class="category">
+                  <a href="https://surpass.github.io/public/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/" rel="category tag">技术文章</a>
+                </li>
+                
+                <li class="category">
+                  <a href="https://surpass.github.io/public/categories/%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F/" rel="category tag">思考感悟</a>
+                </li>
+                
+                <li class="category">
+                  <a href="https://surpass.github.io/public/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="category tag">学习笔记</a>
+                </li>
+                
+              </ul>
             </div>
 
+            <div class="pad group">
+
+              <article
+                  class="post type-post status-publish format-standard has-post-thumbnail hentry category-australien tag-bondi-beach tag-city2surf tag-sydney">
+                <div class="post-inner group">
+
+                  <h1 class="post-title">OpenShift Origin  3.9.0手动单机安装</h1>
+
+
+                  <div class="clear"></div>
+
+                  <div class="entry">
+                    <div class="entry-inner">
+                      
+                      
+
+<p>OpenShift Origin  3.9.0手动单机安装</p>
+
+<p>1.配置主机
+    修改主机名为openshift.demo.com
+    hostnamectl set-hostname openshift.demo.com</p>
+
+<pre><code>开启SELINUX
+修改/etc/selinux/config
+                SELINUX=enforcing
+      SELINUXTYPE=targeted
+激活网络
+
+# nmcli con show
+</code></pre>
+
+<p>docker0  1a211fa6-1001-4fa9-b5c8-e3b2dcf73e5a  bridge    docker0
+ens192   f16e6b7a-e593-4722-9ae4-1bdfa1fa4b4a  ethernet  ens192</p>
+
+<h1 id="nmcli-con-up-ens192">nmcli con up ens192</h1>
+
+<h1 id="nmcli-con-mod-ens192-connection-autoconnect-yes">nmcli con mod ens192 connection.autoconnect yes</h1>
+
+<h1 id="systemctl-restart-networkmanager">systemctl restart NetworkManager</h1>
+
+<p>2.安装docker
+安装依赖
+yum install -y wget git net-tools bind-utils iptables-services bridge-utils bash-completion
+安装docker
+ yum install -y docker
+配置Docker镜像服务器</p>
+
+<p>中国科技大学的镜像服务器进行加速。修改/etc/sysconfig/docker文件，在OPTIONS变量中追加&ndash;registry-mirror=<a href="https://docker.mirrors.ustc.edu.cn">https://docker.mirrors.ustc.edu.cn</a> &ndash;insecure-registry=172.30.0.0/16。</p>
+
+<p>3.下载openshift-origin-server-v3.9.0-191fece-linux-64bit.tar.gz</p>
+
+<p>4.解压openshift-origin-server-v3.9.0-191fece-linux-64bit.tar.gz到 /opt/openshift</p>
+
+<p>5.添加到PATH</p>
+
+<p>6.测试docker是否能正常下载镜像
+    docker pull busybox</p>
+
+<p>7.执行启动命令,开始下载指定版本v3.9.0所需的镜像文件
+        oc cluster up &ndash;version=v3.9.0 &ndash;public-hostname=openshift.demo.com</p>
+
+<pre><code>    会有类似以下信息：
+    Pulling image openshift/origin:v3.9.0
+Pulled 1/4 layers, 26% complete   
+</code></pre>
+
+<p>。。。</p>
+
+<p>Pulled <sup>4</sup>&frasl;<sub>4</sub> layers, 100% complete</p>
+
+<p>表示下载完成了并启动服务</p>
+
+<p>8.启动完成后访问系统 <a href="https://openshift.demo.com:8443">https://openshift.demo.com:8443</a></p>
+
+<p>9.</p>
+
+                      
+                    </div>
+                    <div style="border: 1px dashed #e0e0e0; padding: 10px 10px 10px 10px; background-color: #fffeee; background-repeat: no-repeat; background-attachment: scroll; background-position: 1% 50%; -moz-background-size: auto auto; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+                        <div style="float:left;margin-top:0px;">
+                        <img src="https://surpass.github.io/public/public/qrcode.jpg" width="129px" height="129px"/>
+                        <div style="text-align:center;">微信扫一扫交流</div>
+                        </div>
+                        <div>
+                            <p style="margin-top:0px;">作者：<a target="_blank" href="http://surpass-li.iteye.com/">Frank Li</a>
+                            <br />微信关注：s46488820 （阿超）
+                            <br />本文出处：<a target="_blank" href="https://surpass.github.io/public/post/openshift-001/">https://surpass.github.io/public/post/openshift-001/</a>
+                            <br />
+                            文章版权归本人所有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文连接，否则保留追究法律责任的权利。 </p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                  
+
+                </div>
+                
+              </article>
+              
+              <div class="clear"></div>
+              
+              
+              
+            </div>
           </section>
           <div class="sidebar s1">
   <a class="sidebar-toggle" title="Expand Sidebar"><i class="fa icon-sidebar-toggle"></i></a>
@@ -190,6 +311,26 @@
     <p> 微信扫一扫：<br/> 关注我的微信号： <br /> s46488820 <br /></p>
 </div>
 
+    <ul class="post-nav group">
+      <li class="next">
+        
+        <a href="https://surpass.github.io/public/about/" rel="next">
+          <i class="fa fa-chevron-right"></i>
+          <strong>Next post</strong>
+          <span>关于我</span>
+        </a>
+        
+      </li>
+      <li class="previous">
+        
+        <a href="https://surpass.github.io/public/post/my-first-post/" rel="prev">
+          <i class="fa fa-chevron-left"></i>
+          <strong>Previous Post</strong>
+          <span>My First Post</span>
+        </a>
+        
+      </li>
+    </ul>
     <div id="search-2" class="widget widget_search"><h3>Search</h3>
       <form method="get" class="searchform themeform" action="https://www.google.com/search">
         <div>
@@ -198,6 +339,7 @@
       </form>
     </div>
   </div>
+  
 </div>
 
           <div class="sidebar s2">

@@ -12,36 +12,36 @@
         }
     }
   </script>
-  <title>404 Page not found - Beyond Blog</title>
+  <title>Mysql by Docker	！ - Beyond Blog</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-<meta name="description" content="404 Page not found">
+<meta name="keywords" content="mysql,linus,">
+<meta name="description" content="Docker运行mysql镜像 启动mysql镜像 [root@CentOS ~]# docker run -d -e MYSQL_ROOT_PASSWORD=admin &ndash;name mysql -v /data/mysql/etc:/etc/mysql/conf.d -v /data/mysql/data:/var/lib/mysql -v /etc/localtime:/etc/localtime:ro mysql 说明： 1.把数据文件存贮在宿主机中的/data/mysql/">
 <meta name="author" content="Frank Li">
 <meta name="publisher" content="Frank Li">
 <meta name="generator" content="http://gohugo.io/"/>
 
-<meta itemprop="name" content="404 Page not found - Beyond Blog">
-<meta itemprop="description" content="404 Page not found">
+<meta itemprop="name" content="Mysql by Docker	！ - Beyond Blog">
+<meta itemprop="description" content="Docker运行mysql镜像 启动mysql镜像 [root@CentOS ~]# docker run -d -e MYSQL_ROOT_PASSWORD=admin &ndash;name mysql -v /data/mysql/etc:/etc/mysql/conf.d -v /data/mysql/data:/var/lib/mysql -v /etc/localtime:/etc/localtime:ro mysql 说明： 1.把数据文件存贮在宿主机中的/data/mysql/">
 <meta itemprop="image" content="https://surpass.github.io/public/public/surpassli.jpg">
 
-<meta property="og:title" content="404 Page not found - Beyond Blog" />
+<meta property="og:title" content="Mysql by Docker	！ - Beyond Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="" />
+<meta property="og:url" content="https://surpass.github.io/public/post/mysql-by-docker/" />
 <meta property="og:image" content="https://surpass.github.io/public/public/surpassli.jpg" />
-<meta property="og:description" content="404 Page not found">
+<meta property="og:description" content="Docker运行mysql镜像 启动mysql镜像 [root@CentOS ~]# docker run -d -e MYSQL_ROOT_PASSWORD=admin &ndash;name mysql -v /data/mysql/etc:/etc/mysql/conf.d -v /data/mysql/data:/var/lib/mysql -v /etc/localtime:/etc/localtime:ro mysql 说明： 1.把数据文件存贮在宿主机中的/data/mysql/">
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@Frank Li">
-<meta name="twitter:title" content="404 Page not found - Beyond Blog">
-<meta name="twitter:description" content="404 Page not found">
+<meta name="twitter:title" content="Mysql by Docker	！ - Beyond Blog">
+<meta name="twitter:description" content="Docker运行mysql镜像 启动mysql镜像 [root@CentOS ~]# docker run -d -e MYSQL_ROOT_PASSWORD=admin &ndash;name mysql -v /data/mysql/etc:/etc/mysql/conf.d -v /data/mysql/data:/var/lib/mysql -v /etc/localtime:/etc/localtime:ro mysql 说明： 1.把数据文件存贮在宿主机中的/data/mysql/">
 <meta name="twitter:creator" content="@Frank Li">
 <meta name="twitter:image" content="https://surpass.github.io/public/public/surpassli.jpg">
 
   <script>document.documentElement.className = document.documentElement.className.replace("no-js", "js");</script>
-  <link rel="canonical" href="">
-  <link rel='shortlink' href=""/>
+  <link rel="canonical" href="https://surpass.github.io/public/post/mysql-by-docker/">
+  <link rel='shortlink' href="https://surpass.github.io/public/post/mysql-by-docker/"/>
   <link rel="shortcut icon" href="https://surpass.github.io/public/public/favicon.ico"/>
   
 <link rel="stylesheet" id="human-style-css" href="https://surpass.github.io/public/wp-content/themes/hueman/style.css" type="text/css" media="all"/>
@@ -63,8 +63,7 @@
 
 </head>
 
-<body class="archive category col-3cm full-width topbar-enabled chrome">
-
+<body class="single single-post single-format-standard col-3cm full-width topbar-enabled chrome">
 <div id="wrapper">
   <header id="header">
 
@@ -164,10 +163,122 @@
       <div class="main">
         <div class="main-inner group">
           <section class="content">
-            <div class="pad group" style="width:560px; margin:0 auto;">
-                <h1>Post or Page not found - Error 404 :-(</h1>
+            <div class="page-title pad group">
+              <ul class="meta-single group">
+                
+                <li class="category">
+                  <a href="https://surpass.github.io/public/categories/mysql/" rel="category tag">mysql</a>
+                </li>
+                
+              </ul>
             </div>
 
+            <div class="pad group">
+
+              <article
+                  class="post type-post status-publish format-standard has-post-thumbnail hentry category-australien tag-bondi-beach tag-city2surf tag-sydney">
+                <div class="post-inner group">
+
+                  <h1 class="post-title">Mysql by Docker	！</h1>
+
+
+                  <div class="clear"></div>
+
+                  <div class="entry">
+                    <div class="entry-inner">
+                      
+                      
+
+<p>Docker运行mysql镜像</p>
+
+<p>启动mysql镜像<br />
+[root@CentOS ~]# docker run -d -e MYSQL_ROOT_PASSWORD=admin &ndash;name mysql -v /data/mysql/etc:/etc/mysql/conf.d -v /data/mysql/data:/var/lib/mysql -v /etc/localtime:/etc/localtime:ro mysql</p>
+
+<p>说明：<br />
+1.把数据文件存贮在宿主机中的/data/mysql/data目录下，所以挂载/data/mysql/data到/var/lib/mysql<br />
+2.采用宿主机中的配置启动mysql服务，所以挂载 /data/mysql/etc到/etc/mysql/conf.d 配置文件见下文的my.cnf文件<br />
+3.使容器与宿主机时间同步，挂载/etc/localtime到/etc/localtime:ro  只读的方式。</p>
+
+<p>my.cnf</p>
+
+<p>[mysqld]<br />
+user = mysql<br />
+default-storage-engine = InnoDB<br />
+socket = /var/lib/mysql/mysql.sock<br />
+pid-file = /var/lib/mysql/mysql.pid</p>
+
+<p>skip-external-locking<br />
+skip-name-resolve</p>
+
+<h1 id="myisam">MyISAM #</h1>
+
+<p>key-buffer-size                = 32M</p>
+
+<h1 id="safety">SAFETY #</h1>
+
+<p>max-allowed-packet            = 16M<br />
+max-connect-errors            = 1000000</p>
+
+<h1 id="data-storage">DATA STORAGE #</h1>
+
+<p>datadir                        = /var/lib/mysql</p>
+
+<h1 id="caches-and-limits">CACHES AND LIMITS #</h1>
+
+<p>tmp-table-size                = 32M<br />
+max-heap-table-size            = 32M<br />
+query-cache-type              = 0<br />
+query-cache-size              = 0<br />
+max-connections                = 500<br />
+thread-cache-size              = 50<br />
+open-files-limit              = 65535<br />
+table-definition-cache        = 4096<br />
+table-open-cache              = 4096</p>
+
+<h1 id="innodb">INNODB #</h1>
+
+<p>innodb-flush-method            = O_DIRECT<br />
+innodb-log-files-in-group      = 2<br />
+innodb-log-file-size          = 64M<br />
+innodb-flush-log-at-trx-commit = 1<br />
+innodb-file-per-table          = 1<br />
+innodb-buffer-pool-size        = 592M</p>
+
+<h1 id="logging">LOGGING #</h1>
+
+<p>log-error                      = /var/lib/mysql/mysql-error.log<br />
+log-queries-not-using-indexes  = 1<br />
+slow-query-log                = 1<br />
+slow-query-log-file            = /var/lib/mysql/mysql-slow.log</p>
+
+                      
+                    </div>
+                    <div style="border: 1px dashed #e0e0e0; padding: 10px 10px 10px 10px; background-color: #fffeee; background-repeat: no-repeat; background-attachment: scroll; background-position: 1% 50%; -moz-background-size: auto auto; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+                        <div style="float:left;margin-top:0px;">
+                        <img src="https://surpass.github.io/public/public/qrcode.jpg" width="129px" height="129px"/>
+                        <div style="text-align:center;">微信扫一扫交流</div>
+                        </div>
+                        <div>
+                            <p style="margin-top:0px;">作者：<a target="_blank" href="http://surpass-li.iteye.com/">Frank Li</a>
+                            <br />微信关注：s46488820 （阿超）
+                            <br />本文出处：<a target="_blank" href="https://surpass.github.io/public/post/mysql-by-docker/">https://surpass.github.io/public/post/mysql-by-docker/</a>
+                            <br />
+                            文章版权归本人所有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文连接，否则保留追究法律责任的权利。 </p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                  
+
+                </div>
+                
+              </article>
+              
+              <div class="clear"></div>
+              
+              
+              
+            </div>
           </section>
           <div class="sidebar s1">
   <a class="sidebar-toggle" title="Expand Sidebar"><i class="fa icon-sidebar-toggle"></i></a>
@@ -190,6 +301,26 @@
     <p> 微信扫一扫：<br/> 关注我的微信号： <br /> s46488820 <br /></p>
 </div>
 
+    <ul class="post-nav group">
+      <li class="next">
+        
+        <a href="https://surpass.github.io/public/post/mysql-src-install/" rel="next">
+          <i class="fa fa-chevron-right"></i>
+          <strong>Next post</strong>
+          <span>Mysql源码安装！</span>
+        </a>
+        
+      </li>
+      <li class="previous">
+        
+        <a href="https://surpass.github.io/public/about/" rel="prev">
+          <i class="fa fa-chevron-left"></i>
+          <strong>Previous Post</strong>
+          <span>关于我</span>
+        </a>
+        
+      </li>
+    </ul>
     <div id="search-2" class="widget widget_search"><h3>Search</h3>
       <form method="get" class="searchform themeform" action="https://www.google.com/search">
         <div>
@@ -198,6 +329,7 @@
       </form>
     </div>
   </div>
+  
 </div>
 
           <div class="sidebar s2">

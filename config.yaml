@@ -14,12 +14,22 @@ disablePathToLower: true
 hasCJKLanguage: true
 permalinks:
   posts: /:year/:month/:day/:slug/
+  
+outputs:
+  home:
+    - "RSS"
+    - "HTML"
+outputFormats:
+  RSS:
+    mediatype: "application/rss"
+    baseName: "feed"
+
 Taxonomies:
   tag: "tags"
   category: "categories"
 params:
   CopyrightHTML: "Copyright FrankLee 2018. All Rights Reserved."
-  GitHubUser: "surpass"
+  GitHubUser: "Frank Li"
   SidebarRecentLimit: 5
   DateForm : "2018年06月15日"
   Tagline: "一个程序员的思考与总结"
@@ -29,6 +39,7 @@ params:
     - "读书笔记"
     - "技术文章"
     - "思考感悟"
+    - "学习笔记"
 menu:
   main:
       - Name: "归档"

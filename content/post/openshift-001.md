@@ -1,3 +1,18 @@
+---
+title: "OpenShift Origin  3.9.0手动单机安装"
+date: 2018-06-15T21:56:26+08:00
+description: ""
+categories:
+ - 读书笔记
+ - 技术文章
+ - 思考感悟
+ - 学习笔记
+keywords:
+ - DevOps
+url: ""
+
+---
+
 OpenShift Origin  3.9.0手动单机安装
 
 1.配置主机

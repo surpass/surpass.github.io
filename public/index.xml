@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Beyond Blog on Beyond Blog</title>
-        <link>https://surpass.github.io/public/feed.xml</link>
+        <link>https://surpass.github.io/public/</link>
         <language>zh-CN</language>
         <author>CoderZh</author>
         <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
