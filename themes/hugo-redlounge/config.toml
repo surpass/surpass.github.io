@@ -1,0 +1,159 @@
+baseurl = "https://www.easyolap.cn"
+title = "DevOps"
+theme = "hugo-redlounge"
+languageCode = "zh"
+hasCJKLanguage = true
+# Site language. Available translations in the theme's `/i18n` directory.
+defaultContentLanguage = "zh"
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+# Code highlight
+pygmentsUseClasses = false
+pygmentCodeFences = true
+
+# Define the number of posts per page
+paginate = 10
+
+
+
+name = "Red Lounge"
+description = "A clean, responsive, template with red accents."
+license = "Apache 2.0"
+licenselink = "https://github.com/tmaiaroto/hugo-redlounge/blob/master/LICENSE.md"
+source_repo = "https://github.com/tmaiaroto/hugo-redlounge"
+homepage = "https://www.easyolap.cn"
+tags = ["redlounge", "red", "raleway", "libre baskerville", "blog", "gallery"]
+features = ["blog", "gallery"]
+min_version = 0.14
+
+[author]
+    name = "Frank Li"
+    homepage = "https://www.easyolap.cn/"
+    
+
+[menu]
+
+# Main menu
+
+[[menu.main]]
+    name = "主页"
+    url  = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "博客"
+    url  = "/blog/"
+    weight = 2
+
+[[menu.main]]
+    name="文档"
+    identifier = "docs"
+        url = "/docs/"
+    weight = 3
+
+[[menu.main]]
+    parent="docs"
+    name="Envoy"
+    url = "/envoy/"
+    weight = 2
+
+[[menu.main]]
+    name = "联系我"
+    url  = "/about/"
+    weight = 5
+
+[params]
+    viewMorePostLink = "/blog/"
+    author = "Frank Li(李在超)"
+    defaultKeywords = ["DevOps","技术小站"]
+    defaultDescription = "DevOps技术分享小站"
+    # Browser title description
+    description = "DevOps技术分享小站"
+    # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
+    style = "violet"
+    # Social share buttons
+    share = false
+
+    # 404 page
+    errorimage = "https://ws1.sinaimg.cn/large/00704eQkgy1frkahxdca2j30hd08wq52.jpg"
+    email = "surpass_li@aliyun.com"
+    about_us = "技术交流"
+    copyright = "Copyright ©️ 2018, easyloap all rights reserved."
+    # Format dates with Go's time formatting
+    date_format = "2006年1月2日"
+    logo = "https://ws1.sinaimg.cn/large/00704eQkgy1fshutb9ya0j316v09nabp.jpg"
+    # avatar used for thumbnail on sharing
+    avatar = "https://ws4.sinaimg.cn/large/006tNc79gy1ft0fjbip45j30xd0xbgpl.jpg"
+    logosmall = "https://ws1.sinaimg.cn/large/00704eQkgy1fshuwshsojj30f303ewev.jpg"
+    address = """<p>加我微信（请备注姓名-公司）</p>
+      """
+
+[Permalinks]
+    #blog = "/blog/:year/:month/:day/:filename/"
+    blog = "/blog/:filename/"
+
+# Enable or disable top bar with social icons
+[params.topbar]
+    enable = true
+    text = """<p>社区入口➡</p>
+      """
+
+# Enable and disable widgets for the right sidebar
+[params.widgets]
+    categories = true
+    tags = true
+    search = true
+
+[params.carousel]
+    enable = true
+    # Set carousel background image
+    background = "https://ws1.sinaimg.cn/large/00704eQkgy1frlkpcfzt4j30zk0k0at2.jpg"
+    # All carousel items are defined in their own files. You can find example items
+    # at 'exampleSite/data/carousel'.
+    # For more informtion take a look at the README.
+
+[params.features]
+    enable = false
+    # All features are defined in their own files. You can find example items
+    # at 'exampleSite/data/features'.
+    # For more informtion take a look at the README.
+
+[params.testimonials]
+    enable = true
+    # All testimonials are defined in their own files. You can find example items
+    # at 'exampleSite/data/testimonials'.
+    # For more informtion take a look at the README.
+    title = "社区活动与公告"
+    subtitle = "我们会不定期得在线上和线下举办精彩的活动，敬请关注，下面是活动公告"
+
+
+[params.clients]
+    enable = true
+    # All clients are defined in their own files. You can find example items
+    # at 'exampleSite/data/clients'.
+    # For more informtion take a look at the README.
+    title = "合作社区"
+    subtitle = ""
+
+[params.recent_posts]
+    enable = true
+    title = "最新博客"
+    subtitle = "社区参与者的博客与最 in 的新闻都在这里"
+
+[outputs]
+    home = ["HTML", "RSS", "Algolia"]
+
+[outputFormats.Algolia]
+    baseName = "algolia"
+    isPlainText = true
+    mediaType = "application/json"
+    notAlternative = true
+
+[params.algolia]
+    enable = true
+    appid = "X4YB3WOBNV"
+    index = "servicemesher"
+    vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+    params = ["categories", "tags"]
+    key = "d2134c5a8d250e6d3246594240c45201"
+

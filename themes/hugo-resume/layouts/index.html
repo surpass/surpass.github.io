@@ -1,0 +1,30 @@
+{{ define "main" }}
+   {{ partial "about.html" .}}
+   {{ if .Site.Params.showSkills }}
+       {{ partial "portfolio/skills.html" . }}
+   {{ end }}
+   {{ if .Site.Params.showProjects }}
+      {{ with .Site.GetPage "section" "projects/creations" }}
+         {{ .Scratch.Add "sectionId" "projects" }}
+         {{ partial "sectionSummary" . }}
+      {{ end }}
+   {{ end }}
+   {{ if .Site.Params.showOpenSource }}
+      {{ with .Site.GetPage "section" "projects/contributions" }}
+         {{ .Scratch.Add "sectionId" "open" }}
+         {{ partial "sectionSummary" . }}
+      {{ end }}
+   {{ end }}
+   {{ if .Site.Params.showPublications }}
+      {{ with .Site.GetPage "section" "publications" }}
+         {{ .Scratch.Add "sectionId" "publications" }}
+         {{ partial "sectionSummary" . }}
+      {{ end }}
+   {{ end }}
+   {{ if .Site.Params.showExperience }}
+       {{ partial "portfolio/experience.html" . }}
+   {{ end }}
+   {{ if .Site.Params.showEducation }}
+       {{ partial "portfolio/education.html" . }}
+   {{ end }}
+{{ end }}
