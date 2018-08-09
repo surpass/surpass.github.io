@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Mysql源码安装！</title>
   <meta property="og:title" content="Mysql源码安装！" />
-  <meta property="og:image" content="https://www.easyolap.cn/img/TechChat.png" />
+  <meta property="og:image" content="https://www.easyolap.cn/img/TechChat.jpg" />
   <meta name="description" content="Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud.">
   <meta property="og:description" content="Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud." />
   <meta name="author" content="Lee Frank">
@@ -30,7 +30,7 @@
   <a class="navbar-brand js-scroll-trigger" href="#page-top">
     <span class="d-block d-lg-none">Lee Frank</span>
     <span class="d-none d-lg-block">
-      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/TechChat.png" alt="">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/TechChat.jpg" alt="">
     </span>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -108,14 +108,14 @@
 <section class="resume-section p-3 p-lg-5 d-flex d-column">
   <div class="my-auto">
     <h2 class="mb-0"><span class="text-primary">Mysql源码安装！</span></h2>
-    <p><a href="http://www.alldaydevops.com/blog/organically-devops-building-quality-and-security-into-the-software-supply-chain-at-liberty-mutual">Link to full Talk</a></p>
-    <img src="/img/organicdevops.png" style="max-height:300px;max-width:30%;" align="right"/>
+    <p><a href="https://www.mysql.com/">Link to full Talk</a></p>
+    <img src="/img/mysql.jpg" style="max-height:300px;max-width:30%;" align="right"/>
     
 
-<p>Docker运行mysql镜像</p>
+<h2 id="docker运行mysql镜像">Docker运行mysql镜像</h2>
 
 <p>启动mysql镜像<br />
-[root@CentOS ~]# docker run -d -e MYSQL_ROOT_PASSWORD=admin &ndash;name mysql -v /data/mysql/etc:/etc/mysql/conf.d -v /data/mysql/data:/var/lib/mysql -v /etc/localtime:/etc/localtime:ro mysql</p>
+        [root@CentOS ~]# docker run -d -e MYSQL_ROOT_PASSWORD=admin &ndash;name mysql -v /data/mysql/etc:/etc/mysql/conf.d -v /data/mysql/data:/var/lib/mysql -v /etc/localtime:/etc/localtime:ro mysql</p>
 
 <p>说明：<br />
 1.把数据文件存贮在宿主机中的/data/mysql/data目录下，所以挂载/data/mysql/data到/var/lib/mysql<br />
@@ -133,22 +133,18 @@ pid-file = /var/lib/mysql/mysql.pid</p>
 <p>skip-external-locking<br />
 skip-name-resolve</p>
 
-<h1 id="myisam">MyISAM #</h1>
+<p>\# MyISAM \#<br />
+key-buffer-size                = 32M</p>
 
-<p>key-buffer-size                = 32M</p>
-
-<h1 id="safety">SAFETY #</h1>
-
-<p>max-allowed-packet            = 16M<br />
+<p># SAFETY #<br />
+max-allowed-packet            = 16M<br />
 max-connect-errors            = 1000000</p>
 
-<h1 id="data-storage">DATA STORAGE #</h1>
+<p># DATA STORAGE #<br />
+datadir                        = /var/lib/mysql</p>
 
-<p>datadir                        = /var/lib/mysql</p>
-
-<h1 id="caches-and-limits">CACHES AND LIMITS #</h1>
-
-<p>tmp-table-size                = 32M<br />
+<p># CACHES AND LIMITS #<br />
+tmp-table-size                = 32M<br />
 max-heap-table-size            = 32M<br />
 query-cache-type              = 0<br />
 query-cache-size              = 0<br />
@@ -158,18 +154,16 @@ open-files-limit              = 65535<br />
 table-definition-cache        = 4096<br />
 table-open-cache              = 4096</p>
 
-<h1 id="innodb">INNODB #</h1>
-
-<p>innodb-flush-method            = O_DIRECT<br />
+<p># INNODB #<br />
+innodb-flush-method            = O_DIRECT<br />
 innodb-log-files-in-group      = 2<br />
 innodb-log-file-size          = 64M<br />
 innodb-flush-log-at-trx-commit = 1<br />
 innodb-file-per-table          = 1<br />
 innodb-buffer-pool-size        = 592M</p>
 
-<h1 id="logging">LOGGING #</h1>
-
-<p>log-error                      = /var/lib/mysql/mysql-error.log<br />
+<p># LOGGING #<br />
+log-error                      = /var/lib/mysql/mysql-error.log<br />
 log-queries-not-using-indexes  = 1<br />
 slow-query-log                = 1<br />
 slow-query-log-file            = /var/lib/mysql/mysql-slow.log</p>
@@ -177,17 +171,11 @@ slow-query-log-file            = /var/lib/mysql/mysql-slow.log</p>
     <p class="mt-3">
     <ul class="tags">
     
-      <li><a class="tag" href="/tags/devops">DevOps</a></li>
+      <li><a class="tag" href="/tags/mysql">mysql</a></li>
     
-      <li><a class="tag" href="/tags/continuous-integration">Continuous Integration</a></li>
-    
-      <li><a class="tag" href="/tags/continuous-delivery">Continuous Delivery</a></li>
-    
-      <li><a class="tag" href="/tags/ci/cd-pipelines">CI/CD pipelines</a></li>
+      <li><a class="tag" href="/tags/docker">docker</a></li>
     
       <li><a class="tag" href="/tags/agile">agile</a></li>
-    
-      <li><a class="tag" href="/tags/culture">Culture</a></li>
     
 </ul>
 
@@ -207,13 +195,13 @@ slow-query-log-file            = /var/lib/mysql/mysql-slow.log</p>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
   
   <script src="/js/resume.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=XX-123446-01"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'XX-123446-01');
+    gtag('config', '');
   </script>
   
 

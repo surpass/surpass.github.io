@@ -21,7 +21,7 @@ theme = "hugo-resume"
     address = "Shenyang, CN"
     phone = "13478875695"
     contactNote = "DevOps Engineer"
-    profileImage = "img/TechChat.png"
+    profileImage = "img/TechChat.jpg"
     email = "surpass_li@aliyun.com"
     description = "Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud."
     favicon = "images/favicon.ico"
@@ -43,6 +43,3 @@ theme = "hugo-resume"
 [[params.handles]]
     name = "GitHub"
     link = "https://github.com/surpass/"
-
-[params.google.analytics]
-    trackerID = "XX-123446-01"

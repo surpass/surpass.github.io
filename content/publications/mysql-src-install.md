@@ -7,17 +7,17 @@ translator: "李在超"
 pubtype: "Talk"
 featured: true
 description: "这是一个用源码安装mysql的笔记."
-tags: ["DevOps","Continuous Integration","Continuous Delivery","CI/CD pipelines","agile","Culture"]
+tags: ["mysql","docker","agile"]
 keywords: ["mysql","linus"]
-image: "/img/organicdevops.png"
-link: "http://www.alldaydevops.com/blog/organically-devops-building-quality-and-security-into-the-software-supply-chain-at-liberty-mutual"
-fact: "Interesting little tidbit shown below image on summary and detail page"
+image: "/img/mysql.jpg"
+link: "https://www.mysql.com/"
+fact: "mysql source install by linux"
 weight: 400
 sitemap:
   priority : 0.8
 ---
 
-> 本文转载自：Istio 官方网站，原文地址：https://surpass.github.io/publications/mysql-src-install/
+> 本文转载自：DevOps小站 官方网站，原文地址：https://www.easyolap.cn/publications/mysql-by-docker/
  
 
 一、编译安装MySQL前准备工作						
@@ -79,13 +79,13 @@ chown -R mysql:mysql /data/mysql/etc/my.cnf
 编辑my.cnf，my.cnf可在percona官网中及按照自己的情况生成。网址如下：https://tools.percona.com/wizard 。						
 [mysql] 						
   						
-# CLIENT # 						
+\# CLIENT \# 						
 port                          = 3306 						
 socket                        = /data/mysql/data/mysql.sock 						
   						
 [mysqld] 						
   						
-# GENERAL # 						
+\# GENERAL \# 						
 user                          = mysql 						
 default-storage-engine        = InnoDB 						
 socket                        = /data/mysql/data/mysql.sock 						
@@ -94,28 +94,28 @@ pid-file                      = /data/mysql/data/mysql.pid
 skip-external-locking						
 skip-name-resolve						
 						
-# MyISAM # 						
+\# MyISAM \# 						
 key-buffer-size                = 32M 						
 myisam-recover                = FORCE,BACKUP 						
   						
-# SAFETY # 						
+\# SAFETY \# 						
 max-allowed-packet            = 16M 						
 max-connect-errors            = 1000000 						
   						
-# DATA STORAGE # 						
+\# DATA STORAGE \# 						
 datadir                        = /data/mysql/data						
   						
-# BINARY LOGGING # 						
+\# BINARY LOGGING \# 						
 log-bin                        = /data/mysql/data/mysql-bin						
 expire-logs-days              = 14 						
 sync-binlog                    = 1 						
   						
-# REPLICATION # 						
+\# REPLICATION \# 						
 skip-slave-start              = 1 						
 relay-log                      = /data/mysql/data/relay-bin						
 slave-net-timeout              = 60 						
   						
-# CACHES AND LIMITS # 						
+\# CACHES AND LIMITS \# 						
 tmp-table-size                = 32M 						
 max-heap-table-size            = 32M 						
 query-cache-type              = 0 						
@@ -126,7 +126,7 @@ open-files-limit              = 65535
 table-definition-cache        = 4096 						
 table-open-cache              = 4096 						
   						
-# INNODB # 						
+\# INNODB \# 						
 innodb-flush-method            = O_DIRECT 						
 innodb-log-files-in-group      = 2 						
 innodb-log-file-size          = 64M 						
@@ -134,7 +134,7 @@ innodb-flush-log-at-trx-commit = 1
 innodb-file-per-table          = 1 						
 innodb-buffer-pool-size        = 592M 						
   						
-# LOGGING # 						
+\# LOGGING \# 						
 log-error                      = /data/mysql/data/mysql-error.log 						
 log-queries-not-using-indexes  = 1 						
 slow-query-log                = 1 						

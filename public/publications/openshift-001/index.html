@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>OpenShift Origin  3.9.0手动单机安装</title>
   <meta property="og:title" content="OpenShift Origin  3.9.0手动单机安装" />
-  <meta property="og:image" content="https://www.easyolap.cn/img/TechChat.png" />
+  <meta property="og:image" content="https://www.easyolap.cn/img/TechChat.jpg" />
   <meta name="description" content="Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud.">
   <meta property="og:description" content="Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud." />
   <meta name="author" content="Lee Frank">
@@ -30,7 +30,7 @@
   <a class="navbar-brand js-scroll-trigger" href="#page-top">
     <span class="d-block d-lg-none">Lee Frank</span>
     <span class="d-none d-lg-block">
-      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/TechChat.png" alt="">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/TechChat.jpg" alt="">
     </span>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -108,11 +108,9 @@
 <section class="resume-section p-3 p-lg-5 d-flex d-column">
   <div class="my-auto">
     <h2 class="mb-0"><span class="text-primary">OpenShift Origin  3.9.0手动单机安装</span></h2>
-    <p><a href="http://www.alldaydevops.com/blog/organically-devops-building-quality-and-security-into-the-software-supply-chain-at-liberty-mutual">Link to full Talk</a></p>
-    <img src="/img/organicdevops.png" style="max-height:300px;max-width:30%;" align="right"/>
-    
-
-<p>OpenShift Origin  3.9.0手动单机安装</p>
+    <p><a href="https://www.openshift.com">Link to full Talk</a></p>
+    <img src="/img/openshift.jpg" style="max-height:300px;max-width:30%;" align="right"/>
+    <p>OpenShift Origin  3.9.0手动单机安装</p>
 
 <p>1.配置主机
     修改主机名为openshift.demo.com
@@ -124,17 +122,15 @@
       SELINUXTYPE=targeted
 激活网络
 
-# nmcli con show
+\# nmcli con show
 </code></pre>
 
 <p>docker0  1a211fa6-1001-4fa9-b5c8-e3b2dcf73e5a  bridge    docker0
 ens192   f16e6b7a-e593-4722-9ae4-1bdfa1fa4b4a  ethernet  ens192</p>
 
-<h1 id="nmcli-con-up-ens192">nmcli con up ens192</h1>
-
-<h1 id="nmcli-con-mod-ens192-connection-autoconnect-yes">nmcli con mod ens192 connection.autoconnect yes</h1>
-
-<h1 id="systemctl-restart-networkmanager">systemctl restart NetworkManager</h1>
+<p># nmcli con up ens192
+# nmcli con mod ens192 connection.autoconnect yes
+# systemctl restart NetworkManager</p>
 
 <p>2.安装docker
 安装依赖
@@ -183,6 +179,8 @@ Pulled 1/4 layers, 26% complete
     
       <li><a class="tag" href="/tags/ci/cd-pipelines">CI/CD pipelines</a></li>
     
+      <li><a class="tag" href="/tags/docker">docker</a></li>
+    
       <li><a class="tag" href="/tags/agile">agile</a></li>
     
       <li><a class="tag" href="/tags/culture">Culture</a></li>
@@ -205,13 +203,13 @@ Pulled 1/4 layers, 26% complete
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
   
   <script src="/js/resume.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=XX-123446-01"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'XX-123446-01');
+    gtag('config', '');
   </script>
   
 

@@ -1,20 +1,39 @@
 [
+
     {
-        "role":"Boss man",
-        "company":"Current Company LTD",
-        "summary":"Led in development of fast paced software teams.",
-        "range":"February 2016 - Present"
+        "role":"资深软件工程师",
+        "company":"东软睿驰汽车技术（沈阳）有限公司",
+        "summary":"负责新技术的引入与调研，架构设计，课题调研，采用ofbiz框架进行组件化设计，集成netty实现高并发，高可用的车联网服务。系统采用k8s和docker完成持续集成和自动化测试，提高发版品质，缩短交付周期。系统集成了cassandra/hbase(NOSQL),KAFKA(消息队列)，redis/ingite(分布式缓存\\计算\\内存数据库)。采用Hadoop为基础平台构建大数据应用，使用storm/spark进行数据处理。",
+        "range":"January 2017 - Now"
     },
     {
-        "role":"Developer",
-        "company":"Current Company LTD",
-        "summary":"Expedited the synergies of collaborative agile tooling.",
-        "range":"March 2014 - February 2016"
+        "role":"资深软件工程师",
+        "company":"东软集团股份有限公司",
+        "summary":"负责新技术的引入与调研，采用ofbiz框架进行组件化设计，集成netty实现高并发，高可用的车联网服务。系统集成了cassandra(NOSQL),KAFKA(消息队列)，ingite(分布式缓存\\计算\\内存数据库)。",
+        "range":"December 2009 - December 2016"
     },
     {
-        "role":"Developer",
-        "company":"Previous Company Inc.",
-        "summary":"Implemented continuous devops pipelines automationing",
-        "range":"February 2013 - March 2014"
+        "role":"系统设计师/高级软件工程师",
+        "company":"沈阳智诚祥软件科技有限公司",
+        "summary":"带领技术团队，负责省公安厅印章管理系统的设计与研发;采用java语言，oracle9i数据库。系统架构spring,hibernate,freemarker.采用测试驱动模型进行开发，用svn进行版本管理。mavne进行项目管理。",
+        "range":"March 2009 - November 2009"
+    },
+    {
+        "role":"PM",
+        "company":"盛生科技",
+        "summary":"领导技术团队，负责盛生网的设计、研发工作。负责技术的专研，项目的开发、设计，带领项目组完成项目计划。",
+        "range":"July 2007 - December 2008"
+    },
+    {
+        "role":"高级软件工程师/PSM",
+        "company":"新思软件技术（沈阳）有限公司 ",
+        "summary":"负责技术的专研，项目的开发、设计，带领新同事，使其能快速融于团队之中。",
+        "range":"July 2007 - December 2008"
+    },
+    {
+        "role":"软件工程师",
+        "company":"北京千橡互联科技发展有限公司",
+        "summary":"参与个人门户网站(sns、blog等)的设计和开发,主要应用struts、spring框架；运用ajax等实现web2。0.系统采用点典型的三层架构,以spring进行bean管理.struts进行mvc控制.torque进行持久化处理。Javascript+html+css进行显示优化。为广大网友提供个性优秀的交友娱乐平台。独立设计开发了批量处理用户信息,用户提醒邮件等功能模块,采用多线程技术大数据量并发处理",
+        "range":"April 2005 - May 2006"
     }
 ]

@@ -6,9 +6,90 @@
     <description>Recent content in Docker on Eddie Webb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
+    <lastBuildDate>Fri, 15 Jun 2018 21:56:26 +0800</lastBuildDate>
     
 	<atom:link href="https://www.easyolap.cn/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OpenShift Origin  3.9.0手动单机安装</title>
+      <link>https://www.easyolap.cn/publications/openshift-001/</link>
+      <pubDate>Fri, 15 Jun 2018 21:56:26 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/publications/openshift-001/</guid>
+      <description>OpenShift Origin 3.9.0手动单机安装
+1.配置主机 修改主机名为openshift.demo.com hostnamectl set-hostname openshift.demo.com
+开启SELINUX 修改/etc/selinux/config SELINUX=enforcing SELINUXTYPE=targeted 激活网络 \# nmcli con show  docker0 1a211fa6-1001-4fa9-b5c8-e3b2dcf73e5a bridge docker0 ens192 f16e6b7a-e593-4722-9ae4-1bdfa1fa4b4a ethernet ens192
+# nmcli con up ens192 # nmcli con mod ens192 connection.autoconnect yes # systemctl restart NetworkManager
+2.安装docker 安装依赖 yum install -y wget git net-tools bind-utils iptables-services bridge-utils bash-completion 安装docker yum install -y docker 配置Docker镜像服务器
+中国科技大学的镜像服务器进行加速。修改/etc/sysconfig/docker文件，在OPTIONS变量中追加&amp;ndash;registry-mirror=https://docker.mirrors.ustc.edu.cn &amp;ndash;insecure-registry=172.30.0.0/16。
+3.下载openshift-origin-server-v3.9.0-191fece-linux-64bit.tar.gz
+4.解压openshift-origin-server-v3.9.0-191fece-linux-64bit.tar.gz到 /opt/openshift
+5.添加到PATH
+6.测试docker是否能正常下载镜像 docker pull busybox</description>
+    </item>
+    
+    <item>
+      <title>Mysql源码安装！</title>
+      <link>https://www.easyolap.cn/publications/mysql-by-docker/</link>
+      <pubDate>Mon, 31 Jul 2017 21:44:58 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/publications/mysql-by-docker/</guid>
+      <description>Docker运行mysql镜像 启动mysql镜像
+[root@CentOS ~]# docker run -d -e MYSQL_ROOT_PASSWORD=admin &amp;ndash;name mysql -v /data/mysql/etc:/etc/mysql/conf.d -v /data/mysql/data:/var/lib/mysql -v /etc/localtime:/etc/localtime:ro mysql
+说明：
+1.把数据文件存贮在宿主机中的/data/mysql/data目录下，所以挂载/data/mysql/data到/var/lib/mysql
+2.采用宿主机中的配置启动mysql服务，所以挂载 /data/mysql/etc到/etc/mysql/conf.d 配置文件见下文的my.cnf文件
+3.使容器与宿主机时间同步，挂载/etc/localtime到/etc/localtime:ro 只读的方式。
+my.cnf
+[mysqld]
+user = mysql
+default-storage-engine = InnoDB
+socket = /var/lib/mysql/mysql.sock
+pid-file = /var/lib/mysql/mysql.pid
+skip-external-locking
+skip-name-resolve
+\# MyISAM \#
+key-buffer-size = 32M
+# SAFETY #
+max-allowed-packet = 16M
+max-connect-errors = 1000000
+# DATA STORAGE #
+datadir = /var/lib/mysql
+# CACHES AND LIMITS #
+tmp-table-size = 32M</description>
+    </item>
+    
+    <item>
+      <title>Mysql源码安装！</title>
+      <link>https://www.easyolap.cn/publications/mysql-src-install/</link>
+      <pubDate>Mon, 31 Jul 2017 21:44:58 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/publications/mysql-src-install/</guid>
+      <description>本文转载自：DevOps小站 官方网站，原文地址：https://www.easyolap.cn/publications/mysql-by-docker/
+ 一、编译安装MySQL前准备工作
+安装编译源码所需的工具和库
+yum -y install gcc gcc-c++ ncurses-devel perl openssl-devel bison
+安装cmake（记得好像从mysql 5.5开始需要cmake编译安装），可从https://cmake.org/download/ 中下载。
+tar zxvf cmake-3.6.1.tar.gz
+cd cmake-3.6.1
+./bootstrap
+make &amp;amp;&amp;amp; make install
+二、创建用户及MySQL所需目录
+新增mysql用户
+groupadd -r mysql
+useradd -r -g mysql mysql
+新建MySQL所需目录
+mkdir -p /data/mysql/server
+mkdir -p /data/mysql/data
+mkdir -p /data/mysql/etc
+三、编译安装MySQL
+可从http://dev.mysql.com/downloads/mysql/ 下载mysql源码(MySQL Community Server 5.6.32 )。
+tar zxvf mysql-5.6.32.tar.gz
+cd mysql-5.6.32
+&amp;ldquo;cmake -DCMAKE_INSTALL_PREFIX=/data/mysql/server
+-DDEFAULT_CHARSET=utf8\ -DDEFAULT_COLLATION=utf8_general_ci\ -DWITH_INNOBASE_STORAGE_ENGINE=1\ -DWITH_ARCHIVE_STORAGE_ENGINE=1\ -DWITH_BLACKHOLE_STORAGE_ENGINE=1\ -DMYSQL_DATADIR=/data/mysql/data\ -DMYSQL_TCP_PORT=3306\ -DENABLE_DOWNLOADS=1\ -DSYSCONFDIR=/data/mysql/etc\ -DWITH_SSL=system\ -DWITH_ZLIB=system\ -DWITH_LIBWRAP=0 &amp;ldquo;</description>
+    </item>
     
     <item>
       <title>Added Docker Build Status Badge to shields.io</title>

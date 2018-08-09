@@ -1,23 +1,25 @@
 [
   {
       "grouping":"Architecture",
-      "skills":[ "IP Networking","DNS","Firewalls","Load Balancing","Microservices","RESTful APIs","SaaS/PaaS/IaaS"]
+      "skills":[ "IP Networking","DNS","Firewalls","Load Balancing","Microservices","RESTful APIs","SaaS/PaaS/IaaS","HDP/Ambari","Apache Spark/beam"]
   },{
       "grouping":"Languages, Operating Systems & Tools",
-      "skills":[ "Java","Python","git","subversion","linux","bash","php","jquery","javascript"]
+      "skills":[ "Java","Python","GO","git","subversion","linux","bash","php","jquery","javascript","jenkins","maven","junit","jmeter","selenium","FlywayDb/Dbunit","ansible","ELK/EFK","zipkin"]
   },
   {
       "grouping":"Platform Development & Administration",
-      "skills":[ "Atlassian","Bamboo","Bitbucket","NGINX","MySQL","Wordpress"]
+      "skills":[ "Atlassian JIRA","Atlassian Confluence","Github","Gitlab","sonarqube","nexus","spring boot","NGINX","MySQL","Wordpress"]
   },
   {
     "grouping":"Containers & Cloud",
       "skills":[
-          {"name":"BOSH","link":"https://bosh.io"},
+          {"name":"Kuberntes","link":"https://kubernetes.io"},
           {"name":"Docker","link":"https://docker.com"},
-          {"name":"AWS","link":"https://aws.amazon.com"},
-          {"name":"Google Cloud","link":"https://cloud.google.com"},
-          {"name":"Linux","link":"https://bosh.io"}
-      ]
+          {"name":"BOSH","link":"https://bosh.io"},
+          {"name":"Istio","link":"https://istio.io"},
+          {"name":"OpenShift","link":"https://www.openshift.com"},
+          {"name":"Linux","link":"https://www.centos.org"},
+          {"name":"aliyun","link":"https://www.aliyun.com"}
+     ]
   }
 ]

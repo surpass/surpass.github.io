@@ -6,12 +6,12 @@ authorlink: "https://surpass.github.io/public/about"
 translator: "李在超"
 pubtype: "Talk"
 featured: true
-description: "这是一个用源码安装mysql的笔记."
-tags: ["DevOps","Continuous Integration","Continuous Delivery","CI/CD pipelines","agile","Culture"]
+description: "采用docker运行mysql server."
+tags: ["mysql","docker","agile"]
 keywords: ["mysql","linus"]
-image: "/img/organicdevops.png"
-link: "http://www.alldaydevops.com/blog/organically-devops-building-quality-and-security-into-the-software-supply-chain-at-liberty-mutual"
-fact: "Interesting little tidbit shown below image on summary and detail page"
+image: "/img/mysql.jpg"
+link: "https://www.mysql.com/"
+fact: "mysql docker"
 weight: 400
 sitemap:
   priority : 0.8
@@ -20,10 +20,10 @@ sitemap:
 
 						
 Docker运行mysql镜像						
-						
+-------------------
 						
 启动mysql镜像						
-[root@CentOS ~]# docker run -d -e MYSQL_ROOT_PASSWORD=admin --name mysql -v /data/mysql/etc:/etc/mysql/conf.d -v /data/mysql/data:/var/lib/mysql -v /etc/localtime:/etc/localtime:ro mysql 						
+        [root@CentOS ~]\# docker run -d -e MYSQL_ROOT_PASSWORD=admin --name mysql -v /data/mysql/etc:/etc/mysql/conf.d -v /data/mysql/data:/var/lib/mysql -v /etc/localtime:/etc/localtime:ro mysql 						
 						
 						
 说明：						
@@ -47,17 +47,17 @@ pid-file = /var/lib/mysql/mysql.pid
 skip-external-locking						
 skip-name-resolve						
 						
-# MyISAM # 						
+\\# MyISAM \\# 						
 key-buffer-size                = 32M 						
   						
-# SAFETY # 						
+\# SAFETY \# 						
 max-allowed-packet            = 16M 						
 max-connect-errors            = 1000000 						
   						
-# DATA STORAGE # 						
+\# DATA STORAGE \# 						
 datadir                        = /var/lib/mysql						
   						
-# CACHES AND LIMITS # 						
+\# CACHES AND LIMITS \# 						
 tmp-table-size                = 32M 						
 max-heap-table-size            = 32M 						
 query-cache-type              = 0 						
@@ -68,7 +68,7 @@ open-files-limit              = 65535
 table-definition-cache        = 4096 						
 table-open-cache              = 4096 						
   						
-# INNODB # 						
+\# INNODB \# 						
 innodb-flush-method            = O_DIRECT 						
 innodb-log-files-in-group      = 2 						
 innodb-log-file-size          = 64M 						
@@ -76,7 +76,7 @@ innodb-flush-log-at-trx-commit = 1
 innodb-file-per-table          = 1 						
 innodb-buffer-pool-size        = 592M 						
   						
-# LOGGING # 						
+\# LOGGING \# 						
 log-error                      = /var/lib/mysql/mysql-error.log 						
 log-queries-not-using-indexes  = 1 						
 slow-query-log                = 1 						

@@ -1,33 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Agile on Eddie Webb</title>
-    <link>https://www.easyolap.cn/tags/agile/</link>
-    <description>Recent content in Agile on Eddie Webb</description>
+    <title>Mysql on Eddie Webb</title>
+    <link>https://www.easyolap.cn/tags/mysql/</link>
+    <description>Recent content in Mysql on Eddie Webb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 15 Jun 2018 21:56:26 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 31 Jul 2017 21:44:58 +0800</lastBuildDate>
     
-	<atom:link href="https://www.easyolap.cn/tags/agile/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.easyolap.cn/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>OpenShift Origin  3.9.0手动单机安装</title>
-      <link>https://www.easyolap.cn/publications/openshift-001/</link>
-      <pubDate>Fri, 15 Jun 2018 21:56:26 +0800</pubDate>
-      
-      <guid>https://www.easyolap.cn/publications/openshift-001/</guid>
-      <description>OpenShift Origin 3.9.0手动单机安装
-1.配置主机 修改主机名为openshift.demo.com hostnamectl set-hostname openshift.demo.com
-开启SELINUX 修改/etc/selinux/config SELINUX=enforcing SELINUXTYPE=targeted 激活网络 \# nmcli con show  docker0 1a211fa6-1001-4fa9-b5c8-e3b2dcf73e5a bridge docker0 ens192 f16e6b7a-e593-4722-9ae4-1bdfa1fa4b4a ethernet ens192
-# nmcli con up ens192 # nmcli con mod ens192 connection.autoconnect yes # systemctl restart NetworkManager
-2.安装docker 安装依赖 yum install -y wget git net-tools bind-utils iptables-services bridge-utils bash-completion 安装docker yum install -y docker 配置Docker镜像服务器
-中国科技大学的镜像服务器进行加速。修改/etc/sysconfig/docker文件，在OPTIONS变量中追加&amp;ndash;registry-mirror=https://docker.mirrors.ustc.edu.cn &amp;ndash;insecure-registry=172.30.0.0/16。
-3.下载openshift-origin-server-v3.9.0-191fece-linux-64bit.tar.gz
-4.解压openshift-origin-server-v3.9.0-191fece-linux-64bit.tar.gz到 /opt/openshift
-5.添加到PATH
-6.测试docker是否能正常下载镜像 docker pull busybox</description>
-    </item>
     
     <item>
       <title>Mysql源码安装！</title>
@@ -89,16 +71,6 @@ tar zxvf mysql-5.6.32.tar.gz
 cd mysql-5.6.32
 &amp;ldquo;cmake -DCMAKE_INSTALL_PREFIX=/data/mysql/server
 -DDEFAULT_CHARSET=utf8\ -DDEFAULT_COLLATION=utf8_general_ci\ -DWITH_INNOBASE_STORAGE_ENGINE=1\ -DWITH_ARCHIVE_STORAGE_ENGINE=1\ -DWITH_BLACKHOLE_STORAGE_ENGINE=1\ -DMYSQL_DATADIR=/data/mysql/data\ -DMYSQL_TCP_PORT=3306\ -DENABLE_DOWNLOADS=1\ -DSYSCONFDIR=/data/mysql/etc\ -DWITH_SSL=system\ -DWITH_ZLIB=system\ -DWITH_LIBWRAP=0 &amp;ldquo;</description>
-    </item>
-    
-    <item>
-      <title>Organically DevOps: Building Quality and Security into the Software Supply Chain at Liberty Mutual</title>
-      <link>https://www.easyolap.cn/publications/alldaydevops/</link>
-      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.easyolap.cn/publications/alldaydevops/</guid>
-      <description>This talk looked at Liberty Mutual’s transformation to Continuous Integration, Continuous Delivery, and DevOps. For a large, heavily regulated industry, this task can not only be daunting, but viewed by many as impossible. Often, organizations try to reduce the friction through micro-fixes, but Eddie’s team asked how to change the culture to reduce the friction and concluded with the following final points:
- Don’t mandate DevOps. Give employees the chance to master their discipline with examples to set and follow.</description>
     </item>
     
   </channel>

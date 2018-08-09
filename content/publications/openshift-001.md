@@ -4,10 +4,10 @@ date: 2018-06-15T21:56:26+08:00
 pubtype: "Talk"
 featured: true
 description: "OpenShift Origin  3.9.0手动单机安装."
-tags: ["DevOps","Continuous Integration","Continuous Delivery","CI/CD pipelines","agile","Culture"]
-image: "/img/organicdevops.png"
-link: "http://www.alldaydevops.com/blog/organically-devops-building-quality-and-security-into-the-software-supply-chain-at-liberty-mutual"
-fact: "Interesting little tidbit shown below image on summary and detail page"
+tags: ["DevOps","Continuous Integration","Continuous Delivery","CI/CD pipelines","docker","agile","Culture"]
+image: "/img/openshift.jpg"
+link: "https://www.openshift.com"
+fact: "OpenShift是红帽的云开发平台即服务（PaaS）。自由和开放源码的云计算平台使开发人员能够创建、测试和运行他们的应用程序，并且可以把它们部署到云中。"
 weight: 400
 sitemap:
   priority : 0.8
@@ -26,13 +26,13 @@ OpenShift Origin  3.9.0手动单机安装
           SELINUXTYPE=targeted
 	激活网络
 	
-	# nmcli con show
+	\# nmcli con show
 docker0  1a211fa6-1001-4fa9-b5c8-e3b2dcf73e5a  bridge    docker0 
 ens192   f16e6b7a-e593-4722-9ae4-1bdfa1fa4b4a  ethernet  ens192
  
-# nmcli con up ens192
-# nmcli con mod ens192 connection.autoconnect yes
-# systemctl restart NetworkManager
+\# nmcli con up ens192
+\# nmcli con mod ens192 connection.autoconnect yes
+\# systemctl restart NetworkManager
 
 
 
