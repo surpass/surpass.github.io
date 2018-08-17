@@ -126,6 +126,21 @@ cd mysql-5.6.32
     </item>
     
     <item>
+      <title>Nexus install by docker！</title>
+      <link>https://www.easyolap.cn/publications/nexus-002-docker-regis/</link>
+      <pubDate>Thu, 16 Aug 2018 21:44:58 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/publications/nexus-002-docker-regis/</guid>
+      <description>本文转载自：DevOps小站 官方网站，原文地址：https://www.easyolap.cn/publications/nexus-001-install-by-docker/
+ 一、环境准备 安装docker,本文使用的版本为docker Server Version: 17.11.0-ce 定义域名和购买域名，制作私有证书或购买，本文采用已有域名，申请免费证书实现。  ​
+二、下载镜像并启协服务 ATLASSIAN_HOME=/data/nexus/ docker run -d &amp;ndash;name nexus &amp;ndash;hostname nexus &amp;ndash;user root:root &amp;ndash;restart always -v $ATLASSIAN_HOME/work:/nexus-data -p 8081:8081 -p 8082:8082 -p 6000-6010:6001-6010 -e NEXUS_CONTEXT=nexus sonatype/nexus3:3.13.0
+三、修改容器内的配置文件 /opt/sonatype/nexus/etc/nexus-default.properties添加“application-port-ssl=8082” 和 修改nexus-args的值增加“${jetty.etc}/jetty-https.xml,”
+修改前
+ \# Jetty section application-port=8081 application-host=0.0.0.0 nexus-args=${jetty.etc}/jetty.xml,${jetty.etc}/jetty-http.xml,${jetty.etc}/jetty-requestlog.xml nexus-context-path=/${NEXUS_CONTEXT} \# Nexus section nexus-edition=nexus-pro-edition nexus-features=\ nexus-pro-feature nexus.clustered=false  修改后
+\# Jetty section application-port=8081 application-port-ssl=8082 application-host=0.0.0.0 nexus-args=${jetty.etc}/jetty.xml,${jetty.etc}/jetty-http.xml,${jetty.etc}/jetty-https.xml,${jetty.etc}/jetty-requestlog.xml nexus-context-path=/${NEXUS_CONTEXT} \# Nexus section nexus-edition=nexus-pro-edition nexus-features=\ nexus-pro-feature nexus.</description>
+    </item>
+    
+    <item>
       <title>Added Docker Build Status Badge to shields.io</title>
       <link>https://www.easyolap.cn/projects/contributions/shields-docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -149,7 +164,7 @@ cd mysql-5.6.32
       <pubDate>Fri, 15 Jun 2018 08:55:31 +0800</pubDate>
       
       <guid>https://www.easyolap.cn/about/</guid>
-      <description>大家好，我叫 Frank Li，是一名程序员。 我的经历  1999-2002 沈阳工程学院信息工程系 2007-2012 辽宁广播电视大学(本科，工商管理专业) 2002-2005 测试开发（东软）。 2005-2006 JAVA程序员（千像公司，互联网公司） 2006-2007 程序员（新思软件，软件外包） 2007-2008 架构师（盛生医药，合伙创业电子商务） 2009-2009 架构师（智诚祥科技，政府项目） 2010-至今 资深软件工程师，技术负责人（东软）  我的技能  编程语言：JAVA,了解PHP,Python，捣鼓 Go…… 熟练使用Ofbiz,spring等流行框架;熟悉webservice和微服务; 熟练使用Maven对项目进行模块化管理和组织;了解Nexus server; 掌握jenkins持续集成工具与流程,了解DevOps思想和工具;熟悉JIRA用其管理项目; 熟悉Confluence对知识的管理，积累经验提高团队的战斗力; 掌握Linux下makefile;了解Android开发; 能够熟练操作和使用MYSQL、Oracle等数据库;熟练操作cassandra等nosql数据库 掌握docker虚拟化技术,撑握Dockerfile以及k8s模板编写; 成功实施过kubernetes; 熟练使用Linux操作系统,进行运营环境的部署; 熟悉Tomcat等服务器的使用和部署; 熟悉Selenium、dbunit和Junit/testng进行自动化/半自动化测试; 了解apache spark/beam大数据处理工具; 熟悉软件开发的整个周期;能够使用和指导使用分布式版本控制工具进行多地团队合作开发;  生活中的我  喜欢思考，对未知世界保持好奇心。 有点宅。  一些链接  JAVAEYE博客：surpass-li.iteye.com Github: github.com/surpass Email：surpass_li@aliyun.com(surpass.li@gmail.com) 微信号：s46488820
+      <description>大家好，我叫 Frank Li，是一名程序员。 我的经历  1999-2002 沈阳工程学院信息工程系 2007-2012 辽宁广播电视大学(本科，工商管理专业) 2002-2005 测试开发（东软）。 2005-2006 JAVA程序员（千像公司，互联网公司） 2006-2007 程序员（新思软件，软件外包） 2007-2008 架构师（盛生医药，合伙创业电子商务） 2009-2009 架构师（智诚祥科技，政府项目） 2010-至今 资深软件工程师，技术负责人（东软）  我的技能  编程语言：JAVA,了解PHP,Python，捣鼓 Go…… 熟练使用Ofbiz,spring boot等流行框架;熟悉webservice和微服务; 熟练使用Maven对项目进行模块化管理和组织; 掌握Nexus server搭建私有maven仓库和Docker仓库; 掌握jenkins持续集成工具与流程,了解DevOps思想和工具;熟悉JIRA用其管理项目; 熟悉Confluence对知识的管理，积累经验提高团队的战斗力; 掌握Linux下makefile;了解Android开发; 能够熟练操作和使用Mysql、Oracle等数据库;熟练操作cassandra,hbase等nosql数据库 掌握docker虚拟化技术,撑握Dockerfile以及k8s模板编写; 成功实施过kubernetes 1.9.1; 熟练使用Linux操作系统,进行运营环境的部署; 熟悉Tomcat等服务器的使用和部署; 熟悉Selenium、dbunit和Junit/testng进行自动化/半自动化测试; 了解apache spark/beam大数据处理工具; 熟悉软件开发的整个周期;能够使用和指导使用分布式版本控制工具进行多地团队合作开发;  生活中的我  喜欢思考，对未知世界保持好奇心。 有点宅。  一些链接  JAVAEYE博客：surpass-li.iteye.com Github: github.com/surpass Email：surpass_li@aliyun.com(surpass.li@gmail.com) 微信号：s46488820
   声明 本博客所有文章皆为原创。转载请注明原文链接，并最好与本人联系。谢谢！</description>
     </item>
     

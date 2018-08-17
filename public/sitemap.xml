@@ -49,6 +49,12 @@
   </url>
   
   <url>
+    <loc>https://www.easyolap.cn/publications/nexus-002-docker-regis/</loc>
+    <lastmod>2018-08-16T21:44:58+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>https://www.easyolap.cn/projects/contributions/shields-docker/</loc>
     <priority>0.8</priority>
   </url>
