@@ -143,57 +143,62 @@ sonatype/nexus3:3.13.0</p>
 
 <p>/opt/sonatype/nexus/etc/nexus-default.properties添加“application-port-ssl=8082” 和 修改nexus-args的值增加“${jetty.etc}/jetty-https.xml,”</p>
 
-<p>修改前
-<pre name="code" class="java">
-# Jetty section
+<p>修改前</p>
+
+<pre><code> 
+\# Jetty section
 application-port=8081
 application-host=0.0.0.0
 nexus-args=${jetty.etc}/jetty.xml,${jetty.etc}/jetty-http.xml,${jetty.etc}/jetty-requestlog.xml
-nexus-context-path=/${NEXUS_CONTEXT}</p>
+nexus-context-path=/${NEXUS_CONTEXT}
 
-<p># Nexus section
+\# Nexus section
 nexus-edition=nexus-pro-edition
-nexus-features=<br />
+nexus-features=\
  nexus-pro-feature
 nexus.clustered=false
-</pre></p>
+ 
+</code></pre>
 
-<p>修改后
-<pre name="code" class="java">
-# Jetty section
+<p>修改后</p>
+
+<pre><code>\# Jetty section
 application-port=8081
 application-port-ssl=8082
 application-host=0.0.0.0
 nexus-args=${jetty.etc}/jetty.xml,${jetty.etc}/jetty-http.xml,${jetty.etc}/jetty-https.xml,${jetty.etc}/jetty-requestlog.xml
-nexus-context-path=/${NEXUS_CONTEXT}</p>
+nexus-context-path=/${NEXUS_CONTEXT}
 
-<p># Nexus section
+\# Nexus section
 nexus-edition=nexus-pro-edition
-nexus-features=<br />
+nexus-features=\
  nexus-pro-feature
 nexus.clustered=false
-</pre></p>
+ 
+</code></pre>
 
 <h2 id="四-启用https服务">四、启用https服务</h2>
 
 <p>修改容器内的${jetty.etc}/jetty-https.xml配置文件，并上传证书到/opt/sonatype/nexus/etc/ssl目录下</p>
 
-<p>修改内容为：
-<code>
-&lt;New id=&quot;sslContextFactory&quot; class=&quot;org.eclipse.jetty.util.ssl.SslContextFactory&quot;&gt;
+<p>修改内容为：</p>
+
+<pre><code>&lt;New id=&quot;sslContextFactory&quot; class=&quot;org.eclipse.jetty.util.ssl.SslContextFactory&quot;&gt;
     &lt;Set name=&quot;KeyStorePath&quot;&gt;&lt;Property name=&quot;ssl.etc&quot;/&gt;/keystore.jks&lt;/Set&gt;
     &lt;Set name=&quot;KeyStorePassword&quot;&gt;fsdf!QAZ&lt;/Set&gt;
     &lt;Set name=&quot;KeyManagerPassword&quot;&gt;fsdf!QAZ&lt;/Set&gt;
     &lt;Set name=&quot;TrustStorePath&quot;&gt;&lt;Property name=&quot;ssl.etc&quot;/&gt;/keystore.jks&lt;/Set&gt;
     &lt;Set name=&quot;TrustStorePassword&quot;&gt;1qaz!QAZ&lt;/Set&gt;
-</code>    &hellip;</p>
+    ...
+</code></pre>
 
 <p>上传证书到/opt/sonatype/nexus/etc/ssl并重命名为keystore.jks，（证书可以申请免费的证书一般一年的有效期，学习用足够了）</p>
 
 <h2 id="五-重起服务">五、重起服务</h2>
 
-<pre><code>docker restart  containerId     \#\# containerId 通过docker ps 可以查到
-</code></pre>
+<p>$$
+docker restart  containerId     ## containerId 通过docker ps 可以查到
+$$</p>
 
 <h2 id="六-访问测试">六、访问测试</h2>
 
@@ -205,6 +210,9 @@ nexus.clustered=false
 <p>以默认用户名admin和密码admin123，及时修改密码，根据业务添加相关用户</p>
 
 <p>到此nexus安装完成，关地nexus做为maven私服和docker私服，后续会有相关笔记分享，敬请关注！</p>
+
+<pre><code>
+</code></pre>
 
     <p class="mt-3">
     <ul class="tags">

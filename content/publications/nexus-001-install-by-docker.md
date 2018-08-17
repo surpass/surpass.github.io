@@ -47,7 +47,9 @@ sonatype/nexus3:3.13.0
 /opt/sonatype/nexus/etc/nexus-default.properties添加“application-port-ssl=8082” 和 修改nexus-args的值增加“${jetty.etc}/jetty-https.xml,”
 
 修改前
-<pre name="code" class="java">
+
+```
+ 
 \# Jetty section
 application-port=8081
 application-host=0.0.0.0
@@ -59,10 +61,13 @@ nexus-edition=nexus-pro-edition
 nexus-features=\
  nexus-pro-feature
 nexus.clustered=false
-</pre>
+ 
+```
 
 修改后
-<pre name="code" class="java">
+
+
+```
 \# Jetty section
 application-port=8081
 application-port-ssl=8082
@@ -75,13 +80,17 @@ nexus-edition=nexus-pro-edition
 nexus-features=\
  nexus-pro-feature
 nexus.clustered=false
-</pre>
+ 
+```
+
+
 
 四、启用https服务
 ---------
 修改容器内的${jetty.etc}/jetty-https.xml配置文件，并上传证书到/opt/sonatype/nexus/etc/ssl目录下
 
 修改内容为：
+
 ```
 <New id="sslContextFactory" class="org.eclipse.jetty.util.ssl.SslContextFactory">
     <Set name="KeyStorePath"><Property name="ssl.etc"/>/keystore.jks</Set>
@@ -89,14 +98,17 @@ nexus.clustered=false
     <Set name="KeyManagerPassword">fsdf!QAZ</Set>
     <Set name="TrustStorePath"><Property name="ssl.etc"/>/keystore.jks</Set>
     <Set name="TrustStorePassword">1qaz!QAZ</Set>
-```    ...
- 
+    ...
+```
+
 
 上传证书到/opt/sonatype/nexus/etc/ssl并重命名为keystore.jks，（证书可以申请免费的证书一般一年的有效期，学习用足够了）
 
 五、重起服务			
 ---------
-	docker restart  containerId		\#\# containerId 通过docker ps 可以查到
+$$
+docker restart  containerId		\#\# containerId 通过docker ps 可以查到
+$$
 
 六、访问测试
 ---------
@@ -108,3 +120,6 @@ nexus.clustered=false
    以默认用户名admin和密码admin123，及时修改密码，根据业务添加相关用户
 
 到此nexus安装完成，关地nexus做为maven私服和docker私服，后续会有相关笔记分享，敬请关注！
+```
+
+```
