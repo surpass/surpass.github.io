@@ -32,7 +32,6 @@ theme = "hugo-resume"
     showPublications = true
     showExperience = true
     showEducation = true
-
     showQr = true
 
 [[params.handles]]
@@ -43,3 +42,8 @@ theme = "hugo-resume"
 [[params.handles]]
     name = "GitHub"
     link = "https://github.com/surpass/"
+
+
+[[params.handles]]
+    name = "JavaEye"
+    link = "http://surpass-li.iteye.com/"

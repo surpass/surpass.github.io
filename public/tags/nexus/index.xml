@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Maven on Eddie Webb</title>
-    <link>https://www.easyolap.cn/tags/maven/</link>
-    <description>Recent content in Maven on Eddie Webb</description>
+    <title>Nexus on Eddie Webb</title>
+    <link>https://www.easyolap.cn/tags/nexus/</link>
+    <description>Recent content in Nexus on Eddie Webb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Thu, 16 Aug 2018 21:44:58 +0800</lastBuildDate>
     
-	<atom:link href="https://www.easyolap.cn/tags/maven/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.easyolap.cn/tags/nexus/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -26,15 +26,6 @@
 nexus-pro-feature nexus.clustered=false 
 修改后 # Jetty section application-port=8081 application-port-ssl=8082 application-host=0.0.0.0 nexus-args=${jetty.etc}/jetty.xml,${jetty.etc}/jetty-http.xml,${jetty.etc}/jetty-https.xml,${jetty.etc}/jetty-requestlog.xml nexus-context-path=/${NEXUS_CONTEXT}
 # Nexus section nexus-edition=nexus-pro-edition nexus-features=</description>
-    </item>
-    
-    <item>
-      <title>Docker image for Bitbucket CI/CD Pipelines  &#34;shipit&#34;</title>
-      <link>https://www.easyolap.cn/projects/creations/docker-marketplace/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.easyolap.cn/projects/creations/docker-marketplace/</guid>
-      <description>Provides required dependencies and additional utilities to simplify and codify the process of building, testing and delivering Atlassian plugins all the way to the live marketplace. Executes integration/AUT level tests against all stated compatible versions for the productUploads generated artifact to Atlassian marketplaceProvides corresponding metadata indicating version, release notes, and compatibility</description>
     </item>
     
   </channel>

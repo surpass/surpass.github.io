@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Organically DevOps: Building Quality and Security into the Software Supply Chain at Liberty Mutual</title>
-  <meta property="og:title" content="Organically DevOps: Building Quality and Security into the Software Supply Chain at Liberty Mutual" />
+  <title>Nexus install by docker！</title>
+  <meta property="og:title" content="Nexus install by docker！" />
   <meta property="og:image" content="https://www.easyolap.cn/img/TechChat.jpg" />
   <meta name="description" content="Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud.">
   <meta property="og:description" content="Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud." />
@@ -96,7 +96,7 @@
 
 
 <li class="breadcrumb-item active">
-  <a href="https://www.easyolap.cn/publications/alldaydevops/">Organically DevOps: Building Quality and Security into the Software Supply Chain at Liberty Mutual</a>
+  <a href="https://www.easyolap.cn/publications/nexus-001-install-by-docker/">Nexus install by docker！</a>
 </li>
 
   </ol>
@@ -107,39 +107,113 @@
 
 <section class="resume-section p-3 p-lg-5 d-flex d-column">
   <div class="my-auto">
-    <h2 class="mb-0"><span class="text-primary">Organically DevOps: Building Quality and Security into the Software Supply Chain at Liberty Mutual</span></h2>
-    <p><a href="http://www.alldaydevops.com/blog/organically-devops-building-quality-and-security-into-the-software-supply-chain-at-liberty-mutual">Link to full Talk</a></p>
-    <img src="/img/organicdevops.png" style="max-height:300px;max-width:30%;" align="right"/>
-    <p>This talk looked at Liberty Mutual’s transformation to Continuous Integration, Continuous Delivery, and DevOps. For a large, heavily regulated industry, this task can not only be daunting, but viewed by many as impossible. Often, organizations try to reduce the friction through micro-fixes, but Eddie’s team asked how to change the culture to reduce the friction and concluded with the following final points:</p>
+    <h2 class="mb-0"><span class="text-primary">Nexus install by docker！</span></h2>
+    <p><a href="https://www.sonatype.com/">Link to full Nexus</a></p>
+    <img src="/img/nexus/nexus.png" style="max-height:300px;max-width:30%;" align="right"/>
+    
 
-<ul>
-<li>Don’t mandate DevOps. Give employees the chance to master their discipline with examples to set and follow.</li>
-<li>Favor deep end-to-end accomplishments over broad but incremental steps forward. Focus on taking the right teams far before encouraging broad adoption.</li>
-<li>Centralize the platforms and tools that your teams shouldn’t be thinking about. Provide foundational services/commodities and let teams stay on purpose.</li>
-<li>Incorporate contributions from everyone; don’t stifle autonomy. Stay open to new ways of working.</li>
-<li>Challenge security policies, but respect intentions. Find new ways to enforce concerns without abandoning precaution.</li>
-</ul>
+<blockquote>
+<p>本文转载自：DevOps小站 官方网站，原文地址：<a href="https://www.easyolap.cn/publications/nexus-001-install-by-docker/">https://www.easyolap.cn/publications/nexus-001-install-by-docker/</a></p>
+</blockquote>
 
+<h2 id="一-环境准备">一、环境准备</h2>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/FsfKsqI07jM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+<pre><code>安装docker,本文使用的版本为docker Server Version: 17.11.0-ce
+定义域名和购买域名，制作私有证书或购买，本文采用已有域名，申请免费证书实现。
+</code></pre>
 
+<p>​</p>
+
+<h2 id="二-下载镜像并启协服务">二、下载镜像并启协服务</h2>
+
+<p>ATLASSIAN_HOME=/data/nexus/
+docker run -d <br />
+&ndash;name nexus <br />
+&ndash;hostname nexus <br />
+&ndash;user root:root <br />
+&ndash;restart always <br />
+-v $ATLASSIAN_HOME/work:/nexus-data <br />
+-p 8081:8081 <br />
+-p 8082:8082 <br />
+-p 6000-6010:6001-6010 <br />
+-e NEXUS_CONTEXT=nexus <br />
+sonatype/nexus3:3.13.0</p>
+
+<h2 id="三-修改容器内的配置文件">三、修改容器内的配置文件</h2>
+
+<p>/opt/sonatype/nexus/etc/nexus-default.properties添加“application-port-ssl=8082” 和 修改nexus-args的值增加“${jetty.etc}/jetty-https.xml,”</p>
+
+<p>修改前
+<pre name="code" class="java">
+# Jetty section
+application-port=8081
+application-host=0.0.0.0
+nexus-args=${jetty.etc}/jetty.xml,${jetty.etc}/jetty-http.xml,${jetty.etc}/jetty-requestlog.xml
+nexus-context-path=/${NEXUS_CONTEXT}</p>
+
+<p># Nexus section
+nexus-edition=nexus-pro-edition
+nexus-features=<br />
+ nexus-pro-feature
+nexus.clustered=false
+</pre></p>
+
+<p>修改后
+<pre name="code" class="java">
+# Jetty section
+application-port=8081
+application-port-ssl=8082
+application-host=0.0.0.0
+nexus-args=${jetty.etc}/jetty.xml,${jetty.etc}/jetty-http.xml,${jetty.etc}/jetty-https.xml,${jetty.etc}/jetty-requestlog.xml
+nexus-context-path=/${NEXUS_CONTEXT}</p>
+
+<p># Nexus section
+nexus-edition=nexus-pro-edition
+nexus-features=<br />
+ nexus-pro-feature
+nexus.clustered=false
+</pre></p>
+
+<h2 id="四-启用https服务">四、启用https服务</h2>
+
+<p>修改容器内的${jetty.etc}/jetty-https.xml配置文件，并上传证书到/opt/sonatype/nexus/etc/ssl目录下</p>
+
+<p>修改内容为：
+<code>
+&lt;New id=&quot;sslContextFactory&quot; class=&quot;org.eclipse.jetty.util.ssl.SslContextFactory&quot;&gt;
+    &lt;Set name=&quot;KeyStorePath&quot;&gt;&lt;Property name=&quot;ssl.etc&quot;/&gt;/keystore.jks&lt;/Set&gt;
+    &lt;Set name=&quot;KeyStorePassword&quot;&gt;fsdf!QAZ&lt;/Set&gt;
+    &lt;Set name=&quot;KeyManagerPassword&quot;&gt;fsdf!QAZ&lt;/Set&gt;
+    &lt;Set name=&quot;TrustStorePath&quot;&gt;&lt;Property name=&quot;ssl.etc&quot;/&gt;/keystore.jks&lt;/Set&gt;
+    &lt;Set name=&quot;TrustStorePassword&quot;&gt;1qaz!QAZ&lt;/Set&gt;
+</code>    &hellip;</p>
+
+<p>上传证书到/opt/sonatype/nexus/etc/ssl并重命名为keystore.jks，（证书可以申请免费的证书一般一年的有效期，学习用足够了）</p>
+
+<h2 id="五-重起服务">五、重起服务</h2>
+
+<pre><code>docker restart  containerId     \#\# containerId 通过docker ps 可以查到
+</code></pre>
+
+<h2 id="六-访问测试">六、访问测试</h2>
+
+<p>地址(domain.com根据自己的实际进行替换)
+    <a href="https://domain.com:8082/nexus/">https://domain.com:8082/nexus/</a></p>
+
+<h2 id="七-登录测试">七、登录测试</h2>
+
+<p>以默认用户名admin和密码admin123，及时修改密码，根据业务添加相关用户</p>
+
+<p>到此nexus安装完成，关地nexus做为maven私服和docker私服，后续会有相关笔记分享，敬请关注！</p>
 
     <p class="mt-3">
     <ul class="tags">
     
-      <li><a class="tag" href="/tags/devops">DevOps</a></li>
+      <li><a class="tag" href="/tags/nexus">Nexus</a></li>
     
-      <li><a class="tag" href="/tags/continuous-integration">Continuous Integration</a></li>
+      <li><a class="tag" href="/tags/docker">docker</a></li>
     
-      <li><a class="tag" href="/tags/continuous-delivery">Continuous Delivery</a></li>
-    
-      <li><a class="tag" href="/tags/ci/cd-pipelines">CI/CD pipelines</a></li>
-    
-      <li><a class="tag" href="/tags/agile">agile</a></li>
-    
-      <li><a class="tag" href="/tags/culture">Culture</a></li>
+      <li><a class="tag" href="/tags/maven">maven</a></li>
     
 </ul>
 

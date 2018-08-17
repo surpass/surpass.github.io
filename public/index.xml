@@ -111,6 +111,23 @@ cd mysql-5.6.32
     </item>
     
     <item>
+      <title>Nexus install by docker！</title>
+      <link>https://www.easyolap.cn/publications/nexus-001-install-by-docker/</link>
+      <pubDate>Thu, 16 Aug 2018 21:44:58 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/publications/nexus-001-install-by-docker/</guid>
+      <description>本文转载自：DevOps小站 官方网站，原文地址：https://www.easyolap.cn/publications/nexus-001-install-by-docker/
+ 一、环境准备 安装docker,本文使用的版本为docker Server Version: 17.11.0-ce 定义域名和购买域名，制作私有证书或购买，本文采用已有域名，申请免费证书实现。  ​
+二、下载镜像并启协服务 ATLASSIAN_HOME=/data/nexus/ docker run -d &amp;ndash;name nexus &amp;ndash;hostname nexus &amp;ndash;user root:root &amp;ndash;restart always -v $ATLASSIAN_HOME/work:/nexus-data -p 8081:8081 -p 8082:8082 -p 6000-6010:6001-6010 -e NEXUS_CONTEXT=nexus sonatype/nexus3:3.13.0
+三、修改容器内的配置文件 /opt/sonatype/nexus/etc/nexus-default.properties添加“application-port-ssl=8082” 和 修改nexus-args的值增加“${jetty.etc}/jetty-https.xml,”
+修改前 # Jetty section application-port=8081 application-host=0.0.0.0 nexus-args=${jetty.etc}/jetty.xml,${jetty.etc}/jetty-http.xml,${jetty.etc}/jetty-requestlog.xml nexus-context-path=/${NEXUS_CONTEXT}
+# Nexus section nexus-edition=nexus-pro-edition nexus-features=
+nexus-pro-feature nexus.clustered=false 
+修改后 # Jetty section application-port=8081 application-port-ssl=8082 application-host=0.0.0.0 nexus-args=${jetty.etc}/jetty.xml,${jetty.etc}/jetty-http.xml,${jetty.etc}/jetty-https.xml,${jetty.etc}/jetty-requestlog.xml nexus-context-path=/${NEXUS_CONTEXT}
+# Nexus section nexus-edition=nexus-pro-edition nexus-features=</description>
+    </item>
+    
+    <item>
       <title>Added Docker Build Status Badge to shields.io</title>
       <link>https://www.easyolap.cn/projects/contributions/shields-docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
