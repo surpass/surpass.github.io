@@ -1,5 +1,5 @@
 ---
-title: "Mysql源码安装！"
+title: "Mysql install by Docker！"
 date: 2017-07-31T21:44:58+08:00
 author: "Frank Li"
 authorlink: "https://surpass.github.io/public/about"
@@ -7,7 +7,7 @@ translator: "李在超"
 pubtype: "Talk"
 featured: true
 description: "采用docker运行mysql server."
-tags: ["mysql","docker","agile"]
+tags: ["mysql","docker","Agile","DevOps"]
 keywords: ["mysql","linus"]
 image: "/img/mysql.jpg"
 link: "https://www.mysql.com/"

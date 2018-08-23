@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kubernetes on Eddie Webb</title>
+    <link>https://www.easyolap.cn/tags/kubernetes/</link>
+    <description>Recent content in Kubernetes on Eddie Webb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 16 Aug 2018 21:44:58 +0800</lastBuildDate>
+    
+	<atom:link href="https://www.easyolap.cn/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nexus build docker image Repository ！</title>
+      <link>https://www.easyolap.cn/publications/nexus-002/</link>
+      <pubDate>Thu, 16 Aug 2018 21:44:58 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/publications/nexus-002/</guid>
+      <description>  本文转载自：DevOps小站 官方网站，原文地址：https://www.easyolap.cn/publications/nexus-002/
+ 一、环境准备 安装好Nexus3环境，安装方法参见地址：https://www.easyolap.cn/publications/nexus-001-install-by-docker/。  ​
+二、添加Docker镜像库用户（可选） 方法:  以管理员登录
+ 添加用户 (  三、创建本地镜像库 四、创建代理镜像库 五、创建分组镜像库 总结：   </description>
+    </item>
+    
+  </channel>
+</rss>

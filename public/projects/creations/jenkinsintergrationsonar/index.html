@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Jenkins集成sonar使项目分析可视化 ！</title>
+  <meta property="og:title" content="Jenkins集成sonar使项目分析可视化 ！" />
+  <meta property="og:image" content="https://www.easyolap.cn/img/TechChat.jpg" />
+  <meta name="description" content="Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud.">
+  <meta property="og:description" content="Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud." />
+  <meta name="author" content="Lee Frank">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+  
+  <link href="https://www.easyolap.cn/css/resume.css" rel="stylesheet">
+  <link href="https://www.easyolap.cn/css/tweaks.css" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.42" />
+  
+   
+  
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <span class="d-block d-lg-none">Lee Frank</span>
+    <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/TechChat.jpg" alt="">
+    </span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/about">About</a>
+      </li>
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#skills">Skills</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#projects">Projects</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#open">Open Source</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#publications">Publications</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#experience">Experience</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#education">Education</a>
+          </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <div class="container-fluid p-0">
+    
+<nav aria-label="breadcrumb">
+  <ol  class="breadcrumb">
+    
+
+
+
+
+
+
+
+<li class="breadcrumb-item">
+  <a href="https://www.easyolap.cn/">Home</a>
+</li>
+
+
+<li class="breadcrumb-item">
+  <a href="https://www.easyolap.cn/projects/">Projects</a>
+</li>
+
+
+<li class="breadcrumb-item">
+  <a href="https://www.easyolap.cn/projects/creations/">Creations</a>
+</li>
+
+
+<li class="breadcrumb-item active">
+  <a href="https://www.easyolap.cn/projects/creations/jenkinsintergrationsonar/">Jenkins集成sonar使项目分析可视化 ！</a>
+</li>
+
+  </ol>
+</nav>
+
+
+
+
+<section class="resume-section p-3 p-lg-5 d-flex d-column">
+  <div class="my-auto">
+    <h2 class="mb-0"><span class="text-primary">Jenkins集成sonar使项目分析可视化 ！</span></h2>
+    
+
+<blockquote>
+<p>本文转载自：DevOps小站 官方网站，原文地址：<a href="https://www.easyolap.cn/creations/JenkinsIntergrationSonar/">https://www.easyolap.cn/creations/JenkinsIntergrationSonar/</a></p>
+</blockquote>
+
+<p>Jenkins 集成sonar 可以提供一个dashboard给项目成员和管理者，提供一个一目了然的项目分析情况，Sonar在代码分析是非常有用的工具。下面就具体说说如何进行集成。</p>
+
+<p>实践目标
+ * 安装和配置jenkins中sonar插件
+ * 配置sonar scanner
+ * 修改scanner参数
+ * 执行构建</p>
+
+<h2 id="一-环境准备">一、环境准备</h2>
+
+<pre><code>本文主要说明的是 Jenkins集成sonar的过程和配置以及使用，所以相关准备工作请参照相关文档。
+以下是需要准备的环境
+</code></pre>
+
+<ul>
+<li>安装和配置sonar</li>
+<li>安装和配置Jenkins</li>
+<li>安装 sonar-scanner</li>
+</ul>
+
+<p>​</p>
+
+<h2 id="二-jenkins中sonar插件的安装">二、Jenkins中Sonar插件的安装</h2>
+
+<p>插件方式安装。
+ * 在Jenkins中SonarQube可能通过“jenkins -》插件管理”安装;</p>
+
+<p><img src="/img/sonar/sonar_1.png" alt="sonar_1" /></p>
+
+<p>采用phi 文件安装方式：
+ * 首先去这个url下载phi文件： <a href="http://updates.jenkins-ci.org/latest/sonar.hpi">http://updates.jenkins-ci.org/latest/sonar.hpi</a>    这个是sonar最新插件，需要jenkins 2.6以上版本，可怜只好升级了一把jenkins。</p>
+
+<pre><code>    准备好hpi文件，并升级jenkins，重启后，进入jenkins：
+
+    jenkins -》插件管理-》高级
+
+ ![sonar_2](/img/sonar/sonar_2.png)
+</code></pre>
+
+<h2 id="二-在jenkins中配置-sonarqube-server">二、在Jenkins中配置 sonarqube server</h2>
+
+<p>进入jenkins-》系统管理-》系统配置 后，就可以看到配置sonarqube server相关内容：</p>
+
+<p><img src="/img/sonar/sonar_5.png" alt="sonar_2" /></p>
+
+<p>“Add SonarQube”后现如下界面内容：
+<img src="/img/sonar/sonar_6.png" alt="sonar_2" /></p>
+
+<p>sonar的token如果忘记了可以sonerqube server的帐户-》安全-》用户中重新生成</p>
+
+<h2 id="三-配置-sonarqube-scanner">三、配置 SonarQube Scanner</h2>
+
+<p>进入jenkins-》系统管理-》全局工具配置 就可以看到SonarQube Scanner如下图：</p>
+
+<p><img src="/img/sonar/sonar_7.png" alt="sonar_2" /></p>
+
+<p>填写名称后去掉&rdquo;自动安装选项&rdquo;（此处可以用自动按装，由于网络问题我选择手动下载，解压后，在此配置&rdquo;SONAR_RUNNER_HOME&rdquo;）</p>
+
+<p><img src="/img/sonar/sonar_8.png" alt="sonar_2" /></p>
+
+<h2 id="四-配置工程的scanner参数">四、配置工程的scanner参数</h2>
+
+<ul>
+<li>进入工程的配置页面</li>
+<li>构建配置组中选择“增加构建后步骤”
+<img src="/img/sonar/sonar_9.png" alt="sonar_2" /></li>
+</ul>
+
+<p><img src="/img/sonar/sonar_10.png" alt="sonar_2" /></p>
+
+<p>在Analysis properties中填入以下内容：</p>
+
+<pre><code>sonar.host.url=http://10.10.171.220:9000/sonar
+sonar.projectKey=${projectName}
+sonar.projectName=${projectName}
+sonar.projectVersion=1.0.0
+sonar.sourceEncoding=UTF-8
+sonar.language=java
+sonar.sources=src
+sonar.java.binaries=target/classes
+</code></pre>
+
+<p>四、执行项目构建。
+如果构建成功，可以到sonarqube server中能看到相关报告。
+进入方式，因为jenkins已经与sonar集成了，所以在工程中有连接进入到sonarqube server,如下图：</p>
+
+<p><img src="/img/sonar/sonar_11.png" alt="sonar_2" /></p>
+
+    <p>Project link: <a href="http://www.sonarsource.com/">http://www.sonarsource.com/</a></p>
+    <ul class="tags">
+    
+      <li><a class="tag" href="/tags/nexus">Nexus</a></li>
+    
+      <li><a class="tag" href="/tags/maven">Maven</a></li>
+    
+      <li><a class="tag" href="/tags/docker">Docker</a></li>
+    
+      <li><a class="tag" href="/tags/agile">Agile</a></li>
+    
+      <li><a class="tag" href="/tags/devops">DevOps</a></li>
+    
+</ul>
+
+  </div>
+</section>
+
+
+    <span style="color: #999999; font-size: 60%;">Nifty <a href="https://codepen.io/wbeeftink/pen/dIaDH">tech tag lists</a> from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a> 辽ICP备18011987号-1 </span>
+    
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  
+  <script src="/js/resume.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '');
+  </script>
+  
+
+  
+</body>
+</html>

@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Eddie Webb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 15 Jun 2018 21:56:26 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 16 Aug 2018 21:44:58 +0800</lastBuildDate>
     
 	<atom:link href="https://www.easyolap.cn/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,63 +14,18 @@
     <item>
       <title>Agile</title>
       <link>https://www.easyolap.cn/tags/agile/</link>
-      <pubDate>Fri, 15 Jun 2018 21:56:26 +0800</pubDate>
+      <pubDate>Thu, 16 Aug 2018 21:44:58 +0800</pubDate>
       
       <guid>https://www.easyolap.cn/tags/agile/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Atlassian Developer Ecosystem</title>
-      <link>https://www.easyolap.cn/tags/atlassian-developer-ecosystem/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.easyolap.cn/tags/atlassian-developer-ecosystem/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Atlassian Ecosystem</title>
-      <link>https://www.easyolap.cn/tags/atlassian-ecosystem/</link>
-      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
-      
-      <guid>https://www.easyolap.cn/tags/atlassian-ecosystem/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bamboo</title>
-      <link>https://www.easyolap.cn/tags/bamboo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.easyolap.cn/tags/bamboo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Bash/Shell</title>
       <link>https://www.easyolap.cn/tags/bash/shell/</link>
-      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <pubDate>Sat, 18 Aug 2018 12:41:05 -0500</pubDate>
       
       <guid>https://www.easyolap.cn/tags/bash/shell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bitbucket</title>
-      <link>https://www.easyolap.cn/tags/bitbucket/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.easyolap.cn/tags/bitbucket/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bosh</title>
-      <link>https://www.easyolap.cn/tags/bosh/</link>
-      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
-      
-      <guid>https://www.easyolap.cn/tags/bosh/</guid>
       <description></description>
     </item>
     
@@ -80,15 +35,6 @@
       <pubDate>Fri, 15 Jun 2018 21:56:26 +0800</pubDate>
       
       <guid>https://www.easyolap.cn/tags/ci/cd-pipelines/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Confluence</title>
-      <link>https://www.easyolap.cn/tags/confluence/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.easyolap.cn/tags/confluence/</guid>
       <description></description>
     </item>
     
@@ -122,7 +68,7 @@
     <item>
       <title>Devops</title>
       <link>https://www.easyolap.cn/tags/devops/</link>
-      <pubDate>Fri, 15 Jun 2018 21:56:26 +0800</pubDate>
+      <pubDate>Thu, 16 Aug 2018 21:44:58 +0800</pubDate>
       
       <guid>https://www.easyolap.cn/tags/devops/</guid>
       <description></description>
@@ -131,7 +77,7 @@
     <item>
       <title>Docker</title>
       <link>https://www.easyolap.cn/tags/docker/</link>
-      <pubDate>Fri, 15 Jun 2018 21:56:26 +0800</pubDate>
+      <pubDate>Thu, 16 Aug 2018 21:44:58 +0800</pubDate>
       
       <guid>https://www.easyolap.cn/tags/docker/</guid>
       <description></description>
@@ -140,45 +86,18 @@
     <item>
       <title>Java</title>
       <link>https://www.easyolap.cn/tags/java/</link>
-      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <pubDate>Sat, 18 Aug 2018 12:41:05 -0500</pubDate>
       
       <guid>https://www.easyolap.cn/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Javascript</title>
-      <link>https://www.easyolap.cn/tags/javascript/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Kubernetes</title>
+      <link>https://www.easyolap.cn/tags/kubernetes/</link>
+      <pubDate>Thu, 16 Aug 2018 21:44:58 +0800</pubDate>
       
-      <guid>https://www.easyolap.cn/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Jira</title>
-      <link>https://www.easyolap.cn/tags/jira/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.easyolap.cn/tags/jira/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Jquery</title>
-      <link>https://www.easyolap.cn/tags/jquery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.easyolap.cn/tags/jquery/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Json</title>
-      <link>https://www.easyolap.cn/tags/json/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.easyolap.cn/tags/json/</guid>
+      <guid>https://www.easyolap.cn/tags/kubernetes/</guid>
       <description></description>
     </item>
     
@@ -192,9 +111,18 @@
     </item>
     
     <item>
+      <title>Microservice</title>
+      <link>https://www.easyolap.cn/tags/microservice/</link>
+      <pubDate>Sat, 18 Aug 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://www.easyolap.cn/tags/microservice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Monit</title>
       <link>https://www.easyolap.cn/tags/monit/</link>
-      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <pubDate>Sat, 18 Aug 2018 12:41:05 -0500</pubDate>
       
       <guid>https://www.easyolap.cn/tags/monit/</guid>
       <description></description>
@@ -219,18 +147,9 @@
     </item>
     
     <item>
-      <title>Node.js</title>
-      <link>https://www.easyolap.cn/tags/node.js/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.easyolap.cn/tags/node.js/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Python</title>
       <link>https://www.easyolap.cn/tags/python/</link>
-      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <pubDate>Sat, 18 Aug 2018 12:41:05 -0500</pubDate>
       
       <guid>https://www.easyolap.cn/tags/python/</guid>
       <description></description>
@@ -239,25 +158,16 @@
     <item>
       <title>Rest Apis</title>
       <link>https://www.easyolap.cn/tags/rest-apis/</link>
-      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <pubDate>Sat, 18 Aug 2018 12:41:05 -0500</pubDate>
       
       <guid>https://www.easyolap.cn/tags/rest-apis/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Spring</title>
-      <link>https://www.easyolap.cn/tags/spring/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.easyolap.cn/tags/spring/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Xml/Xslt</title>
       <link>https://www.easyolap.cn/tags/xml/xslt/</link>
-      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <pubDate>Sat, 18 Aug 2018 12:41:05 -0500</pubDate>
       
       <guid>https://www.easyolap.cn/tags/xml/xslt/</guid>
       <description></description>

@@ -7,12 +7,12 @@ translator: "李在超"
 pubtype: "Nexus"
 featured: true
 description: "Nexus3不仅集成了 maven 、npm 等仓库功能，而且支持 Docker了,通过实验，发现 Nexus 3 能够基本满足需求."
-tags: ["Nexus","docker","maven"]
+tags: ["Nexus","Maven","Docker","Agile","DevOps"]
 keywords: ["Nexus","docker"]
 image: "/img/nexus/nexus.png"
 link: "https://www.sonatype.com/"
 fact: ""
-weight: 500
+weight: 300
 sitemap:
   priority : 0.8
 ---

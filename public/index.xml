@@ -12,12 +12,49 @@
     
     
     <item>
-      <title>Atlassian Deployment Triggers</title>
-      <link>https://www.easyolap.cn/projects/contributions/deploy-triggers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Jenkins集成sonar使项目分析可视化 ！</title>
+      <link>https://www.easyolap.cn/projects/creations/jenkinsintergrationsonar/</link>
+      <pubDate>Thu, 16 Aug 2018 21:44:58 +0800</pubDate>
       
-      <guid>https://www.easyolap.cn/projects/contributions/deploy-triggers/</guid>
-      <description>Addressed pretty significant page load performance issue founde in larger deployments. Eliminates uses of intensive backend query, replacing it with an asynchronous API call against a lucene index. This change reduces page load from from 2+ minutes to nearly instant, with an incredibly responsive UI.</description>
+      <guid>https://www.easyolap.cn/projects/creations/jenkinsintergrationsonar/</guid>
+      <description>本文转载自：DevOps小站 官方网站，原文地址：https://www.easyolap.cn/creations/JenkinsIntergrationSonar/
+ Jenkins 集成sonar 可以提供一个dashboard给项目成员和管理者，提供一个一目了然的项目分析情况，Sonar在代码分析是非常有用的工具。下面就具体说说如何进行集成。
+实践目标 * 安装和配置jenkins中sonar插件 * 配置sonar scanner * 修改scanner参数 * 执行构建
+一、环境准备 本文主要说明的是 Jenkins集成sonar的过程和配置以及使用，所以相关准备工作请参照相关文档。 以下是需要准备的环境   安装和配置sonar 安装和配置Jenkins 安装 sonar-scanner  ​
+二、Jenkins中Sonar插件的安装 插件方式安装。 * 在Jenkins中SonarQube可能通过“jenkins -》插件管理”安装;
+采用phi 文件安装方式： * 首先去这个url下载phi文件： http://updates.jenkins-ci.org/latest/sonar.hpi 这个是sonar最新插件，需要jenkins 2.6以上版本，可怜只好升级了一把jenkins。
+ 准备好hpi文件，并升级jenkins，重启后，进入jenkins： jenkins -》插件管理-》高级 ![sonar_2](/img/sonar/sonar_2.png)  二、在Jenkins中配置 sonarqube server 进入jenkins-》系统管理-》系统配置 后，就可以看到配置sonarqube server相关内容：
+“Add SonarQube”后现如下界面内容： sonar的token如果忘记了可以sonerqube server的帐户-》安全-》用户中重新生成
+三、配置 SonarQube Scanner 进入jenkins-》系统管理-》全局工具配置 就可以看到SonarQube Scanner如下图：
+填写名称后去掉&amp;rdquo;自动安装选项&amp;rdquo;（此处可以用自动按装，由于网络问题我选择手动下载，解压后，在此配置&amp;rdquo;SONAR_RUNNER_HOME&amp;rdquo;）
+四、配置工程的scanner参数  进入工程的配置页面 构建配置组中选择“增加构建后步骤”   在Analysis properties中填入以下内容：</description>
+    </item>
+    
+    <item>
+      <title>Nexus build docker image Repository ！</title>
+      <link>https://www.easyolap.cn/publications/nexus-002/</link>
+      <pubDate>Thu, 16 Aug 2018 21:44:58 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/publications/nexus-002/</guid>
+      <description>  本文转载自：DevOps小站 官方网站，原文地址：https://www.easyolap.cn/publications/nexus-002/
+ 一、环境准备 安装好Nexus3环境，安装方法参见地址：https://www.easyolap.cn/publications/nexus-001-install-by-docker/。  ​
+二、添加Docker镜像库用户（可选） 方法:  以管理员登录
+ 添加用户 (  三、创建本地镜像库 四、创建代理镜像库 五、创建分组镜像库 总结：   </description>
+    </item>
+    
+    <item>
+      <title>Nexus install by docker！</title>
+      <link>https://www.easyolap.cn/publications/nexus-001-install-by-docker/</link>
+      <pubDate>Thu, 16 Aug 2018 21:44:58 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/publications/nexus-001-install-by-docker/</guid>
+      <description>本文转载自：DevOps小站 官方网站，原文地址：https://www.easyolap.cn/publications/nexus-001-install-by-docker/
+ 一、环境准备 安装docker,本文使用的版本为docker Server Version: 17.11.0-ce 定义域名和购买域名，制作私有证书或购买，本文采用已有域名，申请免费证书实现。  ​
+二、下载镜像并启协服务 ATLASSIAN_HOME=/data/nexus/ docker run -d &amp;ndash;name nexus &amp;ndash;hostname nexus &amp;ndash;user root:root &amp;ndash;restart always -v $ATLASSIAN_HOME/work:/nexus-data -p 8081:8081 -p 8082:8082 -p 6000-6010:6001-6010 -e NEXUS_CONTEXT=nexus sonatype/nexus3:3.13.0
+三、修改容器内的配置文件 /opt/sonatype/nexus/etc/nexus-default.properties添加“application-port-ssl=8082” 和 修改nexus-args的值增加“${jetty.etc}/jetty-https.xml,”
+修改前
+ \# Jetty section application-port=8081 application-host=0.0.0.0 nexus-args=${jetty.etc}/jetty.xml,${jetty.etc}/jetty-http.xml,${jetty.etc}/jetty-requestlog.xml nexus-context-path=/${NEXUS_CONTEXT} \# Nexus section nexus-edition=nexus-pro-edition nexus-features=\ nexus-pro-feature nexus.clustered=false  修改后
+\# Jetty section application-port=8081 application-port-ssl=8082 application-host=0.0.0.0 nexus-args=${jetty.etc}/jetty.xml,${jetty.etc}/jetty-http.xml,${jetty.etc}/jetty-https.xml,${jetty.etc}/jetty-requestlog.xml nexus-context-path=/${NEXUS_CONTEXT} \# Nexus section nexus-edition=nexus-pro-edition nexus-features=\ nexus-pro-feature nexus.</description>
     </item>
     
     <item>
@@ -39,7 +76,7 @@
     </item>
     
     <item>
-      <title>Mysql源码安装！</title>
+      <title>Mysql install by Docker！</title>
       <link>https://www.easyolap.cn/publications/mysql-by-docker/</link>
       <pubDate>Mon, 31 Jul 2017 21:44:58 +0800</pubDate>
       
@@ -101,61 +138,12 @@ cd mysql-5.6.32
     </item>
     
     <item>
-      <title>Organically DevOps: Building Quality and Security into the Software Supply Chain at Liberty Mutual</title>
-      <link>https://www.easyolap.cn/publications/alldaydevops/</link>
-      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      <title>记录DevOps实施与推广相关知识</title>
+      <link>https://www.easyolap.cn/projects/creations/devops-wiki/</link>
+      <pubDate>Sat, 18 Aug 2018 12:41:05 -0500</pubDate>
       
-      <guid>https://www.easyolap.cn/publications/alldaydevops/</guid>
-      <description>This talk looked at Liberty Mutual’s transformation to Continuous Integration, Continuous Delivery, and DevOps. For a large, heavily regulated industry, this task can not only be daunting, but viewed by many as impossible. Often, organizations try to reduce the friction through micro-fixes, but Eddie’s team asked how to change the culture to reduce the friction and concluded with the following final points:
- Don’t mandate DevOps. Give employees the chance to master their discipline with examples to set and follow.</description>
-    </item>
-    
-    <item>
-      <title>Nexus install by docker！</title>
-      <link>https://www.easyolap.cn/publications/nexus-001-install-by-docker/</link>
-      <pubDate>Thu, 16 Aug 2018 21:44:58 +0800</pubDate>
-      
-      <guid>https://www.easyolap.cn/publications/nexus-001-install-by-docker/</guid>
-      <description>本文转载自：DevOps小站 官方网站，原文地址：https://www.easyolap.cn/publications/nexus-001-install-by-docker/
- 一、环境准备 安装docker,本文使用的版本为docker Server Version: 17.11.0-ce 定义域名和购买域名，制作私有证书或购买，本文采用已有域名，申请免费证书实现。  ​
-二、下载镜像并启协服务 ATLASSIAN_HOME=/data/nexus/ docker run -d &amp;ndash;name nexus &amp;ndash;hostname nexus &amp;ndash;user root:root &amp;ndash;restart always -v $ATLASSIAN_HOME/work:/nexus-data -p 8081:8081 -p 8082:8082 -p 6000-6010:6001-6010 -e NEXUS_CONTEXT=nexus sonatype/nexus3:3.13.0
-三、修改容器内的配置文件 /opt/sonatype/nexus/etc/nexus-default.properties添加“application-port-ssl=8082” 和 修改nexus-args的值增加“${jetty.etc}/jetty-https.xml,”
-修改前
- \# Jetty section application-port=8081 application-host=0.0.0.0 nexus-args=${jetty.etc}/jetty.xml,${jetty.etc}/jetty-http.xml,${jetty.etc}/jetty-requestlog.xml nexus-context-path=/${NEXUS_CONTEXT} \# Nexus section nexus-edition=nexus-pro-edition nexus-features=\ nexus-pro-feature nexus.clustered=false  修改后
-\# Jetty section application-port=8081 application-port-ssl=8082 application-host=0.0.0.0 nexus-args=${jetty.etc}/jetty.xml,${jetty.etc}/jetty-http.xml,${jetty.etc}/jetty-https.xml,${jetty.etc}/jetty-requestlog.xml nexus-context-path=/${NEXUS_CONTEXT} \# Nexus section nexus-edition=nexus-pro-edition nexus-features=\ nexus-pro-feature nexus.</description>
-    </item>
-    
-    <item>
-      <title>Nexus install by docker！</title>
-      <link>https://www.easyolap.cn/publications/nexus-002-docker-regis/</link>
-      <pubDate>Thu, 16 Aug 2018 21:44:58 +0800</pubDate>
-      
-      <guid>https://www.easyolap.cn/publications/nexus-002-docker-regis/</guid>
-      <description>本文转载自：DevOps小站 官方网站，原文地址：https://www.easyolap.cn/publications/nexus-001-install-by-docker/
- 一、环境准备 安装docker,本文使用的版本为docker Server Version: 17.11.0-ce 定义域名和购买域名，制作私有证书或购买，本文采用已有域名，申请免费证书实现。  ​
-二、下载镜像并启协服务 ATLASSIAN_HOME=/data/nexus/ docker run -d &amp;ndash;name nexus &amp;ndash;hostname nexus &amp;ndash;user root:root &amp;ndash;restart always -v $ATLASSIAN_HOME/work:/nexus-data -p 8081:8081 -p 8082:8082 -p 6000-6010:6001-6010 -e NEXUS_CONTEXT=nexus sonatype/nexus3:3.13.0
-三、修改容器内的配置文件 /opt/sonatype/nexus/etc/nexus-default.properties添加“application-port-ssl=8082” 和 修改nexus-args的值增加“${jetty.etc}/jetty-https.xml,”
-修改前
- \# Jetty section application-port=8081 application-host=0.0.0.0 nexus-args=${jetty.etc}/jetty.xml,${jetty.etc}/jetty-http.xml,${jetty.etc}/jetty-requestlog.xml nexus-context-path=/${NEXUS_CONTEXT} \# Nexus section nexus-edition=nexus-pro-edition nexus-features=\ nexus-pro-feature nexus.clustered=false  修改后
-\# Jetty section application-port=8081 application-port-ssl=8082 application-host=0.0.0.0 nexus-args=${jetty.etc}/jetty.xml,${jetty.etc}/jetty-http.xml,${jetty.etc}/jetty-https.xml,${jetty.etc}/jetty-requestlog.xml nexus-context-path=/${NEXUS_CONTEXT} \# Nexus section nexus-edition=nexus-pro-edition nexus-features=\ nexus-pro-feature nexus.</description>
-    </item>
-    
-    <item>
-      <title>Added Docker Build Status Badge to shields.io</title>
-      <link>https://www.easyolap.cn/projects/contributions/shields-docker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.easyolap.cn/projects/contributions/shields-docker/</guid>
-      <description>Shields.io is a massive library of badges that can be inserted into project README&amp;rsquo;s or websites displaying various statuses (code coverage, health, version, etc). Support for docker was missing the current build health, and was a pretty trivial addition.</description>
-    </item>
-    
-    <item>
-      <title>Schema.org Structured Data documentation fixes</title>
-      <link>https://www.easyolap.cn/projects/contributions/schema-org/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.easyolap.cn/projects/contributions/schema-org/</guid>
-      <description>While adding Structured Data to a client&amp;rsquo;s website I found some example JSON that was invalid. Simple contribution to cleanup the user documentation providing syntactically valid JSON documents.</description>
+      <guid>https://www.easyolap.cn/projects/creations/devops-wiki/</guid>
+      <description>整理中，敬请期待&amp;hellip;</description>
     </item>
     
     <item>
@@ -164,35 +152,8 @@ cd mysql-5.6.32
       <pubDate>Fri, 15 Jun 2018 08:55:31 +0800</pubDate>
       
       <guid>https://www.easyolap.cn/about/</guid>
-      <description>大家好，我叫 Frank Li，是一名程序员。 我的经历  1999-2002 沈阳工程学院信息工程系 2007-2012 辽宁广播电视大学(本科，工商管理专业) 2002-2005 测试开发（东软）。 2005-2006 JAVA程序员（千像公司，互联网公司） 2006-2007 程序员（新思软件，软件外包） 2007-2008 架构师（盛生医药，合伙创业电子商务） 2009-2009 架构师（智诚祥科技，政府项目） 2010-至今 资深软件工程师，技术负责人（东软）  我的技能  编程语言：JAVA,了解PHP,Python，捣鼓 Go…… 熟练使用Ofbiz,spring boot等流行框架;熟悉webservice和微服务; 熟练使用Maven对项目进行模块化管理和组织; 掌握Nexus server搭建私有maven仓库和Docker仓库; 掌握jenkins持续集成工具与流程,了解DevOps思想和工具;熟悉JIRA用其管理项目; 熟悉Confluence对知识的管理，积累经验提高团队的战斗力; 掌握Linux下makefile;了解Android开发; 能够熟练操作和使用Mysql、Oracle等数据库;熟练操作cassandra,hbase等nosql数据库 掌握docker虚拟化技术,撑握Dockerfile以及k8s模板编写; 成功实施过kubernetes 1.9.1; 熟练使用Linux操作系统,进行运营环境的部署; 熟悉Tomcat等服务器的使用和部署; 熟悉Selenium、dbunit和Junit/testng进行自动化/半自动化测试; 了解apache spark/beam大数据处理工具; 熟悉软件开发的整个周期;能够使用和指导使用分布式版本控制工具进行多地团队合作开发;  生活中的我  喜欢思考，对未知世界保持好奇心。 有点宅。  一些链接  JAVAEYE博客：surpass-li.iteye.com Github: github.com/surpass Email：surpass_li@aliyun.com(surpass.li@gmail.com) 微信号：s46488820
+      <description>大家好，我叫 Frank Li，是一名程序员。 我的经历  1999-2002 沈阳工程学院信息工程系 2007-2012 辽宁广播电视大学(本科，工商管理专业) 2002-2005 测试开发（东软）。 2005-2006 JAVA程序员（千像公司，互联网公司） 2006-2007 程序员（新思软件，软件外包） 2007-2008 架构师（盛生医药，合伙创业电子商务） 2009-2009 架构师（智诚祥科技，政府项目） 2010-至今 资深软件工程师，技术负责人（东软）  我的技能  编程语言：JAVA,了解PHP,Python，捣鼓 Go…… 熟练使用Ofbiz,spring boot等流行框架,熟悉RESTful,webservice,microservice等web服务架构; 熟练使用Maven对项目进行模块化管理和组织; 掌握Nexus server搭建，熟练构建私有maven仓库和Docker镜像库; 掌握jenkins持续集成工具与流程,了解DevOps思想和工具,在项目应用让生产端变得敏捷; 熟悉JIRA搭建，并用其进行管理项目; 熟悉Confluence对知识的管理，积累经验提高团队的战斗力; 掌握Linux下makefile;了解Android开发; 能够熟练操作和使用Mysql、Oracle等数据库;熟练操作cassandra,hbase等nosql数据库 掌握docker虚拟化技术,撑握Dockerfile以及k8s模板编写; 成功实施过kubernetes 1.9.1; 熟练使用Linux操作系统,进行运营环境的部署; 熟悉Tomcat等服务器的使用和部署; 熟悉Selenium、dbunit和Junit/testng进行自动化/半自动化测试; 了解apache spark/beam大数据处理工具; 熟悉软件开发的整个周期;能够使用和指导使用分布式版本控制工具进行多地团队合作开发;  生活中的我  喜欢思考，对未知世界保持好奇心。 有点宅。  一些链接  JAVAEYE博客：surpass-li.iteye.com Github: github.com/surpass Email：surpass_li@aliyun.com(surpass.li@gmail.com) 微信号：s46488820
   声明 本博客所有文章皆为原创。转载请注明原文链接，并最好与本人联系。谢谢！</description>
-    </item>
-    
-    <item>
-      <title>BOSH release for Bamboo &amp; Remote Agents</title>
-      <link>https://www.easyolap.cn/projects/creations/bosh-agents/</link>
-      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
-      
-      <guid>https://www.easyolap.cn/projects/creations/bosh-agents/</guid>
-      <description>BOSH (Bosh Outer SHell) &amp;ldquo;&amp;hellip; is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.&amp;rdquo; And it&amp;rsquo;s amazingly powerful. This examples uses BOSH to provision an Alassian vendor app running on JDK along with the support Postgres database and agents to support it. The releases manages the health of services and will automatically provision, start/stop processes across the various services.</description>
-    </item>
-    
-    <item>
-      <title>Atlassian Marketplace Plugins</title>
-      <link>https://www.easyolap.cn/projects/creations/marketplace/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.easyolap.cn/projects/creations/marketplace/</guid>
-      <description>Multiple plugins used by thousands of teams that provide enhanced functionality of Atlassian’s core products (primarily JIRA and Bamboo) to enrich CI/CD capabilities, DevOps automation, or productivity. Functionality spans user interface, web services and persistence.</description>
-    </item>
-    
-    <item>
-      <title>Docker image for Bitbucket CI/CD Pipelines  &#34;shipit&#34;</title>
-      <link>https://www.easyolap.cn/projects/creations/docker-marketplace/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.easyolap.cn/projects/creations/docker-marketplace/</guid>
-      <description>Provides required dependencies and additional utilities to simplify and codify the process of building, testing and delivering Atlassian plugins all the way to the live marketplace. Executes integration/AUT level tests against all stated compatible versions for the productUploads generated artifact to Atlassian marketplaceProvides corresponding metadata indicating version, release notes, and compatibility</description>
     </item>
     
     <item>

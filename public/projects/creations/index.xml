@@ -6,36 +6,37 @@
     <description>Recent content in Creations on Eddie Webb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 11 Feb 2018 12:41:05 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 16 Aug 2018 21:44:58 +0800</lastBuildDate>
     
 	<atom:link href="https://www.easyolap.cn/projects/creations/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>BOSH release for Bamboo &amp; Remote Agents</title>
-      <link>https://www.easyolap.cn/projects/creations/bosh-agents/</link>
-      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <title>Jenkins集成sonar使项目分析可视化 ！</title>
+      <link>https://www.easyolap.cn/projects/creations/jenkinsintergrationsonar/</link>
+      <pubDate>Thu, 16 Aug 2018 21:44:58 +0800</pubDate>
       
-      <guid>https://www.easyolap.cn/projects/creations/bosh-agents/</guid>
-      <description>BOSH (Bosh Outer SHell) &amp;ldquo;&amp;hellip; is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.&amp;rdquo; And it&amp;rsquo;s amazingly powerful. This examples uses BOSH to provision an Alassian vendor app running on JDK along with the support Postgres database and agents to support it. The releases manages the health of services and will automatically provision, start/stop processes across the various services.</description>
+      <guid>https://www.easyolap.cn/projects/creations/jenkinsintergrationsonar/</guid>
+      <description>本文转载自：DevOps小站 官方网站，原文地址：https://www.easyolap.cn/creations/JenkinsIntergrationSonar/
+ Jenkins 集成sonar 可以提供一个dashboard给项目成员和管理者，提供一个一目了然的项目分析情况，Sonar在代码分析是非常有用的工具。下面就具体说说如何进行集成。
+实践目标 * 安装和配置jenkins中sonar插件 * 配置sonar scanner * 修改scanner参数 * 执行构建
+一、环境准备 本文主要说明的是 Jenkins集成sonar的过程和配置以及使用，所以相关准备工作请参照相关文档。 以下是需要准备的环境   安装和配置sonar 安装和配置Jenkins 安装 sonar-scanner  ​
+二、Jenkins中Sonar插件的安装 插件方式安装。 * 在Jenkins中SonarQube可能通过“jenkins -》插件管理”安装;
+采用phi 文件安装方式： * 首先去这个url下载phi文件： http://updates.jenkins-ci.org/latest/sonar.hpi 这个是sonar最新插件，需要jenkins 2.6以上版本，可怜只好升级了一把jenkins。
+ 准备好hpi文件，并升级jenkins，重启后，进入jenkins： jenkins -》插件管理-》高级 ![sonar_2](/img/sonar/sonar_2.png)  二、在Jenkins中配置 sonarqube server 进入jenkins-》系统管理-》系统配置 后，就可以看到配置sonarqube server相关内容：
+“Add SonarQube”后现如下界面内容： sonar的token如果忘记了可以sonerqube server的帐户-》安全-》用户中重新生成
+三、配置 SonarQube Scanner 进入jenkins-》系统管理-》全局工具配置 就可以看到SonarQube Scanner如下图：
+填写名称后去掉&amp;rdquo;自动安装选项&amp;rdquo;（此处可以用自动按装，由于网络问题我选择手动下载，解压后，在此配置&amp;rdquo;SONAR_RUNNER_HOME&amp;rdquo;）
+四、配置工程的scanner参数  进入工程的配置页面 构建配置组中选择“增加构建后步骤”   在Analysis properties中填入以下内容：</description>
     </item>
     
     <item>
-      <title>Atlassian Marketplace Plugins</title>
-      <link>https://www.easyolap.cn/projects/creations/marketplace/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>记录DevOps实施与推广相关知识</title>
+      <link>https://www.easyolap.cn/projects/creations/devops-wiki/</link>
+      <pubDate>Sat, 18 Aug 2018 12:41:05 -0500</pubDate>
       
-      <guid>https://www.easyolap.cn/projects/creations/marketplace/</guid>
-      <description>Multiple plugins used by thousands of teams that provide enhanced functionality of Atlassian’s core products (primarily JIRA and Bamboo) to enrich CI/CD capabilities, DevOps automation, or productivity. Functionality spans user interface, web services and persistence.</description>
-    </item>
-    
-    <item>
-      <title>Docker image for Bitbucket CI/CD Pipelines  &#34;shipit&#34;</title>
-      <link>https://www.easyolap.cn/projects/creations/docker-marketplace/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.easyolap.cn/projects/creations/docker-marketplace/</guid>
-      <description>Provides required dependencies and additional utilities to simplify and codify the process of building, testing and delivering Atlassian plugins all the way to the live marketplace. Executes integration/AUT level tests against all stated compatible versions for the productUploads generated artifact to Atlassian marketplaceProvides corresponding metadata indicating version, release notes, and compatibility</description>
+      <guid>https://www.easyolap.cn/projects/creations/devops-wiki/</guid>
+      <description>整理中，敬请期待&amp;hellip;</description>
     </item>
     
   </channel>
