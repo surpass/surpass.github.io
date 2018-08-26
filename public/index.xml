@@ -23,7 +23,7 @@
 一、环境准备 本文主要说明的是 Jenkins集成sonar的过程和配置以及使用，所以相关准备工作请参照相关文档。 以下是需要准备的环境   安装和配置sonar 安装和配置Jenkins 安装 sonar-scanner  ​
 二、Jenkins中Sonar插件的安装 插件方式安装。 * 在Jenkins中SonarQube可能通过“jenkins -》插件管理”安装;
 采用phi 文件安装方式： * 首先去这个url下载phi文件： http://updates.jenkins-ci.org/latest/sonar.hpi 这个是sonar最新插件，需要jenkins 2.6以上版本，可怜只好升级了一把jenkins。
- 准备好hpi文件，并升级jenkins，重启后，进入jenkins： jenkins -》插件管理-》高级 ![sonar_2](/img/sonar/sonar_2.png)  二、在Jenkins中配置 sonarqube server 进入jenkins-》系统管理-》系统配置 后，就可以看到配置sonarqube server相关内容：
+ 准备好hpi文件，并升级jenkins，重启后，进入jenkins： jenkins -》插件管理-》高级  二、在Jenkins中配置 sonarqube server 进入jenkins-》系统管理-》系统配置 后，就可以看到配置sonarqube server相关内容：
 “Add SonarQube”后现如下界面内容： sonar的token如果忘记了可以sonerqube server的帐户-》安全-》用户中重新生成
 三、配置 SonarQube Scanner 进入jenkins-》系统管理-》全局工具配置 就可以看到SonarQube Scanner如下图：
 填写名称后去掉&amp;rdquo;自动安装选项&amp;rdquo;（此处可以用自动按装，由于网络问题我选择手动下载，解压后，在此配置&amp;rdquo;SONAR_RUNNER_HOME&amp;rdquo;）
@@ -55,6 +55,26 @@
 修改前
  \# Jetty section application-port=8081 application-host=0.0.0.0 nexus-args=${jetty.etc}/jetty.xml,${jetty.etc}/jetty-http.xml,${jetty.etc}/jetty-requestlog.xml nexus-context-path=/${NEXUS_CONTEXT} \# Nexus section nexus-edition=nexus-pro-edition nexus-features=\ nexus-pro-feature nexus.clustered=false  修改后
 \# Jetty section application-port=8081 application-port-ssl=8082 application-host=0.0.0.0 nexus-args=${jetty.etc}/jetty.xml,${jetty.etc}/jetty-http.xml,${jetty.etc}/jetty-https.xml,${jetty.etc}/jetty-requestlog.xml nexus-context-path=/${NEXUS_CONTEXT} \# Nexus section nexus-edition=nexus-pro-edition nexus-features=\ nexus-pro-feature nexus.</description>
+    </item>
+    
+    <item>
+      <title>golang学习笔记-关于数组，切片，映射</title>
+      <link>https://www.easyolap.cn/publications/golang-001/</link>
+      <pubDate>Sat, 25 Aug 2018 21:44:58 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/publications/golang-001/</guid>
+      <description> 本文转载自：DevOps小站 官方网站，原文地址：https://www.easyolap.cn/publications/golang-001
+ 数组、切片和映射小结
+ 数组是构造切片和映射的基石。
+ Go语言里切片经常用来处理数据的集合，映射用来处理具有键值对结构的数据。
+ 内置函数make 可以创片和映射，并指定原始的长度和容量。也可以直接使切片和映射字央量，或者使用字面量作为变量作为变量的初始值。
+ 切片有容量限制，不过可以使用内置的append函数扩展容量。
+ 映射的增长设有容量或者任何限制。
+ 内置函数len可以用来获取切片或映射的长度。
+ 内置函数cap只能用于切片。
+ 通过组合，可以创建多维数组和多维切片。也可以使用切片或者其他映射作为映射 的值。但是切片不能用作映射的键。
+ 将切片或者映射传递给函数成本很小，并且不会复制底层的数据结构。
+  </description>
     </item>
     
     <item>

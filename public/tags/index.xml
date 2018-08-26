@@ -84,6 +84,15 @@
     </item>
     
     <item>
+      <title>Golang</title>
+      <link>https://www.easyolap.cn/tags/golang/</link>
+      <pubDate>Sat, 25 Aug 2018 21:44:58 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Java</title>
       <link>https://www.easyolap.cn/tags/java/</link>
       <pubDate>Sat, 18 Aug 2018 12:41:05 -0500</pubDate>
@@ -170,6 +179,33 @@
       <pubDate>Sat, 18 Aug 2018 12:41:05 -0500</pubDate>
       
       <guid>https://www.easyolap.cn/tags/xml/xslt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>切片</title>
+      <link>https://www.easyolap.cn/tags/%E5%88%87%E7%89%87/</link>
+      <pubDate>Sat, 25 Aug 2018 21:44:58 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/tags/%E5%88%87%E7%89%87/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>数组</title>
+      <link>https://www.easyolap.cn/tags/%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Sat, 25 Aug 2018 21:44:58 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/tags/%E6%95%B0%E7%BB%84/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>映射</title>
+      <link>https://www.easyolap.cn/tags/%E6%98%A0%E5%B0%84/</link>
+      <pubDate>Sat, 25 Aug 2018 21:44:58 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/tags/%E6%98%A0%E5%B0%84/</guid>
       <description></description>
     </item>
     

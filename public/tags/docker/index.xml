@@ -23,7 +23,7 @@
 一、环境准备 本文主要说明的是 Jenkins集成sonar的过程和配置以及使用，所以相关准备工作请参照相关文档。 以下是需要准备的环境   安装和配置sonar 安装和配置Jenkins 安装 sonar-scanner  ​
 二、Jenkins中Sonar插件的安装 插件方式安装。 * 在Jenkins中SonarQube可能通过“jenkins -》插件管理”安装;
 采用phi 文件安装方式： * 首先去这个url下载phi文件： http://updates.jenkins-ci.org/latest/sonar.hpi 这个是sonar最新插件，需要jenkins 2.6以上版本，可怜只好升级了一把jenkins。
- 准备好hpi文件，并升级jenkins，重启后，进入jenkins： jenkins -》插件管理-》高级 ![sonar_2](/img/sonar/sonar_2.png)  二、在Jenkins中配置 sonarqube server 进入jenkins-》系统管理-》系统配置 后，就可以看到配置sonarqube server相关内容：
+ 准备好hpi文件，并升级jenkins，重启后，进入jenkins： jenkins -》插件管理-》高级  二、在Jenkins中配置 sonarqube server 进入jenkins-》系统管理-》系统配置 后，就可以看到配置sonarqube server相关内容：
 “Add SonarQube”后现如下界面内容： sonar的token如果忘记了可以sonerqube server的帐户-》安全-》用户中重新生成
 三、配置 SonarQube Scanner 进入jenkins-》系统管理-》全局工具配置 就可以看到SonarQube Scanner如下图：
 填写名称后去掉&amp;rdquo;自动安装选项&amp;rdquo;（此处可以用自动按装，由于网络问题我选择手动下载，解压后，在此配置&amp;rdquo;SONAR_RUNNER_HOME&amp;rdquo;）

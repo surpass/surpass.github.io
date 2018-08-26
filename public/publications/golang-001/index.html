@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Jenkins集成sonar使项目分析可视化 ！</title>
-  <meta property="og:title" content="Jenkins集成sonar使项目分析可视化 ！" />
+  <title>golang学习笔记-关于数组，切片，映射</title>
+  <meta property="og:title" content="golang学习笔记-关于数组，切片，映射" />
   <meta property="og:image" content="https://www.easyolap.cn/img/TechChat.jpg" />
   <meta name="description" content="Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud.">
   <meta property="og:description" content="Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud." />
@@ -85,25 +85,18 @@
 
 
 
-
-
 <li class="breadcrumb-item">
   <a href="https://www.easyolap.cn/">Home</a>
 </li>
 
 
 <li class="breadcrumb-item">
-  <a href="https://www.easyolap.cn/projects/">Projects</a>
-</li>
-
-
-<li class="breadcrumb-item">
-  <a href="https://www.easyolap.cn/projects/creations/">Creations</a>
+  <a href="https://www.easyolap.cn/publications/">Publications</a>
 </li>
 
 
 <li class="breadcrumb-item active">
-  <a href="https://www.easyolap.cn/projects/creations/jenkinsintergrationsonar/">Jenkins集成sonar使项目分析可视化 ！</a>
+  <a href="https://www.easyolap.cn/publications/golang-001/">golang学习笔记-关于数组，切片，映射</a>
 </li>
 
   </ol>
@@ -114,116 +107,49 @@
 
 <section class="resume-section p-3 p-lg-5 d-flex d-column">
   <div class="my-auto">
-    <h2 class="mb-0"><span class="text-primary">Jenkins集成sonar使项目分析可视化 ！</span></h2>
-    
-
-<blockquote>
-<p>本文转载自：DevOps小站 官方网站，原文地址：<a href="https://www.easyolap.cn/creations/JenkinsIntergrationSonar/">https://www.easyolap.cn/creations/JenkinsIntergrationSonar/</a></p>
+    <h2 class="mb-0"><span class="text-primary">golang学习笔记-关于数组，切片，映射</span></h2>
+    <p><a href="https://golang.org/">Link to full Talk</a></p>
+    <img src="/img/go.jpg" style="max-height:300px;max-width:30%;" align="right"/>
+    <blockquote>
+<p>本文转载自：DevOps小站 官方网站，原文地址：<a href="https://www.easyolap.cn/publications/golang-001">https://www.easyolap.cn/publications/golang-001</a></p>
 </blockquote>
 
-<p>Jenkins 集成sonar 可以提供一个dashboard给项目成员和管理者，提供一个一目了然的项目分析情况，Sonar在代码分析是非常有用的工具。下面就具体说说如何进行集成。</p>
-
-<p>实践目标
- * 安装和配置jenkins中sonar插件
- * 配置sonar scanner
- * 修改scanner参数
- * 执行构建</p>
-
-<h2 id="一-环境准备">一、环境准备</h2>
-
-<pre><code>本文主要说明的是 Jenkins集成sonar的过程和配置以及使用，所以相关准备工作请参照相关文档。
-以下是需要准备的环境
-</code></pre>
+<p>数组、切片和映射小结</p>
 
 <ul>
-<li>安装和配置sonar</li>
-<li>安装和配置Jenkins</li>
-<li>安装 sonar-scanner</li>
+<li><p>数组是构造切片和映射的基石。</p></li>
+
+<li><p>Go语言里切片经常用来处理数据的集合，映射用来处理具有键值对结构的数据。</p></li>
+
+<li><p>内置函数make 可以创片和映射，并指定原始的长度和容量。也可以直接使切片和映射字央量，或者使用字面量作为变量作为变量的初始值。</p></li>
+
+<li><p>切片有容量限制，不过可以使用内置的append函数扩展容量。</p></li>
+
+<li><p>映射的增长设有容量或者任何限制。</p></li>
+
+<li><p>内置函数len可以用来获取切片或映射的长度。</p></li>
+
+<li><p>内置函数cap只能用于切片。</p></li>
+
+<li><p>通过组合，可以创建多维数组和多维切片。也可以使用切片或者其他映射作为映射 的值。但是切片不能用作映射的键。</p></li>
+
+<li><p>将切片或者映射传递给函数成本很小，并且不会复制底层的数据结构。</p></li>
 </ul>
 
-<p>​</p>
-
-<h2 id="二-jenkins中sonar插件的安装">二、Jenkins中Sonar插件的安装</h2>
-
-<p>插件方式安装。
- * 在Jenkins中SonarQube可能通过“jenkins -》插件管理”安装;</p>
-
-<p><img src="/img/sonar/sonar_1.png" alt="sonar_1" /></p>
-
-<p>采用phi 文件安装方式：
- * 首先去这个url下载phi文件： <a href="http://updates.jenkins-ci.org/latest/sonar.hpi">http://updates.jenkins-ci.org/latest/sonar.hpi</a>    这个是sonar最新插件，需要jenkins 2.6以上版本，可怜只好升级了一把jenkins。</p>
-
-<pre><code>    准备好hpi文件，并升级jenkins，重启后，进入jenkins：
-
-    jenkins -》插件管理-》高级
-</code></pre>
-
-<p><img src="/img/sonar/sonar_2.png" alt="sonar_2" /></p>
-
-<h2 id="二-在jenkins中配置-sonarqube-server">二、在Jenkins中配置 sonarqube server</h2>
-
-<p>进入jenkins-》系统管理-》系统配置 后，就可以看到配置sonarqube server相关内容：</p>
-
-<p><img src="/img/sonar/sonar_5.png" alt="sonar_2" /></p>
-
-<p>“Add SonarQube”后现如下界面内容：
-<img src="/img/sonar/sonar_6.png" alt="sonar_2" /></p>
-
-<p>sonar的token如果忘记了可以sonerqube server的帐户-》安全-》用户中重新生成</p>
-
-<h2 id="三-配置-sonarqube-scanner">三、配置 SonarQube Scanner</h2>
-
-<p>进入jenkins-》系统管理-》全局工具配置 就可以看到SonarQube Scanner如下图：</p>
-
-<p><img src="/img/sonar/sonar_7.png" alt="sonar_2" /></p>
-
-<p>填写名称后去掉&rdquo;自动安装选项&rdquo;（此处可以用自动按装，由于网络问题我选择手动下载，解压后，在此配置&rdquo;SONAR_RUNNER_HOME&rdquo;）</p>
-
-<p><img src="/img/sonar/sonar_8.png" alt="sonar_2" /></p>
-
-<h2 id="四-配置工程的scanner参数">四、配置工程的scanner参数</h2>
-
-<ul>
-<li>进入工程的配置页面</li>
-<li>构建配置组中选择“增加构建后步骤”
-<img src="/img/sonar/sonar_9.png" alt="sonar_2" /></li>
-</ul>
-
-<p><img src="/img/sonar/sonar_10.png" alt="sonar_2" /></p>
-
-<p>在Analysis properties中填入以下内容：</p>
-
-<pre><code>sonar.host.url=http://10.10.171.220:9000/sonar
-sonar.projectKey=${projectName}
-sonar.projectName=${projectName}
-sonar.projectVersion=1.0.0
-sonar.sourceEncoding=UTF-8
-sonar.language=java
-sonar.sources=src
-sonar.java.binaries=target/classes
-</code></pre>
-
-<p>四、执行项目构建。
-如果构建成功，可以到sonarqube server中能看到相关报告。
-进入方式，因为jenkins已经与sonar集成了，所以在工程中有连接进入到sonarqube server,如下图：</p>
-
-<p><img src="/img/sonar/sonar_11.png" alt="sonar_2" /></p>
-
-    <p>Project link: <a href="http://www.sonarsource.com/">http://www.sonarsource.com/</a></p>
+    <p class="mt-3">
     <ul class="tags">
     
-      <li><a class="tag" href="/tags/nexus">Nexus</a></li>
+      <li><a class="tag" href="/tags/golang">golang</a></li>
     
-      <li><a class="tag" href="/tags/maven">Maven</a></li>
+      <li><a class="tag" href="/tags/%E6%95%B0%E7%BB%84">数组</a></li>
     
-      <li><a class="tag" href="/tags/docker">Docker</a></li>
+      <li><a class="tag" href="/tags/%E5%88%87%E7%89%87">切片</a></li>
     
-      <li><a class="tag" href="/tags/agile">Agile</a></li>
-    
-      <li><a class="tag" href="/tags/devops">DevOps</a></li>
+      <li><a class="tag" href="/tags/%E6%98%A0%E5%B0%84">映射</a></li>
     
 </ul>
 
+    </p>
   </div>
 </section>
 
