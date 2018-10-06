@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>使用kubeadm安装k8s all-in-one单机测试环境 (版本1.11.1)</title>
+  <meta property="og:title" content="使用kubeadm安装k8s all-in-one单机测试环境 (版本1.11.1)" />
+  <meta property="og:image" content="https://www.easyolap.cn/img/TechChat.jpg" />
+  <meta name="description" content="Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud.">
+  <meta property="og:description" content="Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud." />
+  <meta name="author" content="Lee Frank">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+  
+  <link href="https://www.easyolap.cn/css/resume.css" rel="stylesheet">
+  <link href="https://www.easyolap.cn/css/tweaks.css" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.42" />
+  
+   
+  
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <span class="d-block d-lg-none">Lee Frank</span>
+    <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/TechChat.jpg" alt="">
+    </span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/about">About</a>
+      </li>
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#skills">Skills</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#projects">Projects</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#open">Open Source</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#publications">Publications</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#experience">Experience</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#education">Education</a>
+          </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <div class="container-fluid p-0">
+    
+<nav aria-label="breadcrumb">
+  <ol  class="breadcrumb">
+    
+
+
+
+
+
+<li class="breadcrumb-item">
+  <a href="https://www.easyolap.cn/">Home</a>
+</li>
+
+
+<li class="breadcrumb-item">
+  <a href="https://www.easyolap.cn/publications/">Publications</a>
+</li>
+
+
+<li class="breadcrumb-item active">
+  <a href="https://www.easyolap.cn/publications/kubernetes-all-in-one/">使用kubeadm安装k8s all-in-one单机测试环境 (版本1.11.1)</a>
+</li>
+
+  </ol>
+</nav>
+
+
+
+
+<section class="resume-section p-3 p-lg-5 d-flex d-column">
+  <div class="my-auto">
+    <h2 class="mb-0"><span class="text-primary">使用kubeadm安装k8s all-in-one单机测试环境 (版本1.11.1)</span></h2>
+    <p><a href="https://www.kubernetes.org.cn/">Link to full Talk</a></p>
+    <img src="/img/k8s.png" style="max-height:300px;max-width:30%;" align="right"/>
+    <p>使用kubeadm安装k8s all-in-one单机测试环境</p>
+
+<p>1.环境准备</p>
+
+<ul>
+<li><p>使用Oracle VM VirtualBox安装虚拟机</p></li>
+
+<li><p>配置双网卡，网卡1使用net方式;网卡2使用host-only（配置静态ip 192.168.134.0网段）;这样就可以实现虚拟机与宿主机，宿主机与虚拟机之前的通信。</p></li>
+
+<li><p>安装centos 7操作系统（CentOS-7-x86_64-DVD-1708.iso），最小安装版。</p></li>
+
+<li><p>配置国内yum源，我采用的是阿里的镜像。</p></li>
+
+<li><p>安装常用工具</p>
+
+<pre><code>    yum install -y telnet net-tools vim wget curl lrssz git unzip
+</code></pre></li>
+
+<li><p>关闭防火墙</p>
+
+<pre><code>  systemctl stop firewalld &amp;&amp; systemctl disable firewalld
+</code></pre></li>
+
+<li><p>关闭selinux</p>
+
+<pre><code>setenforce 0
+sed -i s/&quot;SELINUX=enforcing&quot;/&quot;SELINUX=disabled&quot;/g  /etc/selinux/config
+sed -i s/&quot;^SELINUXTYPE=targeted&quot;/&quot;&quot;/g  /etc/selinux/config
+</code></pre></li>
+
+<li><p>安装docker-ce
+curl -fsSL <a href="https://get.docker.com/">https://get.docker.com/</a> | sh</p></li>
+
+<li><p>重启docker，配置自起
+systemctl enable docker &amp;&amp; systemctl start docker</p></li>
+
+<li><p>配置系统参数</p>
+
+<pre><code>cat &lt;&lt;EOF | tee /etc/sysctl.d/k8s.conf
+net.ipv4.ip_forward = 1
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+EOF
+sysctl -p /etc/sysctl.d/k8s.conf
+</code></pre></li>
+
+<li><p>关闭swap
+    swapoff -a &amp;&amp; sysctl -w vm.swappiness=0
+    vim /etc/fstab
+    修改 /etc/fstab 文件，注释掉 SWAP 的自动挂载，使用free -m确认swap已经关闭</p></li>
+
+<li><p>安装k8s前重起一次操作，以验证以上配置是否完全生效。(可选)
+    reboot</p></li>
+</ul>
+
+<p>2.安装kubelet，kubectl，kubeadm，kubernetes-cni</p>
+
+<pre><code>cat &lt;&lt;EOF &gt; /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://mirrors.aliyun.com/kubernetes/yum/repos/kubernetes-el7-x86_64
+enabled=1
+gpgcheck=0
+EOF
+yum -y install epel-release
+yum clean all
+yum makecache
+yum -y install kubelet kubeadm kubectl kubernetes-cni
+
+systemctl enable docker &amp;&amp; systemctl start docker
+systemctl enable kubelet &amp;&amp; systemctl start kubelet
+
+</code></pre>
+
+<p>3.上传镜像并导入到本地镜像库中。
+由于网络原因访问不到k8s.gcr.io，采用先载然后导入到本地镜像库。</p>
+
+<p>4.kubeadm安装k8s</p>
+
+<pre><code>kubeadm init --kubernetes-version=v1.11.0 --pod-network-cidr=10.244.0.0/16
+
+</code></pre>
+
+<p>滚动日志，直到有以下类似内容出现：</p>
+
+<pre><code>
+Your Kubernetes master has initialized successfully!
+
+To start using your cluster, you need to run the following as a regular user:
+
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+You should now deploy a pod network to the cluster.
+Run &quot;kubectl apply -f [podnetwork].yaml&quot; with one of the options listed at:
+  https://kubernetes.io/docs/concepts/cluster-administration/addons/
+
+You can now join any number of machines by running the following on each node
+as root:
+
+  kubeadm join 192.168.134.3:6443 --token hro1kc.upqh2abab12pfd0o --discovery-token-ca-cert-hash sha256:3f843b4ccb23c0e0d54b5e454d2404323e863c7e065aa20e042d386b31a271be
+</code></pre>
+
+<p>5.复制配置信息到root用户下</p>
+
+<pre><code>mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+</code></pre>
+
+<p>6.master节点负载node</p>
+
+<pre><code>kubectl taint nodes --all node-role.kubernetes.io/master-
+</code></pre>
+
+<p>7.安装 flannel</p>
+
+<pre><code>mkdir -p /etc/cni/net.d/
+
+cat &lt;&lt;EOF&gt; /etc/cni/net.d/10-flannel.conf
+{
+“name”: “cbr0”,
+“type”: “flannel”,
+“delegate”: {
+“isDefaultGateway”: true
+}
+}
+EOF
+
+mkdir /usr/share/oci-umount/oci-umount.d -p
+mkdir /run/flannel/
+cat &lt;&lt;EOF&gt; /run/flannel/subnet.env
+FLANNEL_NETWORK=10.244.0.0/16
+FLANNEL_SUBNET=10.244.1.0/24
+FLANNEL_MTU=1450
+FLANNEL_IPMASQ=true
+EOF
+
+kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/v0.10.0/Documentation/kube-flannel.yml
+</code></pre>
+
+<p>8.安装dashboard
+直接在线安装
+kubectl apply -f <a href="https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.0/src/deploy/recommended/kubernetes-dashboard.yaml">https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.0/src/deploy/recommended/kubernetes-dashboard.yaml</a>
+先下载后安装
+    到<a href="https://github.com/kubernetes/dashboard/releases下载指定版本的kubernetes-dashboard.yaml文件，上传到服务器">https://github.com/kubernetes/dashboard/releases下载指定版本的kubernetes-dashboard.yaml文件，上传到服务器</a>
+    kubectl apply -f /home/beyond/kubernetes-dashboard.yaml</p>
+
+<p>9.查看运行端口</p>
+
+<pre><code>kubectl describe --namespace kube-system service kubernetes-dashboard
+</code></pre>
+
+<p>10.获取令牌</p>
+
+<pre><code>kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep admin-user | awk '{print $1}')
+</code></pre>
+
+<p>11.安装heapster</p>
+
+<pre><code>git clone https://github.com/dolphintwo/k8s-manual-files.git
+cd  k8s-manual-files/addons
+kubectl create -f kube-heapster/influxdb/
+kubectl create -f kube-heapster/rbac/
+kubectl get pods --all-namespaces
+</code></pre>
+
+<p>重启dashboard即可见
+访问地址：
+<a href="https://192.168.134.3:6443/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/">https://192.168.134.3:6443/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/</a></p>
+
+<p>12.常用的命令</p>
+
+<p>查看指定pod详情</p>
+
+<pre><code>kubectl describe pod  -n=kube-system   pod_name
+</code></pre>
+
+<p>查看某命名空间下的pods，-n指定的命名空间名
+kubectl get pods -n=kube-system</p>
+
+<p>查看日志</p>
+
+<pre><code>kubectl logs -n=kube-system -f --tail=10 pod_name 
+</code></pre>
+
+    <p class="mt-3">
+    <ul class="tags">
+    
+      <li><a class="tag" href="/tags/devops">DevOps</a></li>
+    
+      <li><a class="tag" href="/tags/continuous-integration">Continuous Integration</a></li>
+    
+      <li><a class="tag" href="/tags/continuous-delivery">Continuous Delivery</a></li>
+    
+      <li><a class="tag" href="/tags/ci/cd-pipelines">CI/CD pipelines</a></li>
+    
+      <li><a class="tag" href="/tags/docker">docker</a></li>
+    
+      <li><a class="tag" href="/tags/agile">agile</a></li>
+    
+      <li><a class="tag" href="/tags/culture">Culture</a></li>
+    
+</ul>
+
+    </p>
+  </div>
+</section>
+
+
+    <span style="color: #999999; font-size: 60%;">Nifty <a href="https://codepen.io/wbeeftink/pen/dIaDH">tech tag lists</a> from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a> 辽ICP备18011987号-1 </span>
+    
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  
+  <script src="/js/resume.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '');
+  </script>
+  
+
+  
+</body>
+</html>

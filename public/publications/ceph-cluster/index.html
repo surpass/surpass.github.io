@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>使用ceph-deploy 2.0.0 部署ceph </title>
+  <meta property="og:title" content="使用ceph-deploy 2.0.0 部署ceph " />
+  <meta property="og:image" content="https://www.easyolap.cn/img/TechChat.jpg" />
+  <meta name="description" content="Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud.">
+  <meta property="og:description" content="Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud." />
+  <meta name="author" content="Lee Frank">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+  
+  <link href="https://www.easyolap.cn/css/resume.css" rel="stylesheet">
+  <link href="https://www.easyolap.cn/css/tweaks.css" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.42" />
+  
+   
+  
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <span class="d-block d-lg-none">Lee Frank</span>
+    <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/TechChat.jpg" alt="">
+    </span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/about">About</a>
+      </li>
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#skills">Skills</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#projects">Projects</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#open">Open Source</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#publications">Publications</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#experience">Experience</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#education">Education</a>
+          </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <div class="container-fluid p-0">
+    
+<nav aria-label="breadcrumb">
+  <ol  class="breadcrumb">
+    
+
+
+
+
+
+<li class="breadcrumb-item">
+  <a href="https://www.easyolap.cn/">Home</a>
+</li>
+
+
+<li class="breadcrumb-item">
+  <a href="https://www.easyolap.cn/publications/">Publications</a>
+</li>
+
+
+<li class="breadcrumb-item active">
+  <a href="https://www.easyolap.cn/publications/ceph-cluster/">使用ceph-deploy 2.0.0 部署ceph </a>
+</li>
+
+  </ol>
+</nav>
+
+
+
+
+<section class="resume-section p-3 p-lg-5 d-flex d-column">
+  <div class="my-auto">
+    <h2 class="mb-0"><span class="text-primary">使用ceph-deploy 2.0.0 部署ceph </span></h2>
+    <p><a href="https://ceph.com">Link to full Talk</a></p>
+    <img src="/img/ceph/ceph.jpg" style="max-height:300px;max-width:30%;" align="right"/>
+    
+
+<p>OpenShift Origin  3.9.0手动单机安装</p>
+
+<p>1.环境</p>
+
+<p>1.1 硬件
+6台 Linux虚拟机： server0, server1, server2, server3 , server4, server5
+每台有两块磁盘 ： /dev/vdb, /dev/vdc
+每台有一块网卡 ：eth0</p>
+
+<p>1.2 软件
+linux版本： CentOS 7.2.1511
+内核版本 ： 3.10.0-327.el7.x86_64
+ceph版本： 13.2.2
+ceph-deploy版本： 2.0.0</p>
+
+<p>2.准备工作(所有server)</p>
+
+<p>2.1 配置静态IP</p>
+
+<p>10.3.14.0/24</p>
+
+<p>2.2 生成ssh key</p>
+
+<pre><code># ssh-keygen
+</code></pre>
+
+<p>2.3 配置主机名解析
+把如下内容追加到/etc/hosts:</p>
+
+<p>10.3.14.19 server0 deploy
+10.3.14.20 server1
+10.3.14.12 server2
+10.3.14.13 server3</p>
+
+<p>修改所有节点的主机名，方法如下：
+sudo hostnamectl set-hostname server0</p>
+
+<p>2.4.添加用户
+下一件要做的就是，让添加部署的时候要用的用户了。在每个节点都执行：</p>
+
+<p>sudo useradd -d /data/devops -m devops
+sudo echo &ldquo;devops ALL = (root) NOPASSWD:ALL&rdquo; | sudo tee /etc/sudoers.d/devops
+sudo chmod 0440 /etc/sudoers.d/devops
+sudo passwd devops</p>
+
+<p>2.5.无密码 ssh 登录
+添加部署节点 deploy 对 node 的无密码 ssh 登录，以搭建 Ansible 然后可以批量对 node 执行操作。在 deploy 执行：</p>
+
+<pre><code>su devops
+ssh-keygen
+cat /data/devops/.ssh/id_rsa.pub
+</code></pre>
+
+<p>三下回车生成密钥对，然后拷贝 /data/devops/.ssh/id_rsa.pub 文件的内容到各个 node 节点：
+scp -P7777 /data/devops/.ssh/id_rsa.pub devops@server0:/data/devops/.ssh/authorized_keys
+su test
+mkdir ~/.ssh
+vi ~/.ssh/authorized_keys
+sudo chmod 600 ~/.ssh/authorized_keys</p>
+
+<p>在server0中编辑 ~/.ssh/config 文件：</p>
+
+<p>Host server0
+User devops
+Port 7777</p>
+
+<p>Host server1
+User devops
+Port 7777</p>
+
+<p>Host server2
+User devops
+Port 7777</p>
+
+<p>Host server3
+User devops
+Port 7777</p>
+
+<p>sudo chmod 600 .ssh/config</p>
+
+<p>3.安装 Ansible</p>
+
+<p>以下操作无特殊说明都在 deploy 节点进行操作。</p>
+
+<p>3.1. 从包管理工具安装
+sudo yum -y update &amp;&amp; sudo yum -y install ansible</p>
+
+<p>3.2. 修改 Ansible 配置文件
+在 /etc/ansible/hosts 文件加入：</p>
+
+<p>[ceph-deploy]
+localhost  ansible_connection=local</p>
+
+<p>[ceph-node]
+server1
+server2
+server3</p>
+
+<p>3.3. 验证&amp;&amp;测试：
+ansible all -m ping
+结果如下：</p>
+
+<p>[devops@node-19 .ssh]$ ansible all -m ping
+server1 | SUCCESS =&gt; {
+    &ldquo;changed&rdquo;: false,
+    &ldquo;ping&rdquo;: &ldquo;pong&rdquo;
+}
+localhost | SUCCESS =&gt; {
+    &ldquo;changed&rdquo;: false,
+    &ldquo;ping&rdquo;: &ldquo;pong&rdquo;
+}
+server2 | SUCCESS =&gt; {
+    &ldquo;changed&rdquo;: false,
+    &ldquo;ping&rdquo;: &ldquo;pong&rdquo;
+}
+server3 | SUCCESS =&gt; {
+    &ldquo;changed&rdquo;: false,
+    &ldquo;ping&rdquo;: &ldquo;pong&rdquo;
+}</p>
+
+<p>4.Ceph deploy 节点安装</p>
+
+<p>4.1. 从包管理工具安装
+添加国内源
+sudo vi  /etc/yum.repos.d/ceph.repo</p>
+
+<p>[Ceph]
+name=Ceph packages for $basearch
+baseurl=<a href="http://mirrors.163.com/ceph/rpm-mimic/el7/$basearch">http://mirrors.163.com/ceph/rpm-mimic/el7/$basearch</a>
+enabled=1
+priority=1
+gpgcheck=1
+gpgkey=<a href="https://download.ceph.com/keys/release.asc">https://download.ceph.com/keys/release.asc</a></p>
+
+<p>[Ceph-noarch]
+name=Ceph noarch packages
+baseurl=<a href="http://mirrors.163.com/ceph/rpm-mimic/el7/noarch">http://mirrors.163.com/ceph/rpm-mimic/el7/noarch</a>
+enabled=1
+priority=1
+gpgcheck=1
+gpgkey=<a href="https://download.ceph.com/keys/release.asc">https://download.ceph.com/keys/release.asc</a></p>
+
+<p>[ceph-source]
+name=Ceph source packages
+baseurl=<a href="http://mirrors.163.com/ceph/rpm-mimic/el7/SRPMS">http://mirrors.163.com/ceph/rpm-mimic/el7/SRPMS</a>
+enabled=0
+priority=1
+gpgcheck=1
+gpgkey=<a href="https://download.ceph.com/keys/release.asc">https://download.ceph.com/keys/release.asc</a></p>
+
+<p>4.2安装：</p>
+
+<p>sudo yum -y update &amp;&amp; sudo yum -y install ceph-deploy</p>
+
+<p>5.Ceph 节点安装准备</p>
+
+<p>5.1. 安装 ntp
+修改时区：</p>
+
+<p>ansible all -a &ldquo;sudo timedatectl set-timezone Asia/Shanghai&rdquo; &ndash;sudo</p>
+
+<p>建议在所有 Ceph 节点上安装 NTP 服务（特别是 Ceph Monitor 节点），并跟同一个 ntp 服务器进行时间同步，以免因时钟漂移导致故障：</p>
+
+<p>ansible all -a   &ldquo;sudo yum -y update&rdquo; &ndash;sudo
+ansible all -a   &ldquo;sudo yum -y install ntp &rdquo; &ndash;sudo</p>
+
+<p>编辑 ntp 配置文件：</p>
+
+<p>vi ntp.conf</p>
+
+<p>restrict cn.pool.ntp.org
+server cn.pool.ntp.org</p>
+
+<p>分发，重启服务：</p>
+
+<p>ansible all -m copy -a &ldquo;src=/etc/ntp.conf dest=/etc/ntp.conf&rdquo; &ndash;sudo
+ansible all -a &ldquo;sudo systemctl restart ntpd&rdquo; &ndash;sudo</p>
+
+<p>5.2. 安装依赖
+安装 python：</p>
+
+<p>ansible all -a &ldquo;sudo yum -y install python -y&rdquo; &ndash;sudo
+开放端口
+ansible all -a &ldquo;sudo firewall-cmd &ndash;permanent &ndash;add-port=6789/tcp&rdquo; &ndash;sudo
+ansible all -a &ldquo;sudo firewall-cmd &ndash;permanent &ndash;add-port=6800-7300/tcp&rdquo; &ndash;sudo
+ansible all -a &ldquo;sudo firewall-cmd &ndash;reload&rdquo; &ndash;sudo</p>
+
+<p>3.安装依赖
+ansible all -a &ldquo;sudo yum install -y yum-utils &rdquo; &ndash;sudo
+ansible all -a &ldquo;sudo yum-config-manager &ndash;add-repo <a href="https://dl.fedoraproject.org/pub/epel/7/x86_64/">https://dl.fedoraproject.org/pub/epel/7/x86_64/</a> &ldquo; &ndash;sudo
+ansible all -a &ldquo;sudo yum install &ndash;nogpgcheck -y epel-release &rdquo; &ndash;sudo
+ansible all -a &ldquo;sudo rpm &ndash;import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7 &rdquo; &ndash;sudo
+ansible all -a &ldquo;sudo rm -f /etc/yum.repos.d/dl.fedoraproject.org* &ldquo; &ndash;sudo</p>
+
+<p>ansible all -a &ldquo;sudo yum install redhat-lsb  -y &rdquo; &ndash;sudo</p>
+
+<p>6.ceph-mon 安装</p>
+
+<p>6.1. 添加 mon 节点
+cd /data/devops/
+mkdir ceph-cluster &amp;&amp; cd ceph-cluster</p>
+
+<p>ceph-deploy new server1 server2 server3 server4 server5</p>
+
+<p>ceph-deploy new server0 server1 server2</p>
+
+<p>6.2. 修改配置文件
+修改 ceph.conf 文件(vi /data/devops/ceph-cluster/ceph.conf)，添加：</p>
+
+<h1 id="osd-节点个数">osd 节点个数</h1>
+
+<p>osd_pool_default_size = 3</p>
+
+<h1 id="osd-节点最小个数">osd 节点最小个数</h1>
+
+<p>osd_pool_default_min_size = 1</p>
+
+<h1 id="ceph-公共网络">ceph 公共网络</h1>
+
+<p>public network = 10.3.14.0/24</p>
+
+<p>6.3. 安装 ceph 节点
+使用国内镜像源安装：</p>
+
+<p>export CEPH_DEPLOY_REPO_URL=<a href="http://mirrors.163.com/ceph/rpm-mimic/el7">http://mirrors.163.com/ceph/rpm-mimic/el7</a>
+export CEPH_DEPLOY_GPG_URL=<a href="http://mirrors.163.com/ceph/keys/release.asc">http://mirrors.163.com/ceph/keys/release.asc</a></p>
+
+<p>ceph-deploy install  server0 server1 server2 server3</p>
+
+<p>注：如有提示“Delta RPMs disabled because /usr/bin/applydeltarpm not installed”需要在所有节点中安装以下内容：
+sudo yum provides &lsquo;*/applydeltarpm&rsquo;
+sudo yum -y install deltarpm</p>
+
+<p>ansible all -a &ldquo;sudo yum provides &lsquo;*/applydeltarpm&rsquo; &ldquo; &ndash;sudo
+ansible all -a &ldquo;sudo yum -y install deltarpm &rdquo; &ndash;sudo</p>
+
+<p>6.4. 初始化 mon 节点
+ceph-deploy mon create-initial</p>
+
+<p>如果有重复安装时用ceph-deploy &ndash;overwrite-conf mon create-initial</p>
+
+<p>ceph-deploy admin server1 server2 server3 server4 server5</p>
+
+<p>7.ceph osd 节点安装</p>
+
+<p>7.1. 查看集群 uuid
+集群的 uuid 就是这个 ceph 集群的唯一标识，后面要用：</p>
+
+<p>cat /etc/ceph/ceph.conf
+[global]
+fsid = 9d21dbff-dcf3-41d0-88a9-10bbdefde284
+mon_initial_members = server0, server1, server2
+mon_host = 10.3.14.19,10.3.14.20,10.3.14.12
+auth_cluster_required = cephx
+auth_service_required = cephx
+auth_client_required = cephx</p>
+
+<h1 id="osd-节点个数-1">osd 节点个数</h1>
+
+<p>osd_pool_default_size = 3</p>
+
+<h1 id="osd-节点最小个数-1">osd 节点最小个数</h1>
+
+<p>osd_pool_default_min_size = 1</p>
+
+<h1 id="ceph-公共网络-1">ceph 公共网络</h1>
+
+<p>public network = 10.3.14.0/24</p>
+
+<p>其中 9d21dbff-dcf3-41d0-88a9-10bbdefde284 就是 uuid</p>
+
+<p>ansible all -a &ldquo;sudo chmod +r /etc/ceph/ceph.client.admin.keyring  &rdquo; &ndash;sudo</p>
+
+<p>7.2. 安装 osd
+ssh 到各个节点，执行以下命令：</p>
+
+<p>mkdir /data/devops/osd0
+sudo chown ceph: /data/devops/osd0/
+sudo ceph-disk prepare &ndash;cluster ceph   &ndash;cluster-uuid 9d21dbff-dcf3-41d0-88a9-10bbdefde284 &ndash;fs-type  ext4 /data/devops/osd0/
+sudo ceph-disk activate /data/devops/osd0/</p>
+
+<p>以上命令是在 server1 上执行的，请将 uuid 替换成自己的，–fs-type 是 ext4，请换成自己的类型。然后将 osd0 替换掉对应节点的 osd 编号。</p>
+
+<p>7.3. 查看集群健康状况
+当所有节点都安装完成，可以在任一节点执行以下命令查看集群健康状况:</p>
+
+<p>ceph -s</p>
+
+<p>或者查看集群健康状况
+$ ceph health
+HEALTH_OK</p>
+
+<p>查看集群 OSD 信息
+$ ceph osd tree</p>
+
+<p>8.清理 Ceph 安装包:</p>
+
+<p>ceph-deploy purge server1 server2 server3 server4 server5
+清理配置:</p>
+
+<p>ceph-deploy purgedata server0 server1 server2 server3 server4 server5
+ceph-deploy forgetkeys</p>
+
+<p>9.问题</p>
+
+<p>1：ERROR: missing keyring, cannot use cephx for authentication
+解决：1.确认/etc/ceph/ceph.client.admin.keyring 是否存在，如不存在请确认hostname.修改主机名后需重新安装cehp.
+            2.设置权限 sudo chmod +r /etc/ceph/ceph.client.admin.keyring</p>
+
+    <p class="mt-3">
+    <ul class="tags">
+    
+      <li><a class="tag" href="/tags/devops">DevOps</a></li>
+    
+      <li><a class="tag" href="/tags/cluster-fs">Cluster FS</a></li>
+    
+      <li><a class="tag" href="/tags/continuous-integration">Continuous Integration</a></li>
+    
+      <li><a class="tag" href="/tags/continuous-delivery">Continuous Delivery</a></li>
+    
+      <li><a class="tag" href="/tags/ci/cd-pipelines">CI/CD pipelines</a></li>
+    
+      <li><a class="tag" href="/tags/docker">docker</a></li>
+    
+      <li><a class="tag" href="/tags/agile">agile</a></li>
+    
+      <li><a class="tag" href="/tags/culture">Culture</a></li>
+    
+</ul>
+
+    </p>
+  </div>
+</section>
+
+
+    <span style="color: #999999; font-size: 60%;">Nifty <a href="https://codepen.io/wbeeftink/pen/dIaDH">tech tag lists</a> from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a> 辽ICP备18011987号-1 </span>
+    
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  
+  <script src="/js/resume.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '');
+  </script>
+  
+
+  
+</body>
+</html>

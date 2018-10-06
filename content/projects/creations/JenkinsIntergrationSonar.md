@@ -53,7 +53,8 @@ Jenkins 集成sonar 可以提供一个dashboard给项目成员和管理者，提
 
         jenkins -》插件管理-》高级
 
-     ![sonar_2](/img/sonar/sonar_2.png)
+
+ ![sonar_2](/img/sonar/sonar_2.png)
 
 二、在Jenkins中配置 sonarqube server
 ---------

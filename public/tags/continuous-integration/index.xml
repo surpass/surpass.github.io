@@ -6,10 +6,52 @@
     <description>Recent content in Continuous Integration on Eddie Webb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 15 Jun 2018 21:56:26 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 27 Sep 2018 21:56:26 +0800</lastBuildDate>
     
 	<atom:link href="https://www.easyolap.cn/tags/continuous-integration/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>使用ceph-deploy 2.0.0 部署ceph </title>
+      <link>https://www.easyolap.cn/publications/ceph-cluster/</link>
+      <pubDate>Thu, 27 Sep 2018 21:56:26 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/publications/ceph-cluster/</guid>
+      <description>OpenShift Origin 3.9.0手动单机安装
+1.环境
+1.1 硬件 6台 Linux虚拟机： server0, server1, server2, server3 , server4, server5 每台有两块磁盘 ： /dev/vdb, /dev/vdc 每台有一块网卡 ：eth0
+1.2 软件 linux版本： CentOS 7.2.1511 内核版本 ： 3.10.0-327.el7.x86_64 ceph版本： 13.2.2 ceph-deploy版本： 2.0.0
+2.准备工作(所有server)
+2.1 配置静态IP
+10.3.14.0/24
+2.2 生成ssh key
+# ssh-keygen  2.3 配置主机名解析 把如下内容追加到/etc/hosts:
+10.3.14.19 server0 deploy 10.3.14.20 server1 10.3.14.12 server2 10.3.14.13 server3
+修改所有节点的主机名，方法如下： sudo hostnamectl set-hostname server0
+2.4.添加用户 下一件要做的就是，让添加部署的时候要用的用户了。在每个节点都执行：
+sudo useradd -d /data/devops -m devops sudo echo &amp;ldquo;devops ALL = (root) NOPASSWD:ALL&amp;rdquo; | sudo tee /etc/sudoers.</description>
+    </item>
+    
+    <item>
+      <title>使用kubeadm安装k8s all-in-one单机测试环境 (版本1.11.1)</title>
+      <link>https://www.easyolap.cn/publications/kubernetes-all-in-one/</link>
+      <pubDate>Sat, 01 Sep 2018 21:56:26 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/publications/kubernetes-all-in-one/</guid>
+      <description>使用kubeadm安装k8s all-in-one单机测试环境
+1.环境准备
+ 使用Oracle VM VirtualBox安装虚拟机
+ 配置双网卡，网卡1使用net方式;网卡2使用host-only（配置静态ip 192.168.134.0网段）;这样就可以实现虚拟机与宿主机，宿主机与虚拟机之前的通信。
+ 安装centos 7操作系统（CentOS-7-x86_64-DVD-1708.iso），最小安装版。
+ 配置国内yum源，我采用的是阿里的镜像。
+ 安装常用工具
+ yum install -y telnet net-tools vim wget curl lrssz git unzip  关闭防火墙
+ systemctl stop firewalld &amp;amp;&amp;amp; systemctl disable firewalld  关闭selinux
+setenforce 0 sed -i s/&amp;quot;SELINUX=enforcing&amp;quot;/&amp;quot;SELINUX=disabled&amp;quot;/g /etc/selinux/config sed -i s/&amp;quot;^SELINUXTYPE=targeted&amp;quot;/&amp;quot;&amp;quot;/g /etc/selinux/config  安装docker-ce curl -fsSL https://get.docker.com/ | sh
+ 重启docker，配置自起 systemctl enable docker &amp;amp;&amp;amp; systemctl start docker
+ 配置系统参数
+cat &amp;lt;&amp;lt;EOF | tee /etc/sysctl.</description>
+    </item>
     
     <item>
       <title>OpenShift Origin  3.9.0手动单机安装</title>

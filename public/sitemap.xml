@@ -32,6 +32,18 @@
   </url>
   
   <url>
+    <loc>https://www.easyolap.cn/publications/ceph-cluster/</loc>
+    <lastmod>2018-09-27T21:56:26+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.easyolap.cn/publications/kubernetes-all-in-one/</loc>
+    <lastmod>2018-09-01T21:56:26+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>https://www.easyolap.cn/publications/golang-001/</loc>
     <lastmod>2018-08-25T21:44:58+08:00</lastmod>
     <priority>0.8</priority>
@@ -90,25 +102,31 @@
   
   <url>
     <loc>https://www.easyolap.cn/tags/ci/cd-pipelines/</loc>
-    <lastmod>2018-06-15T21:56:26+08:00</lastmod>
+    <lastmod>2018-09-27T21:56:26+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.easyolap.cn/tags/cluster-fs/</loc>
+    <lastmod>2018-09-27T21:56:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.easyolap.cn/tags/continuous-delivery/</loc>
-    <lastmod>2018-06-15T21:56:26+08:00</lastmod>
+    <lastmod>2018-09-27T21:56:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.easyolap.cn/tags/continuous-integration/</loc>
-    <lastmod>2018-06-15T21:56:26+08:00</lastmod>
+    <lastmod>2018-09-27T21:56:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.easyolap.cn/tags/culture/</loc>
-    <lastmod>2018-06-15T21:56:26+08:00</lastmod>
+    <lastmod>2018-09-27T21:56:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   
