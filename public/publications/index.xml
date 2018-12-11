@@ -39,6 +39,27 @@
     </item>
     
     <item>
+      <title>linux如何成功地离线安装docker </title>
+      <link>https://www.easyolap.cn/publications/docker-001/</link>
+      <pubDate>Tue, 11 Dec 2018 09:00:26 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/publications/docker-001/</guid>
+      <description>linux如何成功地离线安装docker 系统环境：
+Redhat 7.2 和Centos 7.4实测成功
+近期因项目需要用docker，所以记录一些相关知识，由于生产环境是不能直接连接互联网，尝试在linux中离线安装docker。
+步骤 1.下载https://download.docker.com/linux/static/stable/x86_64/docker-18.09.0.tgz
+2.解压将docker-18.09.0.tgz放置到linux用户目录下面，使用命令：tar xzvf docker-18.09.0.tgz进行解压缩，得到一个文件夹docker，然后使用命令：sudo cp docker/* /usr/bin/将docker文件夹中的内容全部移动到/usr/bin/目录下。
+3.启动守护进程
+使用命令：sudo dockerd &amp;amp;来开启docker守护进程，以此来开启docker的使用  4.验证
+使用命令：docker images、docker ps -a、docker &amp;ndash;version等
+5.停止守护进程
+ ps -ef |grep docker 查到进程并kill掉  6.编写系统服务：
+ [Unit] Description=Docker Application Container Engine Documentation=https://docs.docker.com After=network-online.target firewalld.service Wants=network-online.target [Service] Type=notify ExecStart=/usr/bin/dockerd ExecReload=/bin/kill -s HUP $MAINPID LimitNOFILE=infinity LimitNPROC=infinity LimitCORE=infinity #TasksMax=infinity TimeoutStartSec=0 Delegate=yes KillMode=process Restart=on-failure StartLimitBurst=3 StartLimitInterval=60s [Install] WantedBy=multi-user.target 
+7.启动服务
+添加权限 chmod +x /etc/systemd/system/docker.</description>
+    </item>
+    
+    <item>
       <title>使用ceph-deploy 2.0.0 部署ceph </title>
       <link>https://www.easyolap.cn/publications/ceph-cluster/</link>
       <pubDate>Thu, 27 Sep 2018 21:56:26 +0800</pubDate>
@@ -116,6 +137,23 @@ cat &amp;lt;&amp;lt;EOF | tee /etc/sysctl.</description>
 4.解压openshift-origin-server-v3.9.0-191fece-linux-64bit.tar.gz到 /opt/openshift
 5.添加到PATH
 6.测试docker是否能正常下载镜像 docker pull busybox</description>
+    </item>
+    
+    <item>
+      <title>OpenShift Origin  3.9.0手动单机安装</title>
+      <link>https://www.easyolap.cn/publications/openshift-002/</link>
+      <pubDate>Fri, 15 Jun 2018 21:56:26 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/publications/openshift-002/</guid>
+      <description>[OSEv3:children] masters nodes etcd nfs
+[OSEv3:vars] ansible_ssh_user=devops openshift_deployment_type=origin #因采用虚拟机部署学习 配置此选项跳过主机硬件信息检查 openshift_disable_check=disk_availability,docker_storage,memory_availability,docker_image_availability openshift_master_identity_providers=[{&amp;lsquo;name&amp;rsquo;:&amp;lsquo;htpasswd_auth&amp;rsquo;,&amp;lsquo;login&amp;rsquo;:&amp;lsquo;true&amp;rsquo;,&amp;lsquo;challenge&amp;rsquo;:&amp;lsquo;true&amp;rsquo;,&amp;lsquo;kind&amp;rsquo;:&amp;lsquo;HTPasswdPasswordIdentityProvider&amp;rsquo;,}]
+openshift_master_default_subdomain=okd.easyolap.cn openshift_deployment_type=origin os_firewall_use_firewalld=true
+[masters] server0
+[etcd] server0
+[nodes] server1 openshift_node_group_name=&amp;lsquo;node-config-master&amp;rsquo; server2 openshift_node_group_name=&amp;lsquo;node-config-compute&amp;rsquo; server3 openshift_node_group_name=&amp;lsquo;node-config-compute&amp;rsquo;
+[nfs] server0
+安装docker sudo curl -fsSL https://get.docker.com/ | sh
+问题 ：fatal: [server0]: UNREACHABLE! =&amp;gt; {&amp;ldquo;changed&amp;rdquo;: false, &amp;ldquo;msg&amp;rdquo;: &amp;ldquo;Failed to connect to the host via ssh: ssh: connect to host server0 port 22: Connection refused\r\n&amp;rdquo;, &amp;ldquo;unreachable&amp;rdquo;: true} 解决 sudo ansible-playbook openshift-ansible/playbooks/prerequisites.yml &amp;ndash;limit @/data/devops/openshift-ansible/playbooks/prerequisites.retry</description>
     </item>
     
     <item>

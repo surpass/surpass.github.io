@@ -165,30 +165,33 @@ ssh-keygen
 cat /data/devops/.ssh/id_rsa.pub
 </code></pre>
 
-<p>三下回车生成密钥对，然后拷贝 /data/devops/.ssh/id_rsa.pub 文件的内容到各个 node 节点：
-scp -P7777 /data/devops/.ssh/id_rsa.pub devops@server0:/data/devops/.ssh/authorized_keys
+<p>三下回车生成密钥对，然后拷贝 /data/devops/.ssh/id_rsa.pub 文件的内容到各个 node 节点：</p>
+
+<pre><code>scp -P7777 /data/devops/.ssh/id_rsa.pub devops@server0:/data/devops/.ssh/authorized_keys
 su test
 mkdir ~/.ssh
 vi ~/.ssh/authorized_keys
-sudo chmod 600 ~/.ssh/authorized_keys</p>
+sudo chmod 600 ~/.ssh/authorized_keys
+</code></pre>
 
 <p>在server0中编辑 ~/.ssh/config 文件：</p>
 
-<p>Host server0
+<pre><code>Host server0
 User devops
-Port 7777</p>
+Port 7777
 
-<p>Host server1
+Host server1
 User devops
-Port 7777</p>
+Port 7777
 
-<p>Host server2
+Host server2
 User devops
-Port 7777</p>
+Port 7777
 
-<p>Host server3
+Host server3
 User devops
-Port 7777</p>
+Port 7777
+</code></pre>
 
 <p>sudo chmod 600 .ssh/config</p>
 
@@ -202,13 +205,15 @@ sudo yum -y update &amp;&amp; sudo yum -y install ansible</p>
 <p>3.2. 修改 Ansible 配置文件
 在 /etc/ansible/hosts 文件加入：</p>
 
-<p>[ceph-deploy]
-localhost  ansible_connection=local</p>
+<pre><code>[ceph-deploy]
+localhost  ansible_connection=local
 
-<p>[ceph-node]
+
+[ceph-node]
 server1
 server2
-server3</p>
+server3
+</code></pre>
 
 <p>3.3. 验证&amp;&amp;测试：
 ansible all -m ping

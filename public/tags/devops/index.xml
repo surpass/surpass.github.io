@@ -118,6 +118,23 @@ cat &amp;lt;&amp;lt;EOF | tee /etc/sysctl.</description>
     </item>
     
     <item>
+      <title>OpenShift Origin  3.9.0手动单机安装</title>
+      <link>https://www.easyolap.cn/publications/openshift-002/</link>
+      <pubDate>Fri, 15 Jun 2018 21:56:26 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/publications/openshift-002/</guid>
+      <description>[OSEv3:children] masters nodes etcd nfs
+[OSEv3:vars] ansible_ssh_user=devops openshift_deployment_type=origin #因采用虚拟机部署学习 配置此选项跳过主机硬件信息检查 openshift_disable_check=disk_availability,docker_storage,memory_availability,docker_image_availability openshift_master_identity_providers=[{&amp;lsquo;name&amp;rsquo;:&amp;lsquo;htpasswd_auth&amp;rsquo;,&amp;lsquo;login&amp;rsquo;:&amp;lsquo;true&amp;rsquo;,&amp;lsquo;challenge&amp;rsquo;:&amp;lsquo;true&amp;rsquo;,&amp;lsquo;kind&amp;rsquo;:&amp;lsquo;HTPasswdPasswordIdentityProvider&amp;rsquo;,}]
+openshift_master_default_subdomain=okd.easyolap.cn openshift_deployment_type=origin os_firewall_use_firewalld=true
+[masters] server0
+[etcd] server0
+[nodes] server1 openshift_node_group_name=&amp;lsquo;node-config-master&amp;rsquo; server2 openshift_node_group_name=&amp;lsquo;node-config-compute&amp;rsquo; server3 openshift_node_group_name=&amp;lsquo;node-config-compute&amp;rsquo;
+[nfs] server0
+安装docker sudo curl -fsSL https://get.docker.com/ | sh
+问题 ：fatal: [server0]: UNREACHABLE! =&amp;gt; {&amp;ldquo;changed&amp;rdquo;: false, &amp;ldquo;msg&amp;rdquo;: &amp;ldquo;Failed to connect to the host via ssh: ssh: connect to host server0 port 22: Connection refused\r\n&amp;rdquo;, &amp;ldquo;unreachable&amp;rdquo;: true} 解决 sudo ansible-playbook openshift-ansible/playbooks/prerequisites.yml &amp;ndash;limit @/data/devops/openshift-ansible/playbooks/prerequisites.retry</description>
+    </item>
+    
+    <item>
       <title>Mysql install by Docker！</title>
       <link>https://www.easyolap.cn/publications/mysql-by-docker/</link>
       <pubDate>Mon, 31 Jul 2017 21:44:58 +0800</pubDate>
