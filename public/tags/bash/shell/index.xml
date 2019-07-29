@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bash/Shell on Eddie Webb</title>
+    <title>Bash/Shell on Frank Li&#39;s blog</title>
     <link>https://www.easyolap.cn/tags/bash/shell/</link>
-    <description>Recent content in Bash/Shell on Eddie Webb</description>
+    <description>Recent content in Bash/Shell on Frank Li&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language>
+    <language>zn-Hans</language>
     <lastBuildDate>Sat, 18 Aug 2018 12:41:05 -0500</lastBuildDate>
     
 	<atom:link href="https://www.easyolap.cn/tags/bash/shell/index.xml" rel="self" type="application/rss+xml" />

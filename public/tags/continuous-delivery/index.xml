@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Continuous Delivery on Eddie Webb</title>
+    <title>Continuous Delivery on Frank Li&#39;s blog</title>
     <link>https://www.easyolap.cn/tags/continuous-delivery/</link>
-    <description>Recent content in Continuous Delivery on Eddie Webb</description>
+    <description>Recent content in Continuous Delivery on Frank Li&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language>
+    <language>zn-Hans</language>
     <lastBuildDate>Thu, 27 Sep 2018 21:56:26 +0800</lastBuildDate>
     
 	<atom:link href="https://www.easyolap.cn/tags/continuous-delivery/index.xml" rel="self" type="application/rss+xml" />
@@ -17,19 +17,7 @@
       <pubDate>Thu, 27 Sep 2018 21:56:26 +0800</pubDate>
       
       <guid>https://www.easyolap.cn/publications/ceph-cluster/</guid>
-      <description>OpenShift Origin 3.9.0手动单机安装
-1.环境
-1.1 硬件 6台 Linux虚拟机： server0, server1, server2, server3 , server4, server5 每台有两块磁盘 ： /dev/vdb, /dev/vdc 每台有一块网卡 ：eth0
-1.2 软件 linux版本： CentOS 7.2.1511 内核版本 ： 3.10.0-327.el7.x86_64 ceph版本： 13.2.2 ceph-deploy版本： 2.0.0
-2.准备工作(所有server)
-2.1 配置静态IP
-10.3.14.0/24
-2.2 生成ssh key
-# ssh-keygen  2.3 配置主机名解析 把如下内容追加到/etc/hosts:
-10.3.14.19 server0 deploy 10.3.14.20 server1 10.3.14.12 server2 10.3.14.13 server3
-修改所有节点的主机名，方法如下： sudo hostnamectl set-hostname server0
-2.4.添加用户 下一件要做的就是，让添加部署的时候要用的用户了。在每个节点都执行：
-sudo useradd -d /data/devops -m devops sudo echo &amp;ldquo;devops ALL = (root) NOPASSWD:ALL&amp;rdquo; | sudo tee /etc/sudoers.</description>
+      <description>OpenShift Origin 3.9.0手动单机安装 1.环境 1.1 硬件 6台 Linux虚拟机： server0, server1, server2, server3 , server4, server5 每台有两块磁盘 ： /dev/vdb, /dev/vdc 每台有一块网卡 ：eth0 1.2 软件 linux版本： CentOS 7.2.1511 内核版本 ： 3.10.0-327.el7.x86_64 ceph版本： 13.2.2 ceph-deploy版本： 2.0.0 2.准备工作(所有server) 2.1 配置静态IP 10.3.14.0/24 2.2 生成ssh key # ssh-keygen 2.3 配置主机名解析 把如下内容追加到/etc/hosts: 10.3.14.19 server0 deploy 10.3.14.20 server1 10.3.14.12 server2 10.3.14.13 server3 修改所有节点的主机名，方法如下： sudo hostnamectl set-hostname server0 2.4.添加用户 下</description>
     </item>
     
     <item>
@@ -38,19 +26,7 @@ sudo useradd -d /data/devops -m devops sudo echo &amp;ldquo;devops ALL = (root) 
       <pubDate>Sat, 01 Sep 2018 21:56:26 +0800</pubDate>
       
       <guid>https://www.easyolap.cn/publications/kubernetes-all-in-one/</guid>
-      <description>使用kubeadm安装k8s all-in-one单机测试环境
-1.环境准备
- 使用Oracle VM VirtualBox安装虚拟机
- 配置双网卡，网卡1使用net方式;网卡2使用host-only（配置静态ip 192.168.134.0网段）;这样就可以实现虚拟机与宿主机，宿主机与虚拟机之前的通信。
- 安装centos 7操作系统（CentOS-7-x86_64-DVD-1708.iso），最小安装版。
- 配置国内yum源，我采用的是阿里的镜像。
- 安装常用工具
- yum install -y telnet net-tools vim wget curl lrssz git unzip  关闭防火墙
- systemctl stop firewalld &amp;amp;&amp;amp; systemctl disable firewalld  关闭selinux
-setenforce 0 sed -i s/&amp;quot;SELINUX=enforcing&amp;quot;/&amp;quot;SELINUX=disabled&amp;quot;/g /etc/selinux/config sed -i s/&amp;quot;^SELINUXTYPE=targeted&amp;quot;/&amp;quot;&amp;quot;/g /etc/selinux/config  安装docker-ce curl -fsSL https://get.docker.com/ | sh
- 重启docker，配置自起 systemctl enable docker &amp;amp;&amp;amp; systemctl start docker
- 配置系统参数
-cat &amp;lt;&amp;lt;EOF | tee /etc/sysctl.</description>
+      <description>使用kubeadm安装k8s all-in-one单机测试环境 1.环境准备 使用Oracle VM VirtualBox安装虚拟机 配置双网卡，网卡1使用net方式;网卡2使用host-only（配置静态ip 192.168.134.0网段）;这样就可以实现虚拟机与宿主机，宿主机与虚拟机之前的通信。 安装centos 7操作系统（CentOS-7-x86_64-DVD-1708.iso），最小安装版。 配置国内yum</description>
     </item>
     
     <item>
@@ -59,16 +35,7 @@ cat &amp;lt;&amp;lt;EOF | tee /etc/sysctl.</description>
       <pubDate>Fri, 15 Jun 2018 21:56:26 +0800</pubDate>
       
       <guid>https://www.easyolap.cn/publications/openshift-001/</guid>
-      <description>OpenShift Origin 3.9.0手动单机安装
-1.配置主机 修改主机名为openshift.demo.com hostnamectl set-hostname openshift.demo.com
-开启SELINUX 修改/etc/selinux/config SELINUX=enforcing SELINUXTYPE=targeted 激活网络 \# nmcli con show  docker0 1a211fa6-1001-4fa9-b5c8-e3b2dcf73e5a bridge docker0 ens192 f16e6b7a-e593-4722-9ae4-1bdfa1fa4b4a ethernet ens192
-# nmcli con up ens192 # nmcli con mod ens192 connection.autoconnect yes # systemctl restart NetworkManager
-2.安装docker 安装依赖 yum install -y wget git net-tools bind-utils iptables-services bridge-utils bash-completion 安装docker yum install -y docker 配置Docker镜像服务器
-中国科技大学的镜像服务器进行加速。修改/etc/sysconfig/docker文件，在OPTIONS变量中追加&amp;ndash;registry-mirror=https://docker.mirrors.ustc.edu.cn &amp;ndash;insecure-registry=172.30.0.0/16。
-3.下载openshift-origin-server-v3.9.0-191fece-linux-64bit.tar.gz
-4.解压openshift-origin-server-v3.9.0-191fece-linux-64bit.tar.gz到 /opt/openshift
-5.添加到PATH
-6.测试docker是否能正常下载镜像 docker pull busybox</description>
+      <description>OpenShift Origin 3.9.0手动单机安装 1.配置主机 修改主机名为openshift.demo.com hostnamectl set-hostname openshift.demo.com 开启SELINUX 修改/etc/selinux/config SELINUX=enforcing SELINUXTYPE=targeted 激活网络 \# nmcli con show docker0 1a211fa6-1001-4fa9-b5c8-e3b2dcf73e5a bridge docker0 ens192 f16e6b7a-e593-4722-9ae4-1bdfa1fa4b4a ethernet ens192 # nmcli con up ens192 # nmcli con mod ens192 connection.autoconnect yes # systemctl restart NetworkManager 2.安装docker 安装依赖 yum install -y wget git net-tools bind-utils iptables-services bridge-utils bash-completion 安装docker yum install -y docker 配置Docker镜像服务器 中国科技大学的镜像服务器进行加速。修改/etc/sysconfig/docker文</description>
     </item>
     
     <item>
@@ -77,15 +44,7 @@ cat &amp;lt;&amp;lt;EOF | tee /etc/sysctl.</description>
       <pubDate>Fri, 15 Jun 2018 21:56:26 +0800</pubDate>
       
       <guid>https://www.easyolap.cn/publications/openshift-002/</guid>
-      <description>[OSEv3:children] masters nodes etcd nfs
-[OSEv3:vars] ansible_ssh_user=devops openshift_deployment_type=origin #因采用虚拟机部署学习 配置此选项跳过主机硬件信息检查 openshift_disable_check=disk_availability,docker_storage,memory_availability,docker_image_availability openshift_master_identity_providers=[{&amp;lsquo;name&amp;rsquo;:&amp;lsquo;htpasswd_auth&amp;rsquo;,&amp;lsquo;login&amp;rsquo;:&amp;lsquo;true&amp;rsquo;,&amp;lsquo;challenge&amp;rsquo;:&amp;lsquo;true&amp;rsquo;,&amp;lsquo;kind&amp;rsquo;:&amp;lsquo;HTPasswdPasswordIdentityProvider&amp;rsquo;,}]
-openshift_master_default_subdomain=okd.easyolap.cn openshift_deployment_type=origin os_firewall_use_firewalld=true
-[masters] server0
-[etcd] server0
-[nodes] server1 openshift_node_group_name=&amp;lsquo;node-config-master&amp;rsquo; server2 openshift_node_group_name=&amp;lsquo;node-config-compute&amp;rsquo; server3 openshift_node_group_name=&amp;lsquo;node-config-compute&amp;rsquo;
-[nfs] server0
-安装docker sudo curl -fsSL https://get.docker.com/ | sh
-问题 ：fatal: [server0]: UNREACHABLE! =&amp;gt; {&amp;ldquo;changed&amp;rdquo;: false, &amp;ldquo;msg&amp;rdquo;: &amp;ldquo;Failed to connect to the host via ssh: ssh: connect to host server0 port 22: Connection refused\r\n&amp;rdquo;, &amp;ldquo;unreachable&amp;rdquo;: true} 解决 sudo ansible-playbook openshift-ansible/playbooks/prerequisites.yml &amp;ndash;limit @/data/devops/openshift-ansible/playbooks/prerequisites.retry</description>
+      <description>[OSEv3:children] masters nodes etcd nfs [OSEv3:vars] ansible_ssh_user=devops openshift_deployment_type=origin #因采用虚拟机部署学习 配置此选项跳过主机硬件信息检查 openshift_disable_check=disk_availability,docker_storage,memory_availability,docker_image_availability openshift_master_identity_providers=[{&amp;lsquo;name&amp;rsquo;:&amp;lsquo;htpasswd_auth&amp;rsquo;,&amp;lsquo;login&amp;rsquo;:&amp;lsquo;true&amp;rsquo;,&amp;lsquo;challenge&amp;rsquo;:&amp;lsquo;true&amp;rsquo;,&amp;lsquo;kind&amp;rsquo;:&amp;lsquo;HTPasswdPasswordIdentityProvider&amp;rsquo;,}] openshift_master_default_subdomain=okd.easyolap.cn openshift_deployment_type=origin os_firewall_use_firewalld=true [masters] server0 [etcd] server0 [nodes] server1 openshift_node_group_name=&amp;lsquo;node-config-master&amp;rsquo; server2 openshift_node_group_name=&amp;lsquo;node-config-compute&amp;rsquo; server3 openshift_node_group_name=&amp;lsquo;node-config-compute&amp;rsquo; [nfs] server0 安装docker sudo curl -fsSL https://get.docker.com/ | sh 问题 ：fatal: [server0]: UNREACHABLE! =&amp;gt; {&amp;ldquo;changed&amp;rdquo;: false, &amp;ldquo;msg&amp;rdquo;: &amp;ldquo;Failed to connect to the host via ssh: ssh: connect to host server0 port 22: Connection refused\r\n&amp;rdquo;, &amp;ldquo;unreachable&amp;rdquo;: true} 解决 sudo ansible-playbook openshift-ansible/playbooks/prerequisites.yml &amp;ndash;limit @/data/devops/openshift-ansible/playbooks/prerequisites.retry</description>
     </item>
     
   </channel>

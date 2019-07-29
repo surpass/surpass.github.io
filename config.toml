@@ -1,49 +1,97 @@
 baseURL = "https://www.easyolap.cn"
-languageCode = "zh"
-title = "Eddie Webb"
-theme = "hugo-resume"
+builddrafts                = false
+languageCode               = "zn-Hans"
+canonifyurls               = true
+contentdir                 = "content"
+layoutdir                  = "layouts"
+publishdir                 = "public"
+enableEmoji                = true
+hasCJKLanguage             = true
+summaryLength              = 200
+Paginate                   = 3
 
+theme                      = "AllinOne"
+title                      = "Frank Li's blog"
 
+pygmentsuseclasses         = true
 
 [author]
   name = "¿Ó‘⁄≥¨"
   homepage = "https://www.easyolap.cn"
 
+[permalinks]
+  blog                     = "blog/:year-:month/:slug/"
 
-[original]
-  name = "Start Bootstrap Resume"
-  homepage = "https://startbootstrap.com/template-overviews/resume/"
-  repo = "https://github.com/BlackrockDigital/startbootstrap-resume"
-  
+
+[taxonomies]
+  tag                      = "tags"
+  series                   = "series"
+  category                 = "categories"
+
+
+[menu]
+  [[menu.main]]
+    name                   = "Blog"
+    weight                 = -120
+    identifier             = "blog"
+    url                    = "blog/"  
+
+  [[menu.main]]
+    name                   = "Moment"
+    weight                 = -110
+    identifier             = "moment"
+    url                    = "moment/" 
+
+  [[menu.main]]
+    name                   = "About"
+    weight                 = -100
+    identifier             = "about"
+    url                    = "about/index.html"  
+
+ 
+
 [params]
-    firstName = "Lee"
+  faviconfile              = "img/TechChat.jpg"               # from static/
+  avatar                   = "img/profile.jpg"             # path to image in static dir e.g img/avatar.png 
+  author                   = "Orianna"
+  description              = ["Be myself.", "Love the wonderful world.", "Do the right things and be a better man."]           # appears in the site header when set to a non-empty string
+  welcome_head             = "Hello, World!"
+  welcome_word             = "~ No Day But Today ~"
+
+  latestpostscount         = 5                             # how many posts to display on the home page
+  bloggroupby              = 'month'
+  dateform                 = "Jan 2, 2006"
+  dateformfull             = "2006-01-02  Monday  15:04:05"
+  noshowreadtime           = false                         # if true, don't show "<x> minutes read" in posts
+
+  # slides
+  slidesDirPath            = "themes/AllinOne/static/img/header-slides"    # path to image in local dir (path for hugo)
+  slidesDirPathURL         = "img/header-slides"    # path to image in static dir (for static pages)
+
+  # highlighting 
+  highlightjs              = true
+
+  # latex
+  katex                    = true
+
+  # links
+  email                    = "you@email.com"
+  github                   = "//github.com/surpass"
+  linkedin                 = "https://www.linkedin.com/in/frank-li-a109b65a/"
+  facebook                 = "//facebook.com/you"
+  googleplus               = "//google.com/you"
+  twitter                  = "//twitter.com/you" 
+  px500                    = "//px500"
+  instagram                = "//instagram.com/you"
+  include_rss              = true                          # include RSS <link> tag in <head> and show RSS icon
+  
+  # analytics
+  googleAnalytics          = "your-google-analytic-id"
+    
+    
+
+  firstName = "Lee"
     lastName = "Frank"
     address = "Shenyang, CN"
     phone = "13478875695"
     contactNote = "DevOps Engineer"
-    profileImage = "img/TechChat.jpg"
-    email = "surpass_li@aliyun.com"
-    description = "Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud."
-    favicon = "images/favicon.ico"
-    # what sections
-    showSkills = true
-    showProjects = true
-    showOpenSource = true
-    showPublications = true
-    showExperience = true
-    showEducation = true
-    showQr = true
-
-[[params.handles]]
-    name = "LinkedIn"
-    link = "https://www.linkedin.com/in/frank-li-a109b65a/"
-
-
-[[params.handles]]
-    name = "GitHub"
-    link = "https://github.com/surpass/"
-
-
-[[params.handles]]
-    name = "JavaEye"
-    link = "http://surpass-li.iteye.com/"

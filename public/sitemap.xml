@@ -231,6 +231,11 @@
   </url>
   
   <url>
+    <loc>https://www.easyolap.cn/series/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.easyolap.cn/tags/</loc>
     <lastmod>2018-08-16T21:44:58+08:00</lastmod>
     <priority>0</priority>
