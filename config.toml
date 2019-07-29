@@ -33,14 +33,14 @@ pygmentsuseclasses         = true
   [[menu.main]]
     name                   = "Blog"
     weight                 = -120
-    identifier             = "blog"
-    url                    = "blog/"  
+    identifier             = "blogs"
+    url                    = "blogs/"  
 
   [[menu.main]]
-    name                   = "Moment"
+    name                   = "随笔"
     weight                 = -110
-    identifier             = "moment"
-    url                    = "moment/" 
+    identifier             = "publications"
+    url                    = "publications/" 
 
   [[menu.main]]
     name                   = "About"
@@ -78,11 +78,11 @@ pygmentsuseclasses         = true
   email                    = "surpass_li@aliyun.com"
   github                   = "//github.com/surpass"
   linkedin                 = "https://www.linkedin.com/in/frank-li-a109b65a/"
-  facebook                 = "//facebook.com/you"
-  googleplus               = "//google.com/you"
-  twitter                  = "//twitter.com/you" 
-  px500                    = "//px500"
-  instagram                = "//instagram.com/you"
+#  facebook                 = "//facebook.com/you"
+#  googleplus               = "//google.com/you"
+#  twitter                  = "//twitter.com/you" 
+#  px500                    = "//px500"
+#  instagram                = "//instagram.com/you"
   include_rss              = true                          # include RSS <link> tag in <head> and show RSS icon
   
   # analytics
