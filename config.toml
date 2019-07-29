@@ -16,7 +16,7 @@ title                      = "Frank Li's blog"
 pygmentsuseclasses         = true
 
 [author]
-  name = "¿Ó‘⁄≥¨"
+  name = "ÊùéÂú®Ë∂Ö"
   homepage = "https://www.easyolap.cn"
 
 [permalinks]
@@ -56,7 +56,7 @@ pygmentsuseclasses         = true
   author                   = "Frank Li"
   description              = ["Be myself.", "Love the wonderful world.", "Do the right things and be a better man."]           # appears in the site header when set to a non-empty string
   welcome_head             = "Hello, World!"
-  welcome_word             = "~ ≥¨‘Ω”¿Œﬁ÷πæ≥£° ~"
+  welcome_word             = "~ Ë∂ÖË∂äÊ∞∏Êó†Ê≠¢Â¢ÉÔºÅ ~"
 
   latestpostscount         = 5                             # how many posts to display on the home page
   bloggroupby              = 'month'
