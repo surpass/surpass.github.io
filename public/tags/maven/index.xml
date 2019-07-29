@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maven on Frank Li&#39;s blog</title>
+    <link>https://www.easyolap.cn/tags/maven/</link>
+    <description>Recent content in Maven on Frank Li&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 16 Aug 2018 21:44:58 +0800</lastBuildDate>
+    
+	<atom:link href="https://www.easyolap.cn/tags/maven/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jenkins集成sonar使项目分析可视化 ！</title>
+      <link>https://www.easyolap.cn/projects/creations/jenkinsintergrationsonar/</link>
+      <pubDate>Thu, 16 Aug 2018 21:44:58 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/projects/creations/jenkinsintergrationsonar/</guid>
+      <description>本文转载自：DevOps小站 官方网站，原文地址：https://www.easyolap.cn/creations/JenkinsIntergrationSonar/ Jenkins 集成sonar 可以提供一个dashboard给项目成员和管理者，提供一个一目了然的项目分析情况，Sonar在代码分析是非常有用的工具。下面就具体说说如何进行集成。 实践目标 * 安装和配置jenkins中sonar插件 * 配置sonar scanner *</description>
+    </item>
+    
+    <item>
+      <title>Nexus install by docker！</title>
+      <link>https://www.easyolap.cn/publications/nexus-001-install-by-docker/</link>
+      <pubDate>Thu, 16 Aug 2018 21:44:58 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/publications/nexus-001-install-by-docker/</guid>
+      <description>本文转载自：DevOps小站 官方网站，原文地址：https://www.easyolap.cn/publications/nexus-001-install-by-docker/ 一、环境准备 安装docker,本文使用的版本为docker Server Version: 17.11.0-ce 定义域名和购买域名，制作私有证书或购买，本文采用已有域名，申请免费证书实现。 ​ 二、下载镜像并启协服务 ATLASSIAN_HOME=/data/nexus/ docker run -d &amp;ndash;name nexus &amp;ndash;hostname nexus &amp;ndash;user root:root &amp;ndash;restart always -v $ATLASSIAN_HOME/work:/nexus-data -p 8081:8081 -p 8082:8082 -p 6000-6010:6001-6010 -e NEXUS_CONTEXT=nexus sonatype/nexus3:3.13.0 三、修改容器</description>
+    </item>
+    
+  </channel>
+</rss>

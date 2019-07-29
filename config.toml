@@ -1,6 +1,6 @@
 baseURL = "https://www.easyolap.cn"
 builddrafts                = false
-languageCode               = "zn-Hans"
+languageCode               = "zh"
 canonifyurls               = true
 contentdir                 = "content"
 layoutdir                  = "layouts"
@@ -53,10 +53,10 @@ pygmentsuseclasses         = true
 [params]
   faviconfile              = "img/TechChat.jpg"               # from static/
   avatar                   = "img/profile.jpg"             # path to image in static dir e.g img/avatar.png 
-  author                   = "Orianna"
+  author                   = "Frank Li"
   description              = ["Be myself.", "Love the wonderful world.", "Do the right things and be a better man."]           # appears in the site header when set to a non-empty string
   welcome_head             = "Hello, World!"
-  welcome_word             = "~ No Day But Today ~"
+  welcome_word             = "~ ¿¿ ~"
 
   latestpostscount         = 5                             # how many posts to display on the home page
   bloggroupby              = 'month'
@@ -75,7 +75,7 @@ pygmentsuseclasses         = true
   katex                    = true
 
   # links
-  email                    = "you@email.com"
+  email                    = "surpass_li@aliyun.com"
   github                   = "//github.com/surpass"
   linkedin                 = "https://www.linkedin.com/in/frank-li-a109b65a/"
   facebook                 = "//facebook.com/you"

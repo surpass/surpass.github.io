@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cluster Fs on Frank Li&#39;s blog</title>
+    <link>https://www.easyolap.cn/tags/cluster-fs/</link>
+    <description>Recent content in Cluster Fs on Frank Li&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 27 Sep 2018 21:56:26 +0800</lastBuildDate>
+    
+	<atom:link href="https://www.easyolap.cn/tags/cluster-fs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用ceph-deploy 2.0.0 部署ceph </title>
+      <link>https://www.easyolap.cn/publications/ceph-cluster/</link>
+      <pubDate>Thu, 27 Sep 2018 21:56:26 +0800</pubDate>
+      
+      <guid>https://www.easyolap.cn/publications/ceph-cluster/</guid>
+      <description>OpenShift Origin 3.9.0手动单机安装 1.环境 1.1 硬件 6台 Linux虚拟机： server0, server1, server2, server3 , server4, server5 每台有两块磁盘 ： /dev/vdb, /dev/vdc 每台有一块网卡 ：eth0 1.2 软件 linux版本： CentOS 7.2.1511 内核版本 ： 3.10.0-327.el7.x86_64 ceph版本： 13.2.2 ceph-deploy版本： 2.0.0 2.准备工作(所有server) 2.1 配置静态IP 10.3.14.0/24 2.2 生成ssh key # ssh-keygen 2.3 配置主机名解析 把如下内容追加到/etc/hosts: 10.3.14.19 server0 deploy 10.3.14.20 server1 10.3.14.12 server2 10.3.14.13 server3 修改所有节点的主机名，方法如下： sudo hostnamectl set-hostname server0 2.4.添加用户 下</description>
+    </item>
+    
+  </channel>
+</rss>
