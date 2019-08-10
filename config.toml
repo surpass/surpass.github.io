@@ -41,7 +41,13 @@ pygmentsuseclasses         = true
     weight                 = -110
     identifier             = "publications"
     url                    = "publications/" 
-
+    
+  [[menu.main]]
+    name                   = "简介"
+    weight                 = -115
+    identifier             = "resume"
+    url                    = "resume/index.html" 
+    
   [[menu.main]]
     name                   = "About"
     weight                 = -100
