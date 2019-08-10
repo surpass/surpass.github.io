@@ -6,7 +6,7 @@ url: /resume/
 
 
 <p class="message">
-大家好，我叫 Frank Li，是一名程序员。
+Hi，My name is Frank Li，Is a programmer。
 </p>
 
 # 联系方式
@@ -24,7 +24,7 @@ url: /resume/
  - 工作年限：15+（年）
  - 技术博客：http://www.easyolap.cn
  - Github：http://github.com/surpass
-
+ - Bitbucket：https://bitbucket.org/frankleecn
  - 期望职位：Java/Golang软件工程师，架构师，运维工程师
  - 期望薪资：税后月薪15k~20k，特别喜欢的公司可例外
  - 期望城市：沈阳，大连，北京
@@ -34,7 +34,7 @@ url: /resume/
 # 工作经历
 （工作经历按逆序排列，最新的在最前边，按公司做一级分组，公司内按二级分组）
 
-## 天港惠达 （ 2019年5月 ~至今 ）
+## 北京天港惠达科技有限公司 （ 2019年5月 ~至今 ）
 
 ### 虚拟数据库研发 
 我在此项目负责了数据存储引擎的开发与对接，通过不断的学习短时间撑握Parquet列式数据存储格式的应用，成功完成大数据量的合并与分区管理，对接hdfs文件系统，AWS s3对象存储系统，ceph对象存储系统实现虚拟数据库在公有云，私有云的适配。得到的领导和同事的认可。
@@ -92,7 +92,7 @@ linux服务器的安装与系统优化，java应用的性能优化使系统负�
 （对于程序员来讲，没有什么比Show me the code能有说服力了）
 
  - [apache beam](https://github.com/apache/beam)：Apache Beam是一个开源的数据处理编程库，由Google贡献给Apache的项目，前不久刚刚成为Apache TLP项目。它提供了一个高级的、统一的编程模型，允许我们通过构建Pipeline的方式实现批量、流数据处理，并且构建好的Pipeline能够运行在底层不同的执行引擎上。刚刚接触该开源项目时，我的第一感觉就是：在编程API的设计上，数据集及其操作的抽象有点类似Apache Crunch（MapReduce Pipeline编程库）项目；而在支持统一数据处理模型上，能够让人想到Apache Flink项目。如果深入了解Apache Beam，你会发现未来Apache Beam很可能成为数据处理领域唯一一个能够将不同的数据应用统一起来的编程库。参与cassandra io部分
- 
+
 ## 技术文章
  http://www.easyolap.cn
 
@@ -112,6 +112,9 @@ linux服务器的安装与系统优化，java应用的性能优化使系统负�
 - 云和开放平台：阿里云/AWS
 
 ---
+
+# 我的简历
+[简历](https://www.easyolap.cn/resume.html)
 
 # 致谢
 感谢您花时间阅读我的简历，期待能有机会和您共事。
