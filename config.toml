@@ -49,7 +49,7 @@ pygmentsuseclasses         = true
     url                    = "resume/index.html" 
     
   [[menu.main]]
-    name                   = "About"
+    name                   = "About Me"
     weight                 = -100
     identifier             = "about"
     url                    = "about/index.html"  
