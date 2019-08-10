@@ -44,7 +44,7 @@ pygmentsuseclasses         = true
     
   [[menu.main]]
     name                   = "简介"
-    weight                 = -115
+    weight                 = -105
     identifier             = "resume"
     url                    = "resume/index.html" 
     
