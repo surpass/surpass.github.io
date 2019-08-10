@@ -20,12 +20,14 @@ url: /about/
  * 2007-2008 架构师（盛生医药，合伙创业电子商务）
  * 2009-2009 架构师（智诚祥科技，政府项目）
  * 2010-2018 资深软件工程师，技术负责人（东软）
- * 2018-至今 资深DevOps工程师（新炬网络）
+ * 2018.09-2019.05 资深DevOps工程师（新炬网络）
+ * 2019.05-至今 数据库研发开发工程师（天港惠达）
 
 
 ### 我的技能
 
  * 编程语言：JAVA,了解PHP,Python，捣鼓 Go……
+ * 熟悉阿里云，AWS S3,AWS Athena等云应用；
  * 熟练使用Ofbiz,spring boot等流行框架,熟悉RESTful,webservice,microservice等web服务架构;
  * 熟练使用Maven对项目进行模块化管理和组织;
  * 掌握Nexus server搭建，熟练构建私有maven仓库和Docker镜像库;
