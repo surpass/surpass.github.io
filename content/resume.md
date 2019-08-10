@@ -23,6 +23,7 @@ Hi，My name is Frank Li，Is a programmer。
  - 大学/沈阳工程学院（沈阳电力高等专科学校） 
  - 工作年限：15+（年）
  - 技术博客：http://www.easyolap.cn
+ - JAVAEYE博客：[surpass-li.iteye.com](http://surpass-li.iteye.com/)
  - Github：http://github.com/surpass
  - Bitbucket：https://bitbucket.org/frankleecn
  - 期望职位：Java/Golang软件工程师，架构师，运维工程师
@@ -70,13 +71,6 @@ Hi，My name is Frank Li，Is a programmer。
  * 有点宅。
 
 
-### 一些链接
-
- * JAVAEYE博客：[surpass-li.iteye.com](http://surpass-li.iteye.com/)
- * Github: [github.com/surpass](https://github.com/surpass)
- * Email：surpass_li@aliyun.com(surpass.li@gmail.com)
- * 微信号：s46488820  
- * 
 ---
 
 # 主要工作经历
