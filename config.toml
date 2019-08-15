@@ -29,6 +29,26 @@ pygmentsuseclasses         = true
   category                 = "categories"
 
 
+[languages]
+  [[languages.zh.menu.main]]
+    name                   = "博客"
+    weight                 = -120
+    identifier             = "blogs"
+    url                    = "blogs/"  
+
+  [[languages.zh.menu.main]]
+    name                   = "随笔"
+    weight                 = -110
+    identifier             = "publications"
+    url                    = "publications/" 
+    
+  [[languages.zh.menu.main]]
+    name                   = "关于我"
+    weight                 = -100
+    identifier             = "about"
+    url                    = "resume/index.html"  
+
+
 [menu]
   [[menu.main]]
     name                   = "Blog"
