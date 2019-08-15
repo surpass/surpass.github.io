@@ -23,7 +23,7 @@ java finalize在高并发应用中安全删除文件的应用
 
 
 1. finalize的作用
- 
+
 
 finalize()是Object的protected方法，子类可以覆盖该方法以实现资源清理工作，GC在回收对象之前调用该方法。
 finalize()与C++中的析构函数不是对应的。C++中的析构函数调用的时机是确定的（对象离开作用域或delete掉），但Java中的finalize的调用具有不确定性
@@ -36,7 +36,7 @@ finalize方法可能会带来性能问题。因为JVM通常在单独的低优先
 对象再生问题：finalize方法中，可将待回收对象赋值给GC Roots可达的对象引用，从而达到对象再生的目的
 finalize方法至多由GC执行一次(用户当然可以手动调用对象的finalize方法，但并不影响GC对finalize的行为)
 3. finalize的执行过程(生命周期)
- 
+
 
 (1) 首先，大致描述一下finalize流程：当对象变成(GC Roots)不可达时，GC会判断该对象是否覆盖了finalize方法，若未覆盖，则直接将其回收。否则，若对象未执行过finalize方法，将其放入F-Queue队列，由一低优先级线程执行该队列中对象的finalize方法。执行finalize方法完毕后，GC会再次判断该对象是否可达，若不可达，则进行回收，否则，对象“复活”。
 (2) 具体的finalize流程：
@@ -49,15 +49,15 @@ finalizer-reachable(f-reachable)：表示不是reachable，但可通过某个fin
 unreachable：对象不可通过上面两种途径可达
 
 
-示例：
+示例伪代码：
 
-....
+...
 public class ParquetFile {
 //部分属性略
 
 private int refCnt = 1;//引用计数器
 
- public synchronized void addRefCoun() {
+ 	public synchronized void addRefCoun() {
         refCnt = refCnt + 1;
     }
     
@@ -68,22 +68,16 @@ private int refCnt = 1;//引用计数器
     public synchronized int getRefCoun() {
        return refCnt;
     }
-    
 
-@Override
-    public void finalize() {
-        _log.info("finalize gc delete file :{}",fpath);
-        if(ParquetFileManager.getInstance().getReference(fname)==null) {
-            ParquetFileManager.getInstance().deleteFile(this.fpath);
-        }
-        else {
-            _log.info("finalize gc delete file :{},but this file re used not del!!!",fpath);
-        }
-    }
+
+	@Override
+	public void finalize() {
+	       //在此删除文件
+	}
 }
-
+...
 public class GcTest{
-    //在此只是测试用，在多线程应用中当文件没有被引用时即引用计数器为0时，系统GC时即会调用对象的finalize()方法，实现安全的删除文件。
+在此只是测试用，在多线程应用中当文件没有被引用时即引用计数器为0时，系统GC时即会调用对象的finalize()方法，实现安全的删除文件。
      public static void main(String[] args) throws Exception {
          ParquetFile fileRef = new ParquetFile("test.par");
          ParquetFileManager.getInstance().addRef(fileRef);
@@ -94,5 +88,5 @@ public class GcTest{
          System.gc();  
          Thread.sleep(5000);
      }
-    
+
 }
