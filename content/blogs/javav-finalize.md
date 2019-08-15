@@ -51,50 +51,49 @@ unreachable：对象不可通过上面两种途径可达
 示例伪代码：
 
 ```
+    public class ParquetFile {
+    //部分属性略
 
-```
+    ​	private int refCnt = 1;//引用计数器
 
-public class ParquetFile {
-//部分属性略
-
-private int refCnt = 1;//引用计数器
-
- 	public synchronized void addRefCoun() {
-        refCnt = refCnt + 1;
-    }
+ 		public synchronized void addRefCoun() {
+       	 refCnt = refCnt + 1;
+        }
     
-    public synchronized void subRefCoun() {
+
+        public synchronized void subRefCoun() {
         refCnt = refCnt - 1;
-    }
+        }
     
-    public synchronized int getRefCoun() {
-       return refCnt;
+        public synchronized int getRefCoun() {
+           return refCnt;
+        }
+
+
+            @Override
+            public void finalize() {
+                   //在此删除文件
+            }
+        }
+
+```
+
+```
+
+    public class GcTest{
+    在此只是测试用，在多线程应用中当文件没有被引用时即引用计数器为0时，系统GC时即会调用对象的finalize()方法，实现安全的删除文件。
+         public static void main(String[] args) throws Exception {
+             ParquetFile fileRef = new ParquetFile("test.par");
+             ParquetFileManager.getInstance().addRef(fileRef);
+             //someint proce code
+
+
+             ParquetFileManager.getInstance().removeRef("test.par")
+
+             System.gc();  
+             Thread.sleep(5000);
+         }
+
     }
 
-
-	@Override
-	public void finalize() {
-	       //在此删除文件
-	}
-}
-
-```
-
-```
-
-public class GcTest{
-在此只是测试用，在多线程应用中当文件没有被引用时即引用计数器为0时，系统GC时即会调用对象的finalize()方法，实现安全的删除文件。
-     public static void main(String[] args) throws Exception {
-         ParquetFile fileRef = new ParquetFile("test.par");
-         ParquetFileManager.getInstance().addRef(fileRef);
-         //someint proce code
-         
-
-         ParquetFileManager.getInstance().removeRef("test.par")
-         
-         System.gc();  
-         Thread.sleep(5000);
-     }
-
-}
 ```
