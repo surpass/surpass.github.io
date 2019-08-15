@@ -1,6 +1,10 @@
 baseURL = "https://www.easyolap.cn"
+
+languageCode = "zh-CN"
+defaultContentLanguage = "zh"
+
+
 builddrafts                = false
-languageCode               = "zh"
 canonifyurls               = true
 contentdir                 = "content"
 layoutdir                  = "layouts"
