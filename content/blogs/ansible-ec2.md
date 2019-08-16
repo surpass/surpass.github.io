@@ -1,14 +1,14 @@
 ---
 title: "使用Ansible连接AWS EC2"
-date: 2019-08-08T21:44:58+08:00
+date: 2019-08-16T21:44:58+08:00
 author: "Frank Li"
 authorlink: "https://www.easyolap.cn/resume/"
 translator: "李在超"
 pubtype: "Talk"
 featured: true
-description: "java finalize gc 垃圾回收 安全删除文件"
-tags: ["java","finalize","GC"]
-keywords: ["java","finalize","GC"]
+description: "使用Ansible连接AWS EC2"
+tags: [""ansible","ec2","aws"]
+keywords: ["ansible","ec2","publickey"]
 image: "/img/ansible.jpg"
 link: "https://java.oracle.com"
 fact: "自动化运维工具"
@@ -54,12 +54,6 @@ hosts文件中内容：
 ```
 [local]
 localhost
-
-
-
- 
-
-
 
 [aws]
 52.82.*.*
@@ -110,9 +104,6 @@ ansible aws -i hosts --private-key centos.pem -m ping -u centos -s -U root -K
 
 
 还可以使用su来使用root用户执行ping命令
-
-
-
 ```
 ansible aws -i hosts --private-key centos.pem -m ping -u centos -S -R root --ask-su-pass
 ```
@@ -140,26 +131,14 @@ ansible aws -i hosts --private-key centos.pem -a "/bin/echo hello" -u ec2-user
 需求：使用Ansible Playbook在EC2上创建用户
 
 Hosts文件内容：
-
-
-
 ```
 [local]
 127.0.0.1
-
-
-
- 
-
-
 
 [aws]
 52.82.*.*    ansible_ssh_private_key_file=centos.pem
 52.82.*.*    ansible_ssh_user=centos
 ```
-
-
-
 devel.yml文件内容
 ```
 ---
@@ -175,9 +154,6 @@ devel.yml文件内容
 ```
 
 执行
-
-
-
 ```
 ansible-playbook -i hosts -s devel.yml
 ```
@@ -185,9 +161,6 @@ ansible-playbook -i hosts -s devel.yml
 需求：将本地文件拷贝至EC2中
 
 devel.yml文件的tasks中增加：
-
-
-
 ```
   - name: Copy ansible inventory file to client
     copy: src=HelloWorld.java dest=/home/centos
