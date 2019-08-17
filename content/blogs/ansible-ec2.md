@@ -22,8 +22,8 @@ sitemap:
 # 使用Ansible连接AWS EC2
 
  
- 
-\1. 使用Ansible ad-hoc的方式连接AWS EC2
+
+1. 使用Ansible ad-hoc的方式连接AWS EC2
 
 需求：使用ansible连接上EC2执行ping等命令
 
