@@ -26,7 +26,7 @@ Hi，My name is Frank Li，Is a programmer。
  - JAVAEYE博客：[surpass-li.iteye.com](http://surpass-li.iteye.com/)
  - Github：http://github.com/surpass
  - Bitbucket：https://bitbucket.org/frankleecn
- - 期望职位：Java/Golang软件工程师，架构师，运维工程师
+ - 期望职位：Java/Golang软件工程师，架构师，DevOps运维工程师
  - 期望薪资：税后月薪15k~20k，特别喜欢的公司可例外
  - 期望城市：沈阳，大连，北京
 
@@ -69,7 +69,6 @@ Hi，My name is Frank Li，Is a programmer。
 
  * 喜欢思考，对未知世界保持好奇心。
  * 有点宅。
-
 
 ---
 
@@ -156,7 +155,7 @@ linux服务器的安装与系统优化，java应用的性能优化使系统负�
 ---
 
 # 我的简历
-[简历](https://www.easyolap.cn/resume.html)
+[**详细简历**](https://www.easyolap.cn/resume.html)
 
 # 致谢
 感谢您花时间阅读我的简历，期待能有机会和您共事。
