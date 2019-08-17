@@ -141,7 +141,7 @@ linux服务器的安装与系统优化，java应用的性能优化使系统负�
  
  [**DevOps工具系列之-Docker安装与使用**](https://www.easyolap.cn/speech/DevOps-Docker.pdf "DevOps工具系列之-Docker安装与使用")
  
- [**DevOps工具系列之-Maven安装与使用**](https://www.easyolap.cn/speech/DevOps-Maven.pdf "DevOps工具系列之-Maven安装与使用*")
+ [**DevOps工具系列之-Maven安装与使用**](https://www.easyolap.cn/speech/DevOps-Maven.pdf "DevOps工具系列之-Maven安装与使用")
 
 
 # 技能清单
