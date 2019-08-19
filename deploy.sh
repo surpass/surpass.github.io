@@ -1,4 +1,5 @@
-HUOG_HOME=/var/jenkins_home/workspace/easyolap.cn
+export HUOG_HOME=/var/jenkins_home/workspace/easyolap.cn
 
 cd $HUOG_HOME
-cp -a public $HUOG_HOME/www
+rm -rf www/*
+cp -a public/* $HUOG_HOME/www/

@@ -15,7 +15,7 @@ summaryLength              = 200
 Paginate                   = 3
 
 theme                      = "AllinOne"
-title                      = "Frank Li's blog"
+title                      = "Frank Li's blogs"
 
 pygmentsuseclasses         = true
 
