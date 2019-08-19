@@ -145,6 +145,9 @@ linux服务器的安装与系统优化，java应用的性能优化使系统负�
 
  [**DevOps工具系列之-JIRA及Scrum的使用**](https://www.easyolap.cn/speech/DevOps-JIRA&Scrum.pdf "DevOps工具系列之-JIRA及Scrum的使用")
 
+ [**DevOps工具系列之-Gitlab及Git的使用**](https://www.easyolap.cn/speech/DevOps-Gitlab&git.pdf "DevOps工具系列之-JIRA及Scrum的使用")
+
+[**DevOps工具系列之-java开发环境搭建与配置**](https://www.easyolap.cn/speech/DevOps-JAVA "DevOps工具系列之-java开发环境搭建与配置")
 
 
 # 技能清单
