@@ -29,7 +29,7 @@ sitemap:
 
 下面来个简单的示例，标注(1,2,3,4,5)我们要重点关注的数据
 
-![图片描述](img/mysql/001.jpg)
+![图片描述](/img/mysql/001.jpg)
 
 1. type列，连接类型。一个好的sql语句至少要达到range级别。杜绝出现all级别
 2. key列，使用到的索引名。如果没有选择索引，值是NULL。可以采取强制索引方式
@@ -100,7 +100,7 @@ select colname … from A表 Left join B表 on where a.id = b.id where b.id is n
 
 取出的结果集如下图表示，A表不在B表中的数据
 
-![图片描述](img/mysql/002.jpg)
+![图片描述](/img/mysql/002.jpg)
 
 ## 十、使用合理的分页方式以提高分页的效率
 
@@ -122,7 +122,7 @@ select id,name from table_name where id> 866612 limit 20
 
 如下图这个sql语句，扫描的行数成百万级以上的时候就可以使用分段查询
 
-![图片描述](img/mysql/003.jpg)
+![图片描述](/img/mysql/003.jpg)
 
  
 
@@ -134,7 +134,7 @@ select id,name from table_name where id> 866612 limit 20
 
 如下图所示，虽然给secret字段添加了索引，但在explain结果果并没有使用
 
-![图片描述](img/mysql/004.jpg)
+![图片描述](/img/mysql/004.jpg)
 
 那么如何解决这个问题呢，答案：**使用全文索引**
 
@@ -172,7 +172,7 @@ select user_id,user_project from table_name where age=36/2;
 
 where 子句中出现 column 字段的类型和传入的参数类型不一致的时候发生的类型转换，建议先确定where中的参数类型
 
-![图片描述](img/mysql/005.jpg)
+![图片描述](/img/mysql/005.jpg)
 
 ## 十五、对于联合索引来说，要遵守最左前缀法则
 
@@ -190,7 +190,7 @@ where 子句中出现 column 字段的类型和传入的参数类型不一致的
 
 ## 十八、关于JOIN优化
 
-![图片描述](img/mysql/006.jpg)
+![图片描述](/img/mysql/006.jpg)
 
 - LEFT JOIN A表为驱动表
 - INNER JOIN MySQL会自动找出那个数据少的表作用驱动表
@@ -215,7 +215,7 @@ select * from B;
 
 **利用小表去驱动大表**
 
-![图片描述](img/mysql/007.jpg)
+![图片描述](/img/mysql/007.jpg)
 
 从原理图能够直观的看出如果能够减少驱动表的话，减少嵌套循环中的循环次数，以减少 IO总量及CPU运算的次数。
 
@@ -223,7 +223,7 @@ select * from B;
 
 inner join是由mysql选择驱动表，但是有些特殊情况需要选择另个表作为驱动表，比如有group by、order by等「Using filesort」、「Using temporary」时。STRAIGHT_JOIN来强制连接顺序，在STRAIGHT_JOIN左边的表名就是驱动表，右边则是被驱动表。**在使用STRAIGHT_JOIN有个前提条件是该查询是内连接，也就是inner join。其他链接不推荐使用STRAIGHT_JOIN，否则可能造成查询结果不准确。**
 
-![图片描述](img/mysql/008.jpg)
+![图片描述](/img/mysql/008.jpg)
 
 这个方式有时可能减少3倍的时间。
 
