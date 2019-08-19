@@ -12,6 +12,7 @@ keywords: ["ansible","ec2","publickey"]
 image: "/img/ansible.jpg"
 link: "https://java.oracle.com"
 fact: "自动化运维工具"
+summary: "使用Ansible连接AWS EC2"
 weight: 400
 sitemap:
   priority : 0.8
