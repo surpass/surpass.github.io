@@ -1,4 +1,4 @@
-export HUOG_HOME=/data/devops/hugo/easyolap.cn
+export HUOG_HOME=/var/jenkins_home/workspace/easyolap.cn
 
 sudo docker rm easyolap-hugo -f
 sudo rm -rf $HUOG_HOME/output/*
