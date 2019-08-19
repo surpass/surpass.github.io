@@ -1,6 +1,6 @@
 ---
 title: "Presto实现原理"
-date: 2018-08-08T21:44:58+08:00
+date: 2018-08-19T21:44:58+08:00
 author: "Frank Li"
 authorlink: "https://www.easyolap.cn/resume/"
 translator: "李在超"
@@ -23,7 +23,6 @@ sitemap:
 
 转自（https://www.toutiao.com/i6721655256595300868）
 
-咔咔侃技术 2019-08-06 18:11:00
 
 Facebook的数据仓库存储在少量大型Hadoop/HDFS集群。Hive是Facebook在几年前专为Hadoop打造的一款数据仓库工具。在以前，Facebook的科学家和分析师一直依靠Hive来做数据分析。但Hive使用MapReduce作为底层计算框架，是专为批处理设计的。但随着数据越来越多，使用Hive进行一个简单的数据查询可能要花费几分到几小时，显然不能满足交互式查询的需求。Facebook也调研了其他比Hive更快的工具，但它们要么在功能有所限制要么就太简单，以至于无法操作Facebook庞大的数据仓库。
 
