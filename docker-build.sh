@@ -1,7 +1,7 @@
-HUOG_HOME=/data/devops/hugo/easyolap.cn
+export HUOG_HOME=/data/devops/hugo/easyolap.cn
 
 sudo docker rm easyolap-hugo -f
-sudo rm -rf output/*
+sudo rm -rf #(HUOG_HOME)/output/*
 sudo docker run --env HUGO_BASEURL='https://easyolap.cn/' \
 --env HUGO_THEME=AllinOne --name "easyolap-hugo" \
 --publish-all \
