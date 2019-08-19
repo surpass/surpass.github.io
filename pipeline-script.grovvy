@@ -1,0 +1,41 @@
+pipeline {
+    agent any
+    stages {
+        stage("Stage1") {
+            
+            steps {
+                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'surpass1', url: 'https://github.com/surpass/surpass.github.io']]])
+            }
+        }
+        stage("并行执行的 Stage") {
+            parallel {
+                stage("Stage2.1统译静态网站") {
+                    steps {
+                        timestamps {
+	                            sh 'sh /var/jenkins_home/workspace/easyolap.cn/build.sh'
+	                            sleep 1
+	                            sh 'sh /var/jenkins_home/workspace/easyolap.cn/deploy.sh'
+                             
+                        }
+                    }
+                }
+                stage("Stage2.2同步到github") {
+                    steps {
+                        timestamps {
+                            echo "在 agent test3 上执行的并行任务 2."
+                            sleep 10
+                            echo "在 agent test3 上执行的并行任务 2 结束."
+                        }
+                    }
+                }
+            }
+        }
+        stage("Stage3") {
+            steps {
+                timestamps {
+                    echo "这是最后一个被执行的 stage."
+                }
+            }
+        }
+    }
+}
