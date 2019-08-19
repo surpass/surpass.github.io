@@ -1,4 +1,4 @@
-HUOG_HOME=/data/devops/hugo/easyolap.cn
+HUOG_HOME=/var/jenkins_home/workspace/easyolap.cn
 
 cd $HUOG_HOME
-cp -a public /opt/devops/nginx/data/easyolap.cn/
+cp -a public $HUOG_HOME/www
