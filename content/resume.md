@@ -130,7 +130,8 @@ linux服务器的安装与系统优化，java应用的性能优化使系统负�
 # 开源项目和作品
 
 ## 开源项目
-（对于程序员来讲，没有什么比Show me the code能有说服力了）
+ 
+  - [中国DevOps社区](https://devopschina.org/)：运维志愿者，参与中国DevOps社区运维。
 
  - [apache beam](https://github.com/apache/beam)：Apache Beam是一个开源的数据处理编程库，由Google贡献给Apache的项目，前不久刚刚成为Apache TLP项目。它提供了一个高级的、统一的编程模型，允许我们通过构建Pipeline的方式实现批量、流数据处理，并且构建好的Pipeline能够运行在底层不同的执行引擎上。刚刚接触该开源项目时，我的第一感觉就是：在编程API的设计上，数据集及其操作的抽象有点类似Apache Crunch（MapReduce Pipeline编程库）项目；而在支持统一数据处理模型上，能够让人想到Apache Flink项目。如果深入了解Apache Beam，你会发现未来Apache Beam很可能成为数据处理领域唯一一个能够将不同的数据应用统一起来的编程库。参与cassandra io部分
 
