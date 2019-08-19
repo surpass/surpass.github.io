@@ -26,6 +26,7 @@ Hi，My name is Frank Li，Is a programmer。
  - JAVAEYE博客：[surpass-li.iteye.com](http://surpass-li.iteye.com/)
  - Github：http://github.com/surpass
  - Bitbucket：https://bitbucket.org/frankleecn
+ - Gitlab：https://gitlab.com/surpass_li
  - 期望职位：Java/Golang软件工程师，架构师，DevOps运维工程师
  - 期望薪资：税后月薪20k~30k，特别喜欢的公司可例外
  - 期望城市：沈阳，大连，北京
