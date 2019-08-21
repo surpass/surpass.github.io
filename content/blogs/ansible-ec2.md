@@ -156,7 +156,7 @@ devel.yml文件内容
 
 执行
 ```
-ansible-playbook -i hosts -s devel.yml
+ansible-playbook -i hosts devel.yml
 ```
 
 需求：将本地文件拷贝至EC2中
@@ -171,7 +171,7 @@ devel.yml文件的tasks中增加：
 执行
 
 ```
-ansible-playbook -i hosts -s devel.yml
+ansible-playbook -i hosts devel.yml
 ```
 
 yml文件task中的user,copy都为ansible提供的模块名。常用的还有command, template,notify,service模块。
