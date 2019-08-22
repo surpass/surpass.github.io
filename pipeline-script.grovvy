@@ -1,10 +1,68 @@
+#!groovy
 pipeline {
     agent any
+    
+    parameters {
+        //git代码路径【参数值对外隐藏】    
+        string(name:'repoUrl', defaultValue: 'https://github.com/surpass/surpass.github.io', description: 'git代码路径')
+        //repoBranch参数后续替换成git parameter不再依赖手工输入,JENKINS-46451【git parameters目前还不支持pipeline】    
+        string(name:'repoBranch', defaultValue: '*/master', description: 'git分支名称')    
+    }
+    
+    tools {        
+        maven 'maven3'
+    }
+    environment{        
+        //git服务全系统只读账号cred_id【参数值对外隐藏】        
+        CRED_ID='surpass1'        
+        //测试人员邮箱地址【参数值对外隐藏】        
+        QA_EMAIL='*****@*****.com'        
+        //接口测试（网络层）的job名，一般由测试人员编写        
+        ITEST_JOBNAME='Guahao_InterfaceTest_ExpertPatient'    
+    }
+    
+    post{       
+        success{
+            script {
+                 //需要安装 Build User Vars Plugin 
+                 wrap([$class: 'BuildUser']) {
+                      mail to: "${BUILD_USER_EMAIL }",
+                      subject: "PineLine '${JOB_NAME}' (${BUILD_NUMBER}) result",
+                      body: "${BUILD_USER}'s pineline '${JOB_NAME}' (${BUILD_NUMBER}) run success\n请及时前往${env.BUILD_URL}进行查看"
+                }
+            }
+        }
+        failure{
+            script {
+                wrap([$class: 'BuildUser']) {
+                    mail to: "${BUILD_USER_EMAIL }",
+                    subject: "PineLine '${JOB_NAME}' (${BUILD_NUMBER}) result",
+                    body: "${BUILD_USER}'s pineline  '${JOB_NAME}' (${BUILD_NUMBER}) run failure\n请及时前往${env.BUILD_URL}进行查看"
+                }
+            }
+        }       
+        unstable{
+            script {
+                wrap([$class: 'BuildUser']) {
+                    mail to: "${BUILD_USER_EMAIL }",
+                    subject: "PineLine '${JOB_NAME}' (${BUILD_NUMBER})结果",
+                    body: "${BUILD_USER}'s pineline '${JOB_NAME}' (${BUILD_NUMBER}) run unstable\n请及时前往${env.BUILD_URL}进行查看"
+                }
+            }
+        }
+    }
     stages {
+        stage('build user') {
+          steps {
+            wrap([$class: 'BuildUser']) {
+              sh 'echo "${BUILD_USER}"'
+            }
+          }
+        }
         stage("Stage1") {
             
             steps {
-                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'surpass1', url: 'https://github.com/surpass/surpass.github.io']]])
+                 checkout([$class: 'GitSCM', branches: [[name: repoBranch]], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: CRED_ID, url: repoUrl]]])
             }
         }
         stage("并行执行的 Stage") {
@@ -15,7 +73,6 @@ pipeline {
 	                            sh 'sh /var/jenkins_home/workspace/easyolap.cn/build.sh'
 	                            sleep 1
 	                            sh 'sh /var/jenkins_home/workspace/easyolap.cn/deploy.sh'
-                             
                         }
                     }
                 }
