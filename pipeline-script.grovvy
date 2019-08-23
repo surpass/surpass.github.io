@@ -6,7 +6,8 @@ pipeline {
         //git代码路径【参数值对外隐藏】    
         string(name:'repoUrl', defaultValue: 'https://github.com/surpass/surpass.github.io', description: 'git代码路径')
         //repoBranch参数后续替换成git parameter不再依赖手工输入,JENKINS-46451【git parameters目前还不支持pipeline】    
-        string(name:'repoBranch', defaultValue: '*/master', description: 'git分支名称')    
+        string(name:'repoBranch', defaultValue: '*/master', description: 'git分支名称')
+        string(name:'BUILD_USER_EMAIL', defaultValue: 'surpass_li@aliyun.com', description: '默认通知邮件')
     }
     
     tools {        
