@@ -1,6 +1,6 @@
 ---
 title: "Athena 支持的数据类型"
-date: 2019-08-16T21:44:58+08:00
+date: 2019-08-22T21:44:58+08:00
 author: "Frank Li"
 authorlink: "https://www.easyolap.cn/resume/"
 translator: "李在超"
