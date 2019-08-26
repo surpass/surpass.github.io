@@ -9,13 +9,8 @@ featured: true
 description: "简历，JAVA高级程序员，JAVA架构师"
 tags: ["Java","java","Java程序员","Golang","JAVA架构师"]
 keywords: ["Java","java","Java程序员","Golang","JAVA架构师"]
-image: "/img/git.jpg"
-link: "https://git-scm.com/"
-fact: "git应用笔记"
-weight: 400
-sitemap:
-  priority : 0.8
 url: /resume/
+summary:"本人工作认真负责、积极主动、善于团队工作，思维敏捷，创造力强，能吃苦；具有大型软件开发经验。负责过大型电子商务网站的设计与开发,有团队意识,善于合作,乐于钻研,诚信、敬业,责任心强."
 ---
 
 
