@@ -1,12 +1,12 @@
 ---
-title: 关于我 
+title: Java程序员 
 date: 2019-08-10T10:50:00+08:00
 author: "Frank Li"
 authorlink: "https://www.easyolap.cn/resume/"
 translator: "李在超"
 pubtype: "Talk"
 featured: true
-description: "简历，JAVA高级程序员，JAVA架构师"
+description: "简历,JAVA高级程序员,JAVA架构师,Go程序员,DevOps实践者"
 tags: ["Java","java","Java程序员","Golang","JAVA架构师"]
 keywords: ["Java","java","Java程序员","Golang","JAVA架构师"]
 url: /resume/
