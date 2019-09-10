@@ -1,5 +1,5 @@
 ---
-title: "Java Service Wrapper介绍与应用"
+title: "JavaServiceWrapper介绍与应用"
 date: 2019-09-10T21:44:58+08:00
 author: "Frank Li"
 authorlink: "https://www.easyolap.cn/resume/"
@@ -18,7 +18,7 @@ sitemap:
   priority : 0.8
 ---
 
-> 本文转载自：DevOps小站 官方网站，原文地址：https://www.easyolap.cn/blogs/JavaServiceWrapper 
+> 本文转载自：DevOps小站 官方网站，原文地址：https://www.easyolap.cn/blogs/java-service-wrapper 
 
 # Java Service Wrapper 介绍与应用
 
@@ -30,7 +30,7 @@ web应用多数打成war包在web容器（如tomcat,jetty等）中运行
 后台服务应用一般打成jar包，然后使用命令行（如java -jar xxx.jar）运行
 前面两种运行方式在本文不作讨论，主要描述java开发的后台服务程序（如定时任务程序，文件处理，数据备份等）。
 
-###1.1、为什么要用服务形式运行
+### 1.1、为什么要用服务形式运行
 若使用命令行方式运行java程序，把命令写成脚本（如bat脚本）运行即可，但命令行方式有其不方便之处，如命令行窗口不能关闭，关闭即停止，因此维护人员容易误操作（关闭窗口使程序停止）;若服务器宕机或其它原因，程序往往无法在服务器重启时自动启动。在windows下，很多程序都是以服务的形式运行，这也符合windows的管理。因此，建议使用服务形式运行，操作方便。
 
 ### 1.2、如何让java程序以服务形式运行
@@ -39,10 +39,10 @@ web应用多数打成war包在web容器（如tomcat,jetty等）中运行
 > Java Service Wrapper:目前业界最知名、最成熟的解决方案，添加任何额外的代码即可使用。Yet Another Java Service Wrapper类似JSW的开源实现版本，不过官方支持不怎么好。
 > Apache Commons Daemon:著名的Apache Commons工具包的成员，按规则添加启动程序，再编写脚本实现。
 > 其它的:（如WinRun4J，Launch4j）未使用过，更多可参考java开源打包工具
-> `
+> 
 
 
-        本文主要讲解使用java service wrapper把java程序作为服务运行，它不需要添加任何代码，配置即可。
+本文主要讲解使用java service wrapper把java程序作为服务运行，它不需要添加任何代码，配置即可。
 
 
 Java Service Wrapper 顾名思义就是将java程序包装成系统程序，这样可以随着系统的运行而运行。换句话说 JSW可以将我们的java后台程序包装成一个后台服务运行。除此之外，JSW还可以在java程序挂掉以后自动拉起服务，相当于提供了一个守护进程。JSW主要目标就是，单点服务尽可能做到高可靠，程序挂了之后立马拉起，这样能够大大降低运维成本。
@@ -262,7 +262,7 @@ assembly.xml文件内容：
 	</formats>
 	<fileSets>
         <fileSet>
-            <directory>${project.build.directory}/dist/jsw/antsdb/bin</directory>
+            <directory>${project.build.directory}/dist/jsw/beyond/bin</directory>
             <outputDirectory>/bin</outputDirectory>
             <fileMode>0755</fileMode>
         </fileSet>
@@ -287,4 +287,8 @@ assembly.xml文件内容：
 ## 4.解压后运行测试
 
  ./bin/beyond
+
+```
 Usage: ./beyond{ console | start | stop | restart | status | dump }
+```
+
