@@ -20,29 +20,29 @@ sitemap:
 
 LinuxSystemctl是一个系统管理守护进程、工具和库的集合，用于取代System V、service和chkconfig命令，初始进程主要负责控制systemd系统和服务管理器。通过Systemctl –help可以看到该命令主要分为：查询或发送控制命令给systemd服务，管理单元服务的命令，服务文件的相关命令，任务、环境、快照相关命令，systemd服务的配置重载，系统开机关机相关的命令。 
 
-## 1. 列出所有可用单元 
+### 1. 列出所有可用单元 
 
 ```
 #systemctl list-unit-files
 ```
 
-## 2. 列出所有运行中单元 
+### 2. 列出所有运行中单元 
 ```
 # systemctl list-units
 ```
-## 3. 列出所有失败单元 
+### 3. 列出所有失败单元 
 ```
 # systemctl –failed
 ```
-## 4. 检查某个单元（如 crond.service）是否启用 
+### 4. 检查某个单元（如 crond.service）是否启用 
 ```
 # systemctl is-enabledcrond.service 
 ```
-## 5. 列出所有服务 
+### 5. 列出所有服务 
 ```
 # systemctl list-unit-files –type=service
 ```
-## 6. Linux中如何启动、重启、停止、重载服务以及检查服务（如 httpd.service）状态 
+### 6. Linux中如何启动、重启、停止、重载服务以及检查服务（如 httpd.service）状态 
 
 ```
 # systemctl start httpd.service
@@ -61,7 +61,7 @@ LinuxSystemctl是一个系统管理守护进程、工具和库的集合，用于
 ```
 注意：当我们使用systemctl的start，restart，stop和reload命令时，终端不会输出任何内容，只有status命令可以打印输出。
 
-## 7. 如何激活服务并在开机时启用或禁用服务（即系统启动时自动启动mysql.service服务） 
+### 7. 如何激活服务并在开机时启用或禁用服务（即系统启动时自动启动mysql.service服务） 
 
 ```
 # systemctl is-active mysql.service
@@ -72,7 +72,7 @@ LinuxSystemctl是一个系统管理守护进程、工具和库的集合，用于
 
 # systemctl disable mysql.service
 ```
-## 8. 如何屏蔽（让它不能启动）或显示服务（如ntpdate.service） 
+### 8. 如何屏蔽（让它不能启动）或显示服务（如ntpdate.service） 
 
 ```
 # systemctl mask ntpdate.service
@@ -84,17 +84,17 @@ ln -s ‘/dev/null”/etc/systemd/system/ntpdate.service’
 
 rm ‘/etc/systemd/system/ntpdate.service’
 ```
-## 9. 使用systemctl命令杀死服务 
+### 9. 使用systemctl命令杀死服务 
 
 ```
 # systemctl killcrond 
 ```
-## 10. 列出所有系统挂载点 
+### 10. 列出所有系统挂载点 
 
 ```
 # systemctl list-unit-files –type=mount
 ```
-## 11. 挂载、卸载、重新挂载、重载系统挂载点并检查系统中挂载点状态 
+### 11. 挂载、卸载、重新挂载、重载系统挂载点并检查系统中挂载点状态 
 
 ```
 # systemctl start tmp.mount
@@ -111,7 +111,7 @@ rm ‘/etc/systemd/system/ntpdate.service’
 
 # systemctl status tmp.mount
 ```
-## 12. 在启动时激活、启用或禁用挂载点（系统启动时自动挂载） 
+### 12. 在启动时激活、启用或禁用挂载点（系统启动时自动挂载） 
 
 ```
 # systemctl is-active tmp.mount
@@ -120,7 +120,7 @@ rm ‘/etc/systemd/system/ntpdate.service’
 
 # systemctl disable tmp.mount
 ```
-## 13. 在Linux中屏蔽（让它不能启用）或可见挂载点 
+### 13. 在Linux中屏蔽（让它不能启用）或可见挂载点 
 
 ```
 # systemctl mask tmp.mount
@@ -131,37 +131,37 @@ ln -s ‘/dev/null”/etc/systemd/system/tmp.mount’
 
 rm ‘/etc/systemd/system/tmp.mount’
 ```
-## 14. 列出所有可用系统套接口 
+### 14. 列出所有可用系统套接口 
 
 ```
 # systemctl list-unit-files –type=socket
 ```
-## 15. 检查某个服务的所有配置细节 
+### 15. 检查某个服务的所有配置细节 
 
 ```
 # systemctl showmysql 
 ```
-## 16. 获取某个服务（httpd）的依赖性列表 
+### 16. 获取某个服务（httpd）的依赖性列表 
 
 ```
 # systemctl list-dependencies httpd.service
 ```
-## 17. 启动救援模式 
+### 17. 启动救援模式 
 
 ```
 # systemctl rescue
 ```
-## 18. 进入紧急模式 
+### 18. 进入紧急模式 
 
 ```
 # systemctl emergency
 
-## 19. 列出当前使用的运行等级 
+### 19. 列出当前使用的运行等级 
 
 ```
 # systemctl get-default
 ```
-## 20. 启动运行等级5，即图形模式 
+### 20. 启动运行等级5，即图形模式 
 
 ```
 # systemctl isolate runlevel5.target
@@ -170,7 +170,7 @@ rm ‘/etc/systemd/system/tmp.mount’
 
 # systemctl isolate graphical.target
 ```
-## 21. 启动运行等级3，即多用户模式（命令行） 
+### 21. 启动运行等级3，即多用户模式（命令行） 
 
 ```
 # systemctl isolate runlevel3.target
@@ -179,7 +179,7 @@ rm ‘/etc/systemd/system/tmp.mount’
 
 # systemctl isolate multiuser.target
 ```
-## 22. 设置多用户模式或图形模式为默认运行等级 
+### 22. 设置多用户模式或图形模式为默认运行等级 
 
 ```
 # systemctl set-default runlevel3.target
@@ -187,7 +187,7 @@ rm ‘/etc/systemd/system/tmp.mount’
 
 # systemctl set-default runlevel5.target
 ```
-## 23. 重启、停止、挂起、休眠系统或使系统进入混合睡眠 
+### 23. 重启、停止、挂起、休眠系统或使系统进入混合睡眠 
 
 ```
 # systemctl reboot
