@@ -155,7 +155,7 @@ rm ‘/etc/systemd/system/tmp.mount’
 
 ```
 # systemctl emergency
-
+```
 ### 19. 列出当前使用的运行等级 
 
 ```
