@@ -82,7 +82,7 @@ ln -s ‘/dev/null”/etc/systemd/system/ntpdate.service’
 # systemctl unmask ntpdate.service
 
 rm ‘/etc/systemd/system/ntpdate.service’
-
+```
 ## 9. 使用systemctl命令杀死服务 
 
 ```
@@ -115,9 +115,7 @@ rm ‘/etc/systemd/system/ntpdate.service’
 ```
 # systemctl is-active tmp.mount
 
-
 # systemctl enable tmp.mount
-
 
 # systemctl disable tmp.mount
 ```
