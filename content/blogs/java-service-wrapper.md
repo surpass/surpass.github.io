@@ -292,3 +292,14 @@ assembly.xml文件内容：
 Usage: ./beyond{ console | start | stop | restart | status | dump }
 ```
 
+Commands:  
+
+1.   console      启动并显示控制台信息  
+2.   start        作为一个守护进程后台启动  
+3.   stop         停止程序  
+4.   restart      重启程序  
+5.   condrestart  重启已经运行的程序，与前者区别是程序必须已经在运行  
+6.   status       查看该程序状态  
+7.   install      将程序安装为自启动服务，即随系统启动而启动  
+8.   remove       卸载自启动服务  
+9.   dump         报告运行时的Java thread dump(thread dump
