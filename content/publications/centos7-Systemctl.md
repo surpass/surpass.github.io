@@ -15,7 +15,8 @@ sitemap:
 ---
 
 
-# Linux上的Systemctl命令(转自https://www.cnblogs.com/z0909y/p/10032168.html)
+# Linux上的Systemctl命令
+转自(https://www.cnblogs.com/z0909y/p/10032168.html)
 
 LinuxSystemctl是一个系统管理守护进程、工具和库的集合，用于取代System V、service和chkconfig命令，初始进程主要负责控制systemd系统和服务管理器。通过Systemctl –help可以看到该命令主要分为：查询或发送控制命令给systemd服务，管理单元服务的命令，服务文件的相关命令，任务、环境、快照相关命令，systemd服务的配置重载，系统开机关机相关的命令。 
 
