@@ -60,7 +60,14 @@ Dstat的默认输出是专门为人们实时查看而设计的，不过你也可
 
 dstat的基本用法就是输入dstat命令，输出如下：
 
-![img](https://dn-linuxcn.qbox.me/data/attachment/album/201406/17/224823h9y178x8jyro8uy3.png)
+```
+You did not select any stats, using -cdngy by default.
+----total-cpu-usage---- -dsk/total- -net/total- ---paging-- ---system--
+usr sys idl wai hiq siq| read  writ| recv  send|  in   out | int   csw 
+  8   2  88   2   0   0| 241k   51M|   0     0 |   0     0 |  17k   20k
+  0   0 100   0   0   0|   0  8192B|  10k   17k|   0     0 |2090  4012 
+  0   0 100   0   0   0|   0     0 |  10k   17k|   0     0 |2081  4001
+```
 
 这是默认输出显示的信息：
 
