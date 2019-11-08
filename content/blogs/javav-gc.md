@@ -1,5 +1,5 @@
 ---
-title: "java finalize在高并发应用中安全删除文件的应用"
+title: "Java GC机制详解"
 date: 2019-11-08T21:44:58+08:00
 author: "Frank Li"
 authorlink: "https://www.easyolap.cn/resume/"
@@ -11,7 +11,7 @@ tags: ["java","finalize","GC"]
 keywords: ["java","finalize","GC"]
 image: "/img/java.jpg"
 link: "https://java.oracle.com"
-fact: "java应用笔记"
+fact: "Java GC机制详解"
 weight: 400
 sitemap:
   priority : 0.8
@@ -21,7 +21,7 @@ sitemap:
 
 # Java GC机制详解
 
-垃圾收集 Garbage Collection 通常被称为“GC”，本文详细讲述Java垃圾回收机制。
+垃圾收集 Garbage Collection 通常被称为“GC”，本文详细讲述Java垃圾回收机制。（转自CSDN）
 
 > 导读：
 >
