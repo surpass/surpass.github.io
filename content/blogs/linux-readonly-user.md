@@ -17,7 +17,7 @@ sitemap:
   priority : 0.8
 ---
 
-> 本文转载自：DevOps小站 官方网站，原文地址：https://www.easyolap.cn/blogs/centos-dstat
+> 本文转载自：DevOps小站 官方网站，原文地址：https://www.easyolap.cn/blogs/linux-readonly-user
 
 # Linux只读账号配置
 
