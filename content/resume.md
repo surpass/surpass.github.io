@@ -22,7 +22,7 @@ Hi，My name is Frank Li，Is a programmer。
 
 # 联系方式
 
-- 手机：13478875695
+- 手机：134-7887-5695
 - Email：surpass_li@aliyun.com
 - QQ/微信号：46488820/s46488820
 
@@ -39,7 +39,7 @@ Hi，My name is Frank Li，Is a programmer。
  - Bitbucket：https://bitbucket.org/frankleecn
  - Gitlab：https://gitlab.com/surpass_li
  - 期望职位：Java/Golang软件工程师，架构师，DevOps运维工程师
- - 期望薪资：税后月薪20k~30k，特别喜欢的公司可例外
+ - 期望薪资：税后月薪20k~30k(沈阳) 50k~60k(北京)，特别喜欢的公司可例外
  - 期望城市：沈阳，大连，北京
 
 ### 我的主要教育及工作经历
