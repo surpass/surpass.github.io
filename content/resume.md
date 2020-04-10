@@ -38,13 +38,14 @@ Hi，My name is Frank Li，Is a programmer。
  - Github：http://github.com/surpass
  - Bitbucket：https://bitbucket.org/frankleecn
  - Gitlab：https://gitlab.com/surpass_li
+ - Gitee：https://gitee.com/surpass_li
  - 期望职位：Java/Golang软件工程师，架构师，DevOps运维工程师
- - 期望薪资：税后月薪20k~30k(沈阳) 50k~60k(北京)，特别喜欢的公司可例外
+ - 期望薪资：税后月薪20k~30k(沈阳/大连) 50k~60k(北京)，特别喜欢的公司可例外
  - 期望城市：沈阳，大连，北京
 
 ### 我的主要教育及工作经历
 
- * 1999-2002 沈阳工程学院信息工程系 
+ * 1999-2002 沈阳工程学院 信息工程系 
 
  * 2007-2012 辽宁广播电视大学(本科，工商管理专业)
 
@@ -69,7 +70,7 @@ Hi，My name is Frank Li，Is a programmer。
 
 ### 我的技能
 
- * 编程语言：JAVA,了解PHP,Python，捣鼓 Go……
+ * 编程语言：JAVA,Golang,Python，了解PHP……
  * 熟悉阿里云，AWS S3,AWS Athena等云应用；
  * 熟练使用Ofbiz,spring boot等流行框架,熟悉RESTful,webservice,microservice等web服务架构;
  * 熟练使用Maven对项目进行模块化管理和组织;
