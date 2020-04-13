@@ -40,7 +40,7 @@ Hi，My name is Frank Li，Is a programmer。
  - Gitlab：https://gitlab.com/surpass_li
  - Gitee：https://gitee.com/surpass_li
  - 期望职位：Java/Golang软件工程师，架构师，DevOps运维工程师
- - 期望薪资：税后月薪20k~30k(沈阳/大连) 50k~60k(北京)，特别喜欢的公司可例外
+ - 期望薪资：税后月薪18k~25k(沈阳/大连) 40k~60k(北京)，特别喜欢的公司可例外
  - 期望城市：沈阳，大连，北京
 
 ### 我的主要教育及工作经历
