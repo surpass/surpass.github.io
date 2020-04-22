@@ -6,9 +6,9 @@ authorlink: "https://www.easyolap.cn/resume/"
 translator: "李在超"
 pubtype: "Talk"
 featured: true
-description: "简历,JAVA高级程序员,JAVA架构师,Go程序员,DevOps实践者"
-tags: ["Java","java","Java程序员","Golang","JAVA架构师"]
-keywords: ["Java","java","Java程序员","Golang","JAVA架构师"]
+description: "沈阳Java架构师,沈阳Golang,简历,JAVA高级程序员,JAVA架构师,Go程序员,DevOps实践者"
+tags: ["沈阳Java架构师","沈阳Golang","Java","java","Java程序员","Golang","JAVA架构师"]
+keywords: ["沈阳Java架构师","沈阳Golang","Java","java","Java程序员","Golang","JAVA架构师"]
 url: /resume/
 summary: "15+年软件行业工作经验，做过软件测试，软件实施，带过5~10人项目组，工作认真负责、积极主动、善于团队工作，思维敏捷，创造力强，能吃苦；具有大型软件开发经验。负责过大型电子商务网站的设计与开发,有团队意识,善于合作,乐于钻研,诚信、敬业,责任心强."
 ---
