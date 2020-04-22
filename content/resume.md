@@ -6,11 +6,11 @@ authorlink: "https://www.easyolap.cn/resume/"
 translator: "李在超"
 pubtype: "Talk"
 featured: true
-description: "沈阳Java架构师,沈阳Golang,简历,JAVA高级程序员,JAVA架构师,Go程序员,DevOps实践者"
-tags: ["沈阳Java架构师","沈阳Golang","Java","java","Java程序员","Golang","JAVA架构师"]
-keywords: ["沈阳Java架构师","沈阳Golang","Java","java","Java程序员","Golang","JAVA架构师"]
+description: "沈阳Java架构师,沈阳Golang,JVM性能优化,JAVA高级程序员,JAVA架构师,Go程序员,DevOps实践者"
+tags: ["沈阳Java架构师","沈阳Golang","Java","JVM性能优化","Java程序员","Golang","JAVA架构师"]
+keywords: ["沈阳Java架构师","沈阳Golang","Java","JVM性能优化","Java程序员","Golang","JAVA架构师"]
 url: /resume/
-summary: "15+年软件行业工作经验，做过软件测试，软件实施，带过5~10人项目组，工作认真负责、积极主动、善于团队工作，思维敏捷，创造力强，能吃苦；具有大型软件开发经验。负责过大型电子商务网站的设计与开发,有团队意识,善于合作,乐于钻研,诚信、敬业,责任心强."
+summary: "17+年软件行业工作经验，做过软件测试，软件实施，带过5~10人项目组，工作认真负责、积极主动、善于团队工作，思维敏捷，创造力强，能吃苦；具有大型软件开发经验。负责过大型电子商务网站的设计与开发,有团队意识,善于合作,乐于钻研,诚信、敬业,责任心强."
 ---
 
 
@@ -40,7 +40,7 @@ Hi，My name is Frank Li，Is a programmer。
  - Gitlab：https://gitlab.com/surpass_li
  - Gitee：https://gitee.com/surpass_li
  - 期望职位：Java/Golang软件工程师，架构师，DevOps运维工程师
- - 期望薪资：税后月薪18k~25k(沈阳/大连) 40k~60k(北京)，特别喜欢的公司可例外
+ - 期望薪资：税后月薪15k~20k(沈阳/大连) 40k~60k(北京)，特别喜欢的公司可例外
  - 期望城市：沈阳，大连，北京
 
 ### 我的主要教育及工作经历
