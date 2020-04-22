@@ -15,7 +15,7 @@ summaryLength              = 200
 Paginate                   = 3
 
 theme                      = "AllinOne"
-title                      = "Frank Li's blogs, JAVA程序员,架构师,GO程序员,DevOps实践者"
+title                      = "Frank Li's blogs, JAVA程序员,JVM性能优化,架构师,GO程序员,DevOps实践者"
 
 pygmentsuseclasses         = true
 
@@ -78,7 +78,7 @@ pygmentsuseclasses         = true
   faviconfile              = "img/TechChat.jpg"               # from static/
   avatar                   = "img/profile.jpg"             # path to image in static dir e.g img/avatar.png 
   author                   = "Frank Li"
-  description              = ["Be myself.", "Love the wonderful world.", "Do the right things and be a better man.","JAVA程序员,架构师,Go程序员,DevOps实践者"]
+  description              = ["Be myself.", "Love the wonderful world.", "Do the right things and be a better man.","JAVA程序员,架构师,JVM性能优化,Go程序员,DevOps实践者"]
   welcome_head             = "Hello, World!"
   welcome_word             = "~ 超越永无止境！ ~"
 
