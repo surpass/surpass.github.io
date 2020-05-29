@@ -1,6 +1,6 @@
 ---
 title: "使用kubeadm在Centos7.6上部署kubernetes1.18"
-date: 2020-05-29T21:56:26+08:00
+date: 2020-05-29T14:56:26+08:00
 pubtype: "Talk"
 featured: true
 description: "使用kubeadm安装k8s all-in-one单机测试环境."
