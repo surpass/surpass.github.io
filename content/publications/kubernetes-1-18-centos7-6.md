@@ -4,7 +4,7 @@ date: 2020-05-29T21:56:26+08:00
 pubtype: "Talk"
 featured: true
 description: "使用kubeadm安装k8s all-in-one单机测试环境."
-tags: ["DevOps","Continuous Integration","Continuous Delivery","CI/CD pipelines","docker","agile","Culture"]
+tags: ["DevOps","kubernates","Continuous Delivery","CI/CD pipelines","docker","agile","Culture"]
 image: "/img/k8s.png"
 link: "https://www.kubernetes.org.cn/"
 fact: "使用kubeadm安装kubernetes1.18单机测试环境"
