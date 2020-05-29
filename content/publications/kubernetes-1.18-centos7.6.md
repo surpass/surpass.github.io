@@ -1,6 +1,6 @@
 ---
 title: "使用kubeadm在Centos7.6上部署kubernetes1.18"
-date: 2020-05-29T14:56:26+08:00
+date: 2020-05-29T21:56:26+08:00
 pubtype: "Talk"
 featured: true
 description: "使用kubeadm安装k8s all-in-one单机测试环境."
@@ -13,7 +13,7 @@ sitemap:
   priority : 0.8
 ---
 
-# [使用kubeadm在Centos7.6上部署kubernetes1.18](https://www.kubernetes.org.cn/7189.html)
+# [使用kubeadm在Centos7.6上部署kubernetes1.18](https://www.easyolap.cn/publications/kubernetes-1.18-centos7.6/)
 
 虚拟机：Oracle VM VirtualBox
 
@@ -342,7 +342,7 @@ kubernetes-dashboard        NodePort    10.10.27.4   <none>        443:30000/TCP
 ![使用kubeadm在Centos8上部署kubernetnes1.18] 
 https://192.168.139.6:3000
 显示登录页面
-(/img/k8s-login.png)
+![img](/img/k8s-login.png)
 使用token进行登录，执行下面命令获取token
 
 ```
