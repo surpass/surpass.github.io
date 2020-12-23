@@ -370,7 +370,27 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6Ikp3MDIzZWtpcWN5aTh0cU8yUngxSTlYX2ZwZ1FpVnV5VGhkdUFC
 
 解决方法
 
+
+
 ```
+定义：dashboard-admin.yaml
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: kubernetes-dashboard
+  namespace: kubernetes-dashboard
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+  - kind: ServiceAccount
+    name: kubernetes-dashboard
+    namespace: kubernetes-dashboard
+
+kubectl create -f dashboard-admin.yaml
+
 [root@antsdb-server ~]# kubectl create clusterrolebinding serviceaccount-cluster-admin --clusterrole=cluster-admin --group=system:serviceaccount 
 clusterrolebinding.rbac.authorization.k8s.io/serviceaccount-cluster-admin created
 ```
