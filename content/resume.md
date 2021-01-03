@@ -43,7 +43,7 @@ Hi，My name is Frank Li，Is a programmer。
  - 期望薪资：税后月薪20k~30k(沈阳/大连) 40k~60k(北京)，特别喜欢的公司可例外
  - 期望城市：沈阳，大连，北京
 
-### Technology stack
+### Skills
 - Dev Tools - JAVA, GO,PYTHON,SHELL
 - NO SQL - Cassandra,Hbase
 - RDBMS - Oracle, Mysql
