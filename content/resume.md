@@ -40,8 +40,18 @@ Hi，My name is Frank Li，Is a programmer。
  - Gitlab：https://gitlab.com/surpass_li
  - Gitee：https://gitee.com/surpass_li
  - 期望职位：Java/Golang软件工程师，架构师，DevOps运维工程师
- - 期望薪资：税后月薪15k~20k(沈阳/大连) 40k~60k(北京)，特别喜欢的公司可例外
+ - 期望薪资：税后月薪20k~30k(沈阳/大连) 40k~60k(北京)，特别喜欢的公司可例外
  - 期望城市：沈阳，大连，北京
+
+### Technology stack
+Dev Tools - JAVA, GO,PYTHON,SHELL
+NO SQL - Cassandra,Hbase
+RDBMS - Oracle, Mysql
+Hadoop - Cloudera(cdp7.1.4), Hortonworks
+BigData - flink,apache beam,storm
+ETL - Kettle
+Docker, Containerisation - Docker, Kubernetes
+Cloud - public: AWS,Aliyun...; private: Proxmox VE
 
 ### 我的主要教育及工作经历
 
@@ -65,7 +75,9 @@ Hi，My name is Frank Li，Is a programmer。
 
  * 2018.09-2019.05 资深DevOps工程师（新炬网络）
 
- * 2019.05-至今 数据库研发开发工程师（天港惠达）
+ * 2019.05-2020.06 数据库研发开发工程师（天港惠达）
+
+ * 2020.11-至今 飞驰镁物(北京)信息服务有限公司（华晨宝马项目）
 
 
 ### 我的技能
@@ -97,10 +109,16 @@ Hi，My name is Frank Li，Is a programmer。
 ---
 
 # 主要工作经历
-## 北京天港惠达科技有限公司 （ 2019年5月 ~至今 ）
+## 飞驰镁物(北京)信息服务有限公司 （ 2020年11月 ~ 至今 ）
+
+### RTM 新能源远程监控与环保数据采集
+在此项目我担任项目的架构师，负责Hadoop集群的构建,升级等相关技术调研与实施,同时管理运维组持续保障从需求、开发到生产正常运行为客户提供满意的服务.
+
+
+## 北京天港惠达科技有限公司 （ 2019年5月 ~ 2020年06月 ）
 
 ### 虚拟数据库研发 
-我在此项目负责了数据存储引擎的开发与对接，通过不断的学习短时间撑握Parquet列式数据存储格式的应用，成功完成大数据量的合并与分区管理，对接hdfs文件系统，AWS s3对象存储系统，ceph对象存储系统实现虚拟数据库在公有云，私有云的适配。得到的领导和同事的认可。
+在此项目负责了数据存储引擎的开发与对接，通过不断的学习短时间撑握Parquet列式数据存储格式的应用，成功完成大数据量的合并与分区管理，对接hdfs文件系统，AWS s3对象存储系统，ceph对象存储系统实现虚拟数据库在公有云，私有云的适配。得到的领导和同事的认可。
 
 
 ## 新炬网络 （ 2018年9月 ~ 2019年4月 ）
