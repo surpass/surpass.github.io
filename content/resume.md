@@ -44,14 +44,14 @@ Hi，My name is Frank Li，Is a programmer。
  - 期望城市：沈阳，大连，北京
 
 ### Technology stack
-Dev Tools - JAVA, GO,PYTHON,SHELL
-NO SQL - Cassandra,Hbase
-RDBMS - Oracle, Mysql
-Hadoop - Cloudera(cdp7.1.4), Hortonworks
-BigData - flink,apache beam,storm
-ETL - Kettle
-Docker, Containerisation - Docker, Kubernetes
-Cloud - public: AWS,Aliyun...; private: Proxmox VE
+- Dev Tools - JAVA, GO,PYTHON,SHELL
+- NO SQL - Cassandra,Hbase
+- RDBMS - Oracle, Mysql
+- Hadoop - Cloudera(cdp7.1.4), Hortonworks
+- BigData - flink,apache beam,storm
+- ETL - Kettle
+- Docker, Containerisation - Docker, Kubernetes
+- Cloud - public: AWS,Aliyun...; private: Proxmox VE
 
 ### 我的主要教育及工作经历
 
