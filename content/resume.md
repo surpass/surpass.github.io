@@ -48,9 +48,9 @@ Hi，My name is Frank Li，Is a programmer。
 - NO SQL - Cassandra,Hbase
 - RDBMS - Oracle, Mysql
 - Hadoop - Cloudera(cdp7.1.4), Hortonworks
-- BigData - flink,apache beam,storm
+- BigData - Flink,Apache Beam,storm,Apache Spark
 - ETL - Kettle
-- Docker, Containerisation - Docker, Kubernetes
+- Docker, Containerisation - Docker, Kubernetes,Openshift
 - Cloud - public: AWS,Aliyun...; private: Proxmox VE
 
 ### 我的主要教育及工作经历
@@ -115,7 +115,7 @@ Hi，My name is Frank Li，Is a programmer。
 在此项目我担任项目的架构师，负责Hadoop集群的构建,升级等相关技术调研与实施,同时管理运维组持续保障从需求、开发到生产正常运行为客户提供满意的服务.
 
 
-## 北京天港惠达科技有限公司 （ 2019年5月 ~ 2020年06月 ）
+## 北京天港惠达科技有限公司 （ 2019年5月 ~ 2020年6月 ）
 
 ### 虚拟数据库研发 
 在此项目负责了数据存储引擎的开发与对接，通过不断的学习短时间撑握Parquet列式数据存储格式的应用，成功完成大数据量的合并与分区管理，对接hdfs文件系统，AWS s3对象存储系统，ceph对象存储系统实现虚拟数据库在公有云，私有云的适配。得到的领导和同事的认可。
