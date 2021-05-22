@@ -87,13 +87,13 @@ Hi，My name is Frank Li，Is a programmer。
  * 熟练使用Ofbiz,spring boot等流行框架,熟悉RESTful,webservice,microservice等web服务架构;
  * 熟练使用Maven对项目进行模块化管理和组织;
  * 掌握Nexus server搭建，熟练构建私有maven仓库和Docker镜像库;
- * 掌握jenkins持续集成工具与流程,了解DevOps思想和工具,在项目应用让生产端变得敏捷;
+ * 掌握Jenkins持续集成工具与流程,了解DevOps思想和工具,在项目应用让生产端变得敏捷;
  * 熟悉JIRA搭建，并用其进行管理项目;
  * 熟悉Confluence对知识的管理，积累经验提高团队的战斗力;
  * 掌握Linux下makefile;了解Android开发;
- * 能够熟练操作和使用Mysql、Oracle等数据库;熟练操作cassandra,hbase等nosql数据库
- * 掌握docker虚拟化技术,撑握Dockerfile以及k8s模板编写;
- * 成功实施过kubernetes 1.9.1;
+ * 能够熟练操作和使用Mysql、Oracle等数据库;熟练操作Cassandra,Hbase等Nosql数据库
+ * 掌握Docker虚拟化技术,撑握Dockerfile以及k8s模板编写;
+ * 成功实施过Kubernetes 1.9.1;
  * 熟练使用Linux操作系统,进行运营环境的部署;
  * 熟悉Tomcat等服务器的使用和部署;
  * 熟悉Selenium、dbunit和Junit/testng进行自动化/半自动化测试;
