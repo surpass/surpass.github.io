@@ -6,11 +6,11 @@ authorlink: "https://www.easyolap.cn/resume/"
 translator: "李在超"
 pubtype: "Talk"
 featured: true
-description: "沈阳Java架构师,沈阳Golang,JVM性能优化,JAVA高级程序员,JAVA架构师,Go程序员,DevOps实践者"
-tags: ["沈阳Java架构师","沈阳Golang","Java","JVM性能优化","Java程序员","Golang","JAVA架构师"]
-keywords: ["沈阳Java架构师","沈阳Golang","Java","JVM性能优化","Java程序员","Golang","JAVA架构师"]
+description: "沈阳Java架构师,沈阳Golang,JVM性能优化,JAVA高级程序员,JAVA架构师,Go程序员,DevOps实践者,车联网"
+tags: ["沈阳Java架构师","沈阳Golang","Java","JVM性能优化","Java程序员","Golang","JAVA架构师","车联网"]
+keywords: ["沈阳Java架构师","沈阳Golang","Java","JVM性能优化","Java程序员","Golang","JAVA架构师","车联网"]
 url: /resume/
-summary: "17+年软件行业工作经验，做过软件测试，软件实施，带过5~10人项目组，工作认真负责、积极主动、善于团队工作，思维敏捷，创造力强，能吃苦；具有大型软件开发经验。负责过大型电子商务网站的设计与开发,有团队意识,善于合作,乐于钻研,诚信、敬业,责任心强."
+summary: "18+年软件行业工作经验，做过软件测试，软件实施，带过5~10人项目组，工作认真负责、积极主动、善于团队工作，思维敏捷，创造力强，能吃苦；具有大型软件开发经验。负责过大型电子商务网站的设计与开发,有团队意识,善于合作,乐于钻研,诚信、敬业,责任心强."
 ---
 
 
@@ -77,7 +77,9 @@ Hi，My name is Frank Li，Is a programmer。
 
  * 2019.05-2020.06 数据库研发开发工程师（天港惠达）
 
- * 2020.11-至今 飞驰镁物(北京)信息服务有限公司（华晨宝马项目）
+ * 2020.11-2021-07 飞驰镁物(北京)信息服务有限公司（华晨宝马H&R项目）
+ 
+ * 2021.07-至今 凯捷中国
 
 
 ### 我的技能
@@ -109,7 +111,7 @@ Hi，My name is Frank Li，Is a programmer。
 ---
 
 # 主要工作经历
-## 飞驰镁物(北京)信息服务有限公司 （ 2020年11月 ~ 至今 ）
+## 飞驰镁物(北京)信息服务有限公司 （ 2020年11月 ~ 2021年07月 ）
 
 ### RTM 新能源远程监控与环保数据采集
 在此项目我担任项目的架构师，负责Hadoop集群的构建,升级等相关技术调研与实施,同时管理运维组持续保障从需求、开发到生产正常运行为客户提供满意的服务.
