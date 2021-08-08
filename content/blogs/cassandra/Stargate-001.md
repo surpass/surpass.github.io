@@ -320,6 +320,10 @@ curl -L -X GET 'api.easyolap.cn:8082/v2/namespaces/easyolapdemo/collections/demo
 ```
 {"documentId":"demo","data":{"firstname":"Demo","lastname":"Data"}}
 ```
+通过cassandra cql查看cassandra  的数据见下图：
+
+![img](/images/blog/cassandra/stargate-001-005.png)
+
 ### 删除文档
 
 要删除文档，请向 发送`DELETE`请求 `/v2/namespaces/{namespace_name}/collections/{collections_name}/{document-id}`。
@@ -370,5 +374,7 @@ curl --location \
 ```
 证明documentid为demo的已被删除。
 
-
 瞧！有关文档 API 的更多信息，请参阅API 参考部分中的 [使用文档 API](https://stargate.io/docs/stargate/1.0/developers-guide/document-using.html) 或[文档 API](https://stargate.io/docs/stargate/1.0/attachments/docv2.html)。
+
+
+
