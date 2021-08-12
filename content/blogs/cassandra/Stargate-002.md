@@ -1,5 +1,5 @@
 ---
-title: "Stargate-rest api"
+title: "Stargate-REST API"
 date: 2021-08-12T21:30:58+08:00
 author: "Frank Li"
 authorlink: "https://www.easyolap.cn/resume/"
@@ -23,9 +23,9 @@ sitemap:
 
  本次使用上次实验的镜像。
 
-[Stargate-简介及Document ApiI](stargate-001) 
+[Stargate-简介及Document ApiI](../stargate-001) 
 
-[Stargate-REST ApiI](stargate-002) 
+[Stargate-REST ApiI](../stargate-002) 
 # Stargate REST API
 
 ## **一、简介**
