@@ -22,10 +22,10 @@ sitemap:
 测试机信息：Centos 7 , ip:192.168.139.6  绑定域名：api.easyolap.cn
 
  本次使用上次实验的镜像。
-
+Stargate简介系列：
 [Stargate-简介及Document ApiI](../stargate-001) 
 
-[Stargate-REST ApiI](../stargate-002) 
+[Stargate-REST ApiI（本文）](../stargate-002) 
 # Stargate REST API
 
 ## **一、简介**
