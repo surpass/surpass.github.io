@@ -32,7 +32,7 @@ Hi，My name is Frank Li，Is a programmer。
 
  - 李在超/男/1980 
  - 大学/沈阳工程学院（沈阳电力高等专科学校） 
- - 工作年限：15+（年）
+ - 工作年限：18+（年）
  - 技术博客：http://www.easyolap.cn
  - JAVAEYE博客：[surpass-li.iteye.com](http://surpass-li.iteye.com/)
  - Github：http://github.com/surpass
@@ -78,7 +78,7 @@ Hi，My name is Frank Li，Is a programmer。
  * 2019.05-2020.06 数据库研发开发工程师（天港惠达）
 
  * 2020.11-2021-07 飞驰镁物(北京)信息服务有限公司（华晨宝马H&R项目）
- 
+
  * 2021.07-至今 凯捷中国
 
 
@@ -204,6 +204,12 @@ linux服务器的安装与系统优化，java应用的性能优化使系统负�
 - 版本管理、文档和自动化部署工具：Svn/Git/Markdown
 - 单元测试：Junit/dbunit
 - 云和开放平台：阿里云/AWS
+
+
+
+# 培训及证书
+
+**[Apache Cassandra 3 Administrator Associate Certification](https://certification.mettl.com/datastax/applicant/result/download-certificate?key=tCsyxsZgD083hZLtcOla%2Fw)**
 
 ---
 
