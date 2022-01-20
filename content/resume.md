@@ -211,6 +211,8 @@ linux服务器的安装与系统优化，java应用的性能优化使系统负�
 
 **[Apache Cassandra 3 Administrator Associate Certification](https://certification.mettl.com/datastax/applicant/result/download-certificate?key=tCsyxsZgD083hZLtcOla%2Fw)**
 
+**[PolarDB技术工程师认证](https://www.easyolap.cn/images/PolarDB.jpg)**
+
 ---
 
 # 我的简历
