@@ -51,7 +51,7 @@ sitemap:
 
 - 通过单击下面的链接并从Apache镜像下载版本：
 
-  - [Pulsar 2.9.1 binary release](https://archive.apache.org/dist/pulsar/pulsar-2.9.1/apache-pulsar-2.9.1-bin.tar.gz)
+- [Pulsar 2.9.1 binary release](https://archive.apache.org/dist/pulsar/pulsar-2.9.1/apache-pulsar-2.9.1-bin.tar.gz)
 
 - 从 Pulsar [下载页面](https://pulsar.apache.org/download)
 
