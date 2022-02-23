@@ -7,8 +7,8 @@ translator: "李在超"
 pubtype: "Talk"
 featured: true
 description: "Stargate rest api"
-tags: ["Apache Cassandra","Apache Pulsar","Tutorial" "连接器" "sink"]
-keywords: ["Apache Cassandra","Apache Pulsar","Tutorial" "连接器" "sink]
+tags: ["Apache Cassandra","Apache Pulsar","Tutorial", "连接器", "sink"]
+keywords: ["Apache Cassandra","Apache Pulsar","Tutorial", "连接器", "sink"]
 image: "https://pulsar.apache.org/img/pulsar.svg"
 link: "https://pulsar.apache.org"
 fact: "Connecting Pulsar With Apache Cassandra"
