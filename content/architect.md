@@ -27,7 +27,7 @@ Hi，My name is Frank Li，Is a programmer。
 
 # 个人信息
 
- - 李在超/男/1980 
+ - 李在超/男/1980-11
  - 工作年限：18+年
  - 技术博客：https://www.easyolap.cn
  - Github：http://github.com/surpass
@@ -46,7 +46,7 @@ Hi，My name is Frank Li，Is a programmer。
 ## 凯捷中国 （ 2021年07月 ~ 至今 ）
 
 ### 国内某大型家居连锁集团IT服务建设优化项目 
-​        我在此项目负责一个开发小组的技术Leader和管理工作,参与架构设计，方案制定，技术调研，敏捷Scrum Master等工作，在任务重、系统复杂、团队成员新、多组织远程交付等背景下，通过互动交流，每日站会等活动从最初的延迟状态，到最后按时并高质量的完成远程交付工作。最后得到客户和领导的认可。
+​        我在此项目负责一个开发小组的技术Leader和管理工作,参与架构设计，方案制定，技术调研，敏捷Scrum Master等工作，在任务重、系统复杂、团队成员新、多组织协同远程交付等背景下，通过互动交流，每日站会等活动从最初的延迟状态，到最后按时并高质量的完成远程交付工作。最后得到客户和领导的认可。
 
 #### 技术栈：
 - 阿里云
@@ -66,6 +66,13 @@ Hi，My name is Frank Li，Is a programmer。
 - redis
 - zabbix
 
+## 东软睿驰汽车技术（沈阳）有限公司 （ 2020年6月 ~ 2020年11月）
+TSP服务项目
+#### 技术栈：
+- 存储:阿里云(OSS)
+- 计算:Flink 
+- JAVA
+
 ## 北京天港惠达科技有限公司 （ 2019年5月 ~ 2020年6月 ）
 
 ### 虚拟数据库研发 
@@ -75,13 +82,16 @@ Hi，My name is Frank Li，Is a programmer。
 
 - 存储:Hadoop(hdfs),AWS（S3）,阿里云(OSS)
 - 计算:Spark Sql,AWS Athena,阿里云(DLA)
-- java
+- JAVA
 
 ## 新炬网络 （ 2018年9月 ~ 2019年4月 ）
 
 ### 辽宁某移动通信公司DEVOPS项目  
 我在此项目负责了现场DevOps的实施与技术支持工作，通过对用户进行基础技术的培训与分享，使公司的服务得到用户的认可和好评，提高用户的满意度。
+#### 技术栈：
 
+- Tool Chain：JIRA,JENKINS,SonarQube,Artifactory,nesux
+- 开发语言：java
 
 ## 东软集团 （ 2009年12月 ~ 2018年9月 ）
 
