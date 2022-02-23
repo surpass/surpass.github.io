@@ -1,6 +1,6 @@
 ---
-title: "Stargate-REST API"
-date: 2021-08-12T21:30:58+08:00
+title: "Connecting Pulsar With Apache Cassandra"
+date: 2022-02-22T22:30:58+08:00
 author: "Frank Li"
 authorlink: "https://www.easyolap.cn/resume/"
 translator: "李在超"
