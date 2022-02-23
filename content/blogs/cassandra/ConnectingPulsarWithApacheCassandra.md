@@ -25,7 +25,7 @@ sitemap:
 
 本教程提供了一个亲身体验，了解如何在不编写一行代码的情况下将数据移出Pulsar。回顾Pulsar I/O的概念，同时运行本指南中的步骤，有助于加深理解。本教程结束时，您将能够：
 
-连接你的Pulsar和Cassandra
+        连接你的Pulsar和Cassandra
 
 提示
 
@@ -35,10 +35,10 @@ sitemap:
 
 软件版本：
 
-| Name                 | Version | 
-| -------------------- | ------- | 
-| `Apache Pulsar`      | `2.9.1` | 
-| ``Apache Cassandra`` | `4.0.1` | 
+| Name                 | Version |
+| -------------------- | ------- |
+| `Apache Pulsar`      | `2.9.1` |
+| Apache Cassandra | `4.0.1` |
 
 
 
@@ -82,11 +82,11 @@ bin/pulsar-client consume persistent://public/default/test_cassandra_datastax -s
 生产消息：
 
 ```bash
-bin/pulsar-client produce  -k "2" -m "{\"schema\":{\"type\":\"map\",\"fields\":[{\"type\":\"int32\",\"optional\":false,\"field\":\"id\"},{\"type\":\"string\",\"optional\":true,\"field\":\"name\"},{\"type\":\"string\",\"optional\":true,\"field\":\"value\"},{\"type\":\"string\",\"optional\":true,\"field\":\"tx_time\"}],\"optional\":false,\"name\":\"stocksdata\"}, \"payload\":{\"id\": 1,\"name\": \"doit\",\"value\": 1,\"tx_time\":\"2018-11-26T19:26:27.483\"}}" persistent://public/default/test_cassandra_datastax -s $
+bin/pulsar-client produce  -k "3" -m "{\"id\": 1,\"name\": \"doit\",\"value\": 1,\"tx_time\": 1642817730000}" persistent://public/default/example_topic -s $
 ```
 -s 定义消息的分隔符。
 
-bin/pulsar-client produce  -k "3" -m "{\"id\": 1,\"name\": \"doit\",\"value\": 1,\"tx_time\": 1642817730000}" persistent://public/default/example_topic -s $
+
 
 
 ## 二、安装内置连接器
@@ -722,7 +722,7 @@ Example output:
 bin/pulsar-admin sink status \
     --tenant public \
     --namespace default \
-    --name cassandra-datastax-sink
+    --name dse-sink-kv
 ```
 Example output:
 ```bash
@@ -770,7 +770,7 @@ cqlsh:testks> select * from transaction ;
 以下代码来自https://mp.weixin.qq.com/s/7Lz4WV45i2vNI6SeYArCow
 
 通过go程序向pulsar topic 发送消息。(go运行时环境略)
-
+```
 package main
 
 import (
@@ -872,5 +872,5 @@ cqlsh:testks> select count(*) from transaction;
 bin/pulsar-admin sink delete \
     --tenant public \
     --namespace default \
-    --name cassandra-datastax-sink
+    --name dse-sink-kv
 ```
