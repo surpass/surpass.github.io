@@ -19,6 +19,8 @@ sitemap:
 
 > 本文转载自：DevOps小站 官方网站，原文地址：https://www.easyolap.cn/blogs/cassandra/connectingpulsarwithapachecassandra/
 
+Frank Li  *2022-02-22 22:30*
+
 测试机信息：Centos 8 , ip:192.168.139.8  绑定域名：api.easyolap.cn
 
  
