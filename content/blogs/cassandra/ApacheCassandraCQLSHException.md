@@ -1,6 +1,6 @@
 ---
 title: "Apache Cassandra 异常记录"
-date: 2022-02-22T22:30:58+08:00
+date: 2022-02-26T22:20:08+08:00
 author: "Frank Li"
 authorlink: "https://www.easyolap.cn/resume/"
 translator: "李在超"
@@ -11,7 +11,7 @@ tags: ["Apache Cassandra","CQLSH"]
 keywords: ["Apache Cassandra","CQLSH"]
 image: "https://pulsar.apache.org/img/pulsar.svg"
 link: "https://cassandra.apache.org"
-fact: "Connecting Pulsar With Apache Cassandra"
+fact: "Apache Cassandra 异常记录"
 weight: 400
 sitemap:
   priority : 0.8
@@ -19,7 +19,7 @@ sitemap:
 
 > 本文转载自：DevOps小站 官方网站，原文地址：https://www.easyolap.cn/blogs/cassandra/apachecassandracqlshexception/
 
-作者：Frank Li  *2022-02-26 22:30*
+作者：Frank Li  *2022-02-26 22:20*
 
 测试机信息：Centos 8 , ip:192.168.139.8  绑定域名：nosql.easyolap.cn
 
