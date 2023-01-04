@@ -67,7 +67,7 @@ curl -v -k https://xxx.xxx.xxx.xxx/test/login/oauth2/code/iam  -H "X-Forwarded-H
 
 二、问题分析
 
-1.搜索“要”
+1.搜索“Host头攻击”
 
 根据文章添加Interceptor或filter进行拦截或过滤，以HandlerInterceptor为例
 
