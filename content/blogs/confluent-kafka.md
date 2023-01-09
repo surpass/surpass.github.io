@@ -195,7 +195,7 @@ https://github.com/confluentinc/cp-all-in-one
 
 2、Confluent Kafka企业版
 docker-compose.yml文件：
-
+```
 version: '2'
 services:
   zookeeper:
@@ -373,12 +373,12 @@ services:
       KAFKA_REST_BOOTSTRAP_SERVERS: 'broker:29092'
       KAFKA_REST_LISTENERS: "http://0.0.0.0:8082"
       KAFKA_REST_SCHEMA_REGISTRY_URL: 'http://schema-registry:8081'
+```
 启动容器服务：
-
+```
 docker-compose -f docker-compose.yml up -d
+```
 关闭容器服务：
-
+```
 docker-compose -f docker-compose.yml down
-————————————————
-版权声明：本文为CSDN博主「天山老妖」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/A642960662/article/details/123055555
+``` 
