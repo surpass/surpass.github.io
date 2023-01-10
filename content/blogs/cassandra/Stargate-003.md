@@ -1,6 +1,6 @@
 ---
 title: "Stargate-GraphQL CQL API"
-date: 2022-01-10T21:10:58+08:00
+date: 2022-01-09T21:10:58+08:00
 author: "Frank Li"
 authorlink: "https://www.easyolap.cn/resume/"
 translator: "李在超"
@@ -152,7 +152,7 @@ mutation createKsLibrary {
     "createKeyspace": true
   }
 }
-  ```
+```
 
 ### 检查 keyspace
 
@@ -160,7 +160,7 @@ mutation createKsLibrary {
 
 - graphQL command
 
-​```shell
+```shell
 # Works in graphql-schema
 # for either CQL-first or schema-first
 query GetKeyspace {
@@ -189,7 +189,7 @@ query GetKeyspace {
 
 Result
 
-```
+  ```
 {
   "data": {
     "keyspace": {
@@ -335,7 +335,7 @@ keyspace存在后, 可以通过执行以下语句建表.例如, 两个表被创�
 
 - graphQL command
 
-```shell
+​```shell
 # create two tables (book, reader) in library with a single mutation
 # DATA TYPES: TEXT, UUID, SET(TEXT), TUPLE(TEXT, INT, DATE), LIST(UDT)
 mutation createTables {
