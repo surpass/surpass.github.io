@@ -393,7 +393,7 @@ Result
 
 - graphQL command
 
-​```shell
+```
 # create a table with a MAP
 # DATA TYPE: TEXT, INT, MAP(TEXT, DATE)
 # Sample: btype=Editor, badge_id=1, earned = [Gold:010120, Silver:020221]
@@ -429,8 +429,6 @@ Result
 
 此示例显示了一张地图。前面的示例显示了一个列表。在下一个示例中，将定义一个集合
 
-This example shows a map. A previous example shows a list. In the next example, a set will be defined.
-
 ### [添加列到表 schema]
 
 如果需要向存储在表中的内容添加更多属性，可以添加一个或多个列：
@@ -438,7 +436,7 @@ This example shows a map. A previous example shows a list. In the next example, 
 - graphQL command
 - 
 
-```shell
+```
 # alter a table and add columns
 # DATA TYPES: TEXT, INT, SET(TEXT)
 mutation alterTableAddCols {
@@ -454,6 +452,7 @@ mutation alterTableAddCols {
     ]
   )
 }
+
 ```
 
 Result
@@ -474,7 +473,7 @@ Result
 
 - graphQL command
 
-```shell
+```
 query GetTables {
   keyspace(name: "library") {
       name
@@ -569,7 +568,7 @@ Result
 
 例如，为“books”表生成的GraphQL API是：
 
-```plaintext
+```
 schema {
   query: Query
   mutation: Mutation
@@ -611,7 +610,7 @@ type Mutation {
 
 - graphQL command
 
-```shell
+```
 # insert 2 books in one mutation
 mutation insert2Books {
   moby: insertbook(value: {title:"Moby Dick", author:"Herman Melville"}) {
@@ -668,7 +667,7 @@ Result
 
 - graphQL command
 
-```shell
+```
 # get one book using the primary key title with a value
 query oneBook {
     book (value: {title:"Moby Dick"}) {
@@ -705,7 +704,7 @@ Result
 
 - graphQL command
 
-```shell
+```
 mutation updateOneBook {
   moby: updatebook(value: {title:"Moby Dick", author:"Herman Melville", isbn: "9780140861723"}, ifExists: true ) {
     value {
@@ -715,6 +714,7 @@ mutation updateOneBook {
     }
   }
 }
+
 ```
 
 Result
@@ -740,7 +740,7 @@ Result
 
 - graphQL command
 
-```shell
+```
 mutation deleteOneBook {
   PaP: deletebook(value: {title:"Pride and Prejudice", author: "Jane Austen"}, ifExists: true ) {
     value {
