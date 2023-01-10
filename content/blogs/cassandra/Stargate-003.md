@@ -26,8 +26,9 @@ sitemap:
 Stargate简介系列：
 [Stargate-简介及Document ApiI](../stargate-001) 
 
-[Stargate-REST ApiI（本文）](../stargate-002) 
-[Stargate-Stargate GraphQL CQL](../stargate-003) 
+[Stargate-REST ApiI](../stargate-002) 
+
+[Stargate-Stargate GraphQL CQL（本文）](../stargate-003) 
 
 # Stargate GraphQL CQL-first API QuickStart
 
@@ -185,7 +186,7 @@ query GetKeyspace {
       }
   }
 }
-  ```
+```
 
 Result
 
@@ -323,7 +324,7 @@ Result
       }
     }
 }
-```
+  ```
 
 
 
@@ -335,7 +336,7 @@ keyspace存在后, 可以通过执行以下语句建表.例如, 两个表被创�
 
 - graphQL command
 
-​```shell
+```shell
 # create two tables (book, reader) in library with a single mutation
 # DATA TYPES: TEXT, UUID, SET(TEXT), TUPLE(TEXT, INT, DATE), LIST(UDT)
 mutation createTables {
@@ -392,7 +393,7 @@ Result
 
 - graphQL command
 
-```shell
+​```shell
 # create a table with a MAP
 # DATA TYPE: TEXT, INT, MAP(TEXT, DATE)
 # Sample: btype=Editor, badge_id=1, earned = [Gold:010120, Silver:020221]
