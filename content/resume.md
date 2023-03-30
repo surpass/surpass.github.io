@@ -103,6 +103,24 @@ Hi，My name is Frank Li，Is a programmer。
 ---
 
 # 主要工作经历
+
+## IBM(中国) （ 2022年09月 ~ 至今 ）
+
+### 国内某合资品牌车企的采购系统
+
+在此项目我担任项目的解决方案架构师，负责技术支持，问题解决，DevOps支持，系统设计，系统优化等架构相关工作.
+
+
+
+## 凯捷(中国) （ 2021年07月 ~ 2022年08月 ）
+
+### 居然之家项目
+
+在此项目我担任技术组长，带领团队完成交付任务，在项目同时担任Scrum Master 角友；实现远程交付与协作；
+在工期短，成员新的情况下顺利完成了预期交付；得到了合作方和客户的好评；
+
+
+
 ## 飞驰镁物(北京)信息服务有限公司 （ 2020年11月 ~ 2021年07月 ）
 
 ### RTM 新能源远程监控与环保数据采集
@@ -182,7 +200,7 @@ linux服务器的安装与系统优化，java应用的性能优化使系统负�
 
  [**DevOps工具系列之-Gitlab及Git的使用**](https://www.easyolap.cn/speech/DevOps-Gitlab&git.pdf "DevOps工具系列之-JIRA及Scrum的使用")
 
-[**DevOps工具系列之-java开发环境搭建与配置**](https://www.easyolap.cn/speech/DevOps-JAVA "DevOps工具系列之-java开发环境搭建与配置")
+[**DevOps工具系列之-java开发环境搭建与配置**](https://www.easyolap.cn/speech/DevOps-JAVA.pdf "DevOps工具系列之-java开发环境搭建与配置")
 
 
 # 技能清单
@@ -208,7 +226,7 @@ linux服务器的安装与系统优化，java应用的性能优化使系统负�
 ---
 
 # 我的简历
-[**详细简历**](https://www.easyolap.cn/resume-v2.0.html)
+[**详细简历**](https://www.easyolap.cn/resume-v3.0.html)
 
 # 致谢
 感谢您花时间阅读我的简历，期待能有机会和您共事。
