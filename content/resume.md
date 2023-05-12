@@ -31,8 +31,8 @@ Hi，My name is Frank Li，Is a programmer。
 # 个人信息
 
  - 李在超/男/1980 
- - 大学/沈阳工程学院（沈阳电力高等专科学校） 
- - 工作年限：18+（年）
+ - 大学/沈阳工程学院
+ - 工作年限：20+（年）
  - 技术博客：http://www.easyolap.cn
  - JAVAEYE博客：[surpass-li.iteye.com](http://surpass-li.iteye.com/)
  - Github：http://github.com/surpass
@@ -48,28 +48,39 @@ Hi，My name is Frank Li，Is a programmer。
 - NO SQL - Cassandra,Hbase
 - RDBMS - Oracle, Mysql
 - Hadoop - Cloudera(cdp7.1.4), Hortonworks
-- BigData - Flink,Apache Beam,storm,Apache Spark
+- BigData - Flink,Apache Beam,storm,Apache Spark,Apache Solr
 - ETL - Kettle
 - Docker, Containerisation - Docker, Kubernetes,Openshift
 - Cloud - public: AWS,Aliyun...; private: Proxmox VE
 
 ### 我的主要教育及工作经历
 
- * 1999-2002 沈阳工程学院 信息工程系 
+ * 1999-2002 沈阳工程学院 计算机应用与维护 
 
  * 2007-2012 辽宁广播电视大学(本科，工商管理专业)
 
    ----------------------------------------------------------------------------------------------
 
- * 2021.07-至今 凯捷中国
+ * 2022.09-至今 IBM
+
+ * 2021.07-2022.08 凯捷中国
+
  * 2020.11-2021-07 飞驰镁物(北京)信息服务有限公司（华晨宝马H&R项目）
+
  * 2019.05-2020.06 数据库研发开发工程师（天港惠达）
+
  * 2018.09-2019.05 资深DevOps工程师（新炬网络）
+
  * 2010-2018 资深软件工程师，技术负责人（东软）
+
  * 2009-2009 架构师（智诚祥科技，政府项目）
+
  * 2007-2008 架构师（盛生医药，合伙创业电子商务）
+
  * 2006-2007 程序员（新思软件，软件外包）
+
  * 2005-2006 JAVA程序员（千像公司，互联网公司）
+
  * 2002-2005 测试开发（东软）。
 
 
@@ -84,8 +95,8 @@ Hi，My name is Frank Li，Is a programmer。
  * 掌握Jenkins持续集成工具与流程,了解DevOps思想和工具,在项目应用让生产端变得敏捷;
  * 熟悉JIRA搭建，并用其进行管理项目;
  * 熟悉Confluence对知识的管理，积累经验提高团队的战斗力;
- * 掌握Linux下makefile;了解Android开发;
- * 能够熟练操作和使用Mysql、Oracle等数据库;熟练操作Cassandra,Hbase等Nosql数据库
+ * 掌握Linux下Makefile;了解Android开发;
+ * 能够熟练操作和使用MySql、Oracle等数据库;熟练操作Cassandra,Hbase等Nosql数据库
  * 掌握Docker虚拟化技术,撑握Dockerfile以及k8s模板编写;
  * 成功实施过Kubernetes 1.9.1;
  * 熟练使用Linux操作系统,进行运营环境的部署;
@@ -116,8 +127,13 @@ Hi，My name is Frank Li，Is a programmer。
 
 ### 居然之家数字化升级项目
 
-在此项目我担任技术组长，带领团队完成交付任务，在项目同时担任Scrum Master 角友；实现远程交付与协作；
-在工期短，成员新的情况下顺利完成了预期交付；得到了合作方和客户的好评；
+我在此项目负责一个开发小组的技术Leader和管理工作,参与架构设计，方案制定，技术调研，敏捷Scrum Master等工作，在任务重、系统复杂、团队成员新、多组织协同远程交付等背景下，通过互动交流，每日站会等活动从最初的延迟状态，到最后按时并高质量的完成远程交付工作。最后得到客户和领导的认可。
+
+#### 技术栈：
+
+- 阿里云
+- JAVA
+- MySql
 
 
 
@@ -143,19 +159,19 @@ Hi，My name is Frank Li，Is a programmer。
 
 ### 东软睿驰汽车技术（沈阳）有限公司  云业务与大数据
 负责新技术的引入与调研，架构设计，课题调研，采用ofbiz框架进行组件化设计，集成netty实现高并发，高可用的车联网服务。系统采用k8s和docker完成持续集成和自动化测试，提高发版品质，缩短交付周期。
-系统集成了cassandra/hbase(NOSQL),KAFKA(消息队列)，redis/ingite(分布式缓存\计算\内存数据库)。采用Hadoop为基础平台构建大数据应用，使用storm/spark进行数据处理。
+系统集成了Cassandra/Hbase(NOSQL),KAFKA(消息队列)，Redis/Ingite(分布式缓存\计算\内存数据库)。采用Hadoop为基础平台构建大数据应用，使用storm/spark进行数据处理。
 工作业绩：
 推进GIT分布式版本控制应用，为持续集成做准备;
-推进实施kubernetes与docker的应用,解决微服务运行环境问题;
-推进实施基于jenkins持续集成的推广与应用;
+推进实施Kubernetes与docker的应用,解决微服务运行环境问题;
+推进实施基于Jenkins持续集成的推广与应用;
 微服务架构的推广与应用;
-安装与实施ambari对hadoop集群的安装与管理;
-linux服务器的安装与系统优化，java应用的性能优化使系统负载能力提升进10倍;
+安装与实施Ambari对Hadoop集群的安装与管理;
+Linux服务器的安装与系统优化，java应用的性能优化使系统负载能力提升进10倍;
 采用EFK对微服务进行日志收集;
 
 
 ### 东软汽车电子事业部
-负责新技术的引入与调研，采用ofbiz框架进行组件化设计，集成netty实现高并发，高可用的车联网服务。系统集成了cassandra(NOSQL),KAFKA(消息队列)，ingite(分布式缓存\计算\内存数据库)。
+负责新技术的引入与调研，采用Ofbiz框架进行组件化设计，集成Netty实现高并发，高可用的车联网服务。系统集成了Cassandra(NOSQL),KAFKA(消息队列)，ingite(分布式缓存\计算\内存数据库)。
 
 ## 沈阳智诚祥软件科技有限公司（ 2009年03月 ~ 2009年11月 ）
 带领技术团队，负责省公安厅印章管理系统的设计与研发;采用java语言，oracle9i数据库。系统架构spring,hibernate,freemarker.采用测试驱动模型进行开发，用svn进行版本管理。mavne进行项目管理。

@@ -15,7 +15,7 @@ summaryLength              = 200
 Paginate                   = 3
 
 theme                      = "AllinOne"
-title                      = "Frank Li's blogs, JAVA程序员,JVM性能优化,架构师,GO程序员,DevOps实践者"
+title                      = "Frank Li's blogs, JAVA程序员,JVM性能优化,架构师,GO程序员,DevOps实践者,Scrum敏捷项目落地实践"
 
 pygmentsuseclasses         = true
 
